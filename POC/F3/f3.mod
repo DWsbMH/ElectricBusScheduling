@@ -6,42 +6,43 @@ param steps{Products}; #termék elõállításához szükséges lépések pl A-hoz 3 lépés
 
 set Tasks := setof{p in Products, n in 1..steps[p]}(p,n); #feladatok halmaza az egyes termékek legyártásához pl (A,1) (A,2) (A,3) ... (D,3)
 
-set Applicable := setof{(p,n) in Tasks, u in Units}(p,n,u);
-
 param proctime {p in Products, n in 1..steps[p], u in Units},default -1;
+
+set Applicable := setof{(p,n) in Tasks, u in Units : proctime[p,n,u]!=-1}(p,n,u);
+
+
 
 var stime {Tasks}>=0; #adott task kezdete 
 var ctime {Tasks}>=0; #adott task vége
 
 var choose {Applicable} binary; # pl ha A1es taskot az U3 ba végzem el akkor choose[(A,1,U3)]=1
 
-set Precedence := setof {(p,n) in Tasks,(p2,n2) in Tasks: (p!=p2 || n!=n2)} (p,n,p2,n2);
+set Precedence := setof {(p,n,u) in Applicable,(p2,n2,u) in Applicable : (p!=p2 || n!=n2)} (p,n,p2,n2);
+set CommonUnits{(p,n,p2,n2) in Precedence} := setof {(p,n,u) in Applicable:(p2,n2,u) in Applicable} u;
 
 var X {Precedence} binary; #ki kit elõz meg
 
 var makespan >=0; #teljes átfutási idõ
 
-s.t. Valaszt {(p,n,u) in Applicable}: #ha a proctime -1 akkor azt nem választjuk
-choose[p,n,u]*proctime[p,n,u]>=0;
-
 s.t. ProctimeConstraint {(p,n) in Tasks}:
-ctime[p,n] >= stime[p,n] + sum{u in Units} choose[p,n,u] * proctime[p,n,u];
+ctime[p,n] >= stime[p,n] + sum{(p,n,u) in Applicable} choose[p,n,u] * proctime[p,n,u];
 
 s.t. SubsequentTask {(p,n) in Tasks:n!=1}:
 	stime[p,n] >= ctime [p,n-1];
 #az elõzõ task befejezése után kezdõdhet a következõ task A1 után jön A2
 
-s.t. Sequencing{(p,n,p2,n2) in Precedence, u in Units : proctime[p,n,u]>0 && proctime[p2,n2,u]>0}:
+s.t. Sequencing{(p,n,p2,n2) in Precedence, u in CommonUnits[p,n,p2,n2]}:
 	stime[p2,n2] >= ctime[p,n] - M *(3-X[p,n,p2,n2]-choose[p,n,u]-choose[p2,n2,u]);
 #stime[p2,n2] >= ctime[p,n] ha X[p,n,p2,n2] == 1 és ugyanabban a Unitban vannak choose[p,n,u]==1 és choose[p2,n2,u]==1 
 
-s.t. Orderaround{(p,n,p2,n2) in Precedence, u in Units : proctime[p,n,u]>0 && proctime[p2,n2,u]>0}:
+s.t. Orderaround{(p,n,p2,n2) in Precedence,  u in CommonUnits[p,n,p2,n2]}:
 	X[p,n,p2,n2]+X[p2,n2,p,n] >= -1 + choose[p,n,u] + choose[p2,n2,u];
 # X[p,n,p2,n2]+X[p2,n2,p,n] >= 1 - M *(2-choose[p,n,u]-choose[p2,n2,u])
 # X[p,n,p2,n2]+X[p2,n2,p,n]=1 ha ugyanabban a Unitban vannak choose[p,n,u]==1 és choose[p2,n2,u]==1 
 # A1U1+A1U2+A1U3+A1U4=1
+
 s.t. egyTaskotegyUnitba{(p,n) in Tasks}:
-	sum{u in Units} choose[p,n,u]=1;
+	sum{(p,n,u) in Applicable} choose[p,n,u]=1;
 #(p,n,u) in Applicable,u2,u3,u4 in Units : u!=u2!=u3!=u4  ->>>>> choose[p,n,u]+choose[p,n,u2]+choose[p,n,u3]+choose[p,n,u4]=1;
 
 s.t. Makespanconstraint{(p,n) in Tasks}:
@@ -52,7 +53,7 @@ solve;
 for{u in Units}
 {
 	printf "%s: ",u;
-	for{(p,n) in Tasks : choose[p,n,u]==1}
+	for{(p,n,u) in Applicable : choose[p,n,u]==1}
 	{
 		printf"%s%d[%g-%g] ",p,n,stime[p,n],ctime[p,n];
 	}

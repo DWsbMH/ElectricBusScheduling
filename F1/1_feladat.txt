@@ -1,0 +1,14 @@
+a következõ feladatosztály megoldására alkalmazható:
+
+adottak:
+Termékek
+Részfeladatok száma
+Gyártási egységek
+Részfeladat legyártási ideje
+
+Az egyes termékekhez tartozó részfeladatokat csak adott egységben végzik el.
+Unlimited a storage.
+Többszálú folyamatok ütemezése
+Cél: a teljes gyártási idõ minimalizálása
+
+

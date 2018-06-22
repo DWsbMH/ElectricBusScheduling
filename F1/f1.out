@@ -1,0 +1,272 @@
+Problem:    e1
+Rows:       96
+Columns:    57 (30 integer, 30 binary)
+Non-zeros:  221
+Status:     INTEGER OPTIMAL
+Objective:  Makespan = 59 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 ProctimeConstraint[A,1]
+                                  16            15               
+     2 ProctimeConstraint[A,2]
+                                   8             8               
+     3 ProctimeConstraint[A,3]
+                                  12            12               
+     4 ProctimeConstraint[B,1]
+                                  10            10               
+     5 ProctimeConstraint[B,2]
+                                  20            20               
+     6 ProctimeConstraint[B,3]
+                                   5             5               
+     7 ProctimeConstraint[B,4]
+                                  13            13               
+     8 ProctimeConstraint[C,1]
+                                   9             9               
+     9 ProctimeConstraint[C,2]
+                                  12             7               
+    10 ProctimeConstraint[C,3]
+                                  20            20               
+    11 ProctimeConstraint[D,1]
+                                   5             5               
+    12 ProctimeConstraint[D,2]
+                                  17            17               
+    13 ProctimeConstraint[D,3]
+                                   7             7               
+    14 SubequentTask[A,2]
+                                   0            -0               
+    15 SubequentTask[A,3]
+                                   0            -0               
+    16 SubequentTask[B,2]
+                                  11            -0               
+    17 SubequentTask[B,3]
+                                   0            -0               
+    18 SubequentTask[B,4]
+                                   0            -0               
+    19 SubequentTask[C,2]
+                                   0            -0               
+    20 SubequentTask[C,3]
+                                  18            -0               
+    21 SubequentTask[D,2]
+                                   4            -0               
+    22 SubequentTask[D,3]
+                                  26            -0               
+    23 Sequencing[A,1,B,1]
+                                 -26         -1000               
+    24 Sequencing[A,1,C,3]
+                                -987         -1000               
+    25 Sequencing[A,2,B,3]
+                                -993         -1000               
+    26 Sequencing[A,2,C,1]
+                                 -34         -1000               
+    27 Sequencing[A,2,D,2]
+                                 -25         -1000               
+    28 Sequencing[A,3,B,4]
+                               -1000         -1000               
+    29 Sequencing[A,3,D,1]
+                                 -46         -1000               
+    30 Sequencing[B,1,A,1]
+                               -1000         -1000               
+    31 Sequencing[B,1,C,3]
+                                -971         -1000               
+    32 Sequencing[B,2,C,2]
+                                 -32         -1000               
+    33 Sequencing[B,2,D,3]
+                                -989         -1000               
+    34 Sequencing[B,3,A,2]
+                                 -20         -1000               
+    35 Sequencing[B,3,C,1]
+                                 -46         -1000               
+    36 Sequencing[B,3,D,2]
+                                 -37         -1000               
+    37 Sequencing[B,4,A,3]
+                                 -25         -1000               
+    38 Sequencing[B,4,D,1]
+                                 -59         -1000               
+    39 Sequencing[C,1,A,2]
+                                -983         -1000               
+    40 Sequencing[C,1,B,3]
+                                -968         -1000               
+    41 Sequencing[C,1,D,2]
+                               -1000         -1000               
+    42 Sequencing[C,2,B,2]
+                               -1000         -1000               
+    43 Sequencing[C,2,D,3]
+                                -969         -1000               
+    44 Sequencing[C,3,A,1]
+                                 -49         -1000               
+    45 Sequencing[C,3,B,1]
+                                 -59         -1000               
+    46 Sequencing[D,1,A,3]
+                                -971         -1000               
+    47 Sequencing[D,1,B,4]
+                                -959         -1000               
+    48 Sequencing[D,2,A,2]
+                               -1000         -1000               
+    49 Sequencing[D,2,B,3]
+                                -985         -1000               
+    50 Sequencing[D,2,C,1]
+                                 -26         -1000               
+    51 Sequencing[D,3,B,2]
+                                 -38         -1000               
+    52 Sequencing[D,3,C,2]
+                                 -50         -1000               
+    53 Orderaround[A,1,B,1]
+                                   1             1             = 
+    54 Orderaround[A,1,C,3]
+                                   1             1             = 
+    55 Orderaround[A,2,B,3]
+                                   1             1             = 
+    56 Orderaround[A,2,C,1]
+                                   1             1             = 
+    57 Orderaround[A,2,D,2]
+                                   1             1             = 
+    58 Orderaround[A,3,B,4]
+                                   1             1             = 
+    59 Orderaround[A,3,D,1]
+                                   1             1             = 
+    60 Orderaround[B,1,A,1]
+                                   1             1             = 
+    61 Orderaround[B,1,C,3]
+                                   1             1             = 
+    62 Orderaround[B,2,C,2]
+                                   1             1             = 
+    63 Orderaround[B,2,D,3]
+                                   1             1             = 
+    64 Orderaround[B,3,A,2]
+                                   1             1             = 
+    65 Orderaround[B,3,C,1]
+                                   1             1             = 
+    66 Orderaround[B,3,D,2]
+                                   1             1             = 
+    67 Orderaround[B,4,A,3]
+                                   1             1             = 
+    68 Orderaround[B,4,D,1]
+                                   1             1             = 
+    69 Orderaround[C,1,A,2]
+                                   1             1             = 
+    70 Orderaround[C,1,B,3]
+                                   1             1             = 
+    71 Orderaround[C,1,D,2]
+                                   1             1             = 
+    72 Orderaround[C,2,B,2]
+                                   1             1             = 
+    73 Orderaround[C,2,D,3]
+                                   1             1             = 
+    74 Orderaround[C,3,A,1]
+                                   1             1             = 
+    75 Orderaround[C,3,B,1]
+                                   1             1             = 
+    76 Orderaround[D,1,A,3]
+                                   1             1             = 
+    77 Orderaround[D,1,B,4]
+                                   1             1             = 
+    78 Orderaround[D,2,A,2]
+                                   1             1             = 
+    79 Orderaround[D,2,B,3]
+                                   1             1             = 
+    80 Orderaround[D,2,C,1]
+                                   1             1             = 
+    81 Orderaround[D,3,B,2]
+                                   1             1             = 
+    82 Orderaround[D,3,C,2]
+                                   1             1             = 
+    83 Makespanconstraint[A,1]
+                                  33            -0               
+    84 Makespanconstraint[A,2]
+                                  25            -0               
+    85 Makespanconstraint[A,3]
+                                  13            -0               
+    86 Makespanconstraint[B,1]
+                                  49            -0               
+    87 Makespanconstraint[B,2]
+                                  18            -0               
+    88 Makespanconstraint[B,3]
+                                  13            -0               
+    89 Makespanconstraint[B,4]
+                                   0            -0               
+    90 Makespanconstraint[C,1]
+                                  50            -0               
+    91 Makespanconstraint[C,2]
+                                  38            -0               
+    92 Makespanconstraint[C,3]
+                                   0            -0               
+    93 Makespanconstraint[D,1]
+                                  54            -0               
+    94 Makespanconstraint[D,2]
+                                  33            -0               
+    95 Makespanconstraint[D,3]
+                                   0            -0               
+    96 Makespan                   59                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 stime[A,1]                 10             0               
+     2 stime[A,2]                 26             0               
+     3 stime[A,3]                 34             0               
+     4 stime[B,1]                  0             0               
+     5 stime[B,2]                 21             0               
+     6 stime[B,3]                 41             0               
+     7 stime[B,4]                 46             0               
+     8 stime[C,1]                  0             0               
+     9 stime[C,2]                  9             0               
+    10 stime[C,3]                 39             0               
+    11 stime[D,1]                  0             0               
+    12 stime[D,2]                  9             0               
+    13 stime[D,3]                 52             0               
+    14 ctime[A,1]                 26             0               
+    15 ctime[A,2]                 34             0               
+    16 ctime[A,3]                 46             0               
+    17 ctime[B,1]                 10             0               
+    18 ctime[B,2]                 41             0               
+    19 ctime[B,3]                 46             0               
+    20 ctime[B,4]                 59             0               
+    21 ctime[C,1]                  9             0               
+    22 ctime[C,2]                 21             0               
+    23 ctime[C,3]                 59             0               
+    24 ctime[D,1]                  5             0               
+    25 ctime[D,2]                 26             0               
+    26 ctime[D,3]                 59             0               
+    27 X[A,1,B,1]   *              0             0             1 
+    28 X[A,1,C,3]   *              1             0             1 
+    29 X[A,2,B,3]   *              1             0             1 
+    30 X[A,2,C,1]   *              0             0             1 
+    31 X[A,2,D,2]   *              0             0             1 
+    32 X[A,3,B,4]   *              1             0             1 
+    33 X[A,3,D,1]   *              0             0             1 
+    34 X[B,1,A,1]   *              1             0             1 
+    35 X[B,1,C,3]   *              1             0             1 
+    36 X[B,2,C,2]   *              0             0             1 
+    37 X[B,2,D,3]   *              1             0             1 
+    38 X[B,3,A,2]   *              0             0             1 
+    39 X[B,3,C,1]   *              0             0             1 
+    40 X[B,3,D,2]   *              0             0             1 
+    41 X[B,4,A,3]   *              0             0             1 
+    42 X[B,4,D,1]   *              0             0             1 
+    43 X[C,1,A,2]   *              1             0             1 
+    44 X[C,1,B,3]   *              1             0             1 
+    45 X[C,1,D,2]   *              1             0             1 
+    46 X[C,2,B,2]   *              1             0             1 
+    47 X[C,2,D,3]   *              1             0             1 
+    48 X[C,3,A,1]   *              0             0             1 
+    49 X[C,3,B,1]   *              0             0             1 
+    50 X[D,1,A,3]   *              1             0             1 
+    51 X[D,1,B,4]   *              1             0             1 
+    52 X[D,2,A,2]   *              1             0             1 
+    53 X[D,2,B,3]   *              1             0             1 
+    54 X[D,2,C,1]   *              0             0             1 
+    55 X[D,3,B,2]   *              0             0             1 
+    56 X[D,3,C,2]   *              0             0             1 
+    57 makespan                   59             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,26 @@
+set Products := A B C D;
+set Units := U1 U2 U3 U4;
+
+param steps :=
+A 3
+B 4
+C 3
+D 3
+;
+
+param : appliable proctime :=
+A 1 U1 15
+A 2 U3 8
+A 3 U4 12
+B 1 U1 10
+B 2 U2 20
+B 3 U3 5
+B 4 U4 13
+C 1 U3 9
+C 2 U2 7
+C 3 U1 20
+D 1 U4 5
+D 2 U3 17
+D 3 U2 7
+;
+

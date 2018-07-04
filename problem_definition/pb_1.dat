@@ -10,17 +10,13 @@ param honnan{Jaratok} symbolic, in Helyek;
 param hova{Jaratok} symbolic, in Helyek;
 param mikortol{Jaratok}; #perc
 param meddig{Jaratok}; #perc
-param fogyasztas{Jaratok}; #watt
 
 
 param nBusz;
 set Buszok := 1..nBusz;
 
-#minden busz vegtelen meretu akksival van
-#tok mindegy honnet indul es hol er veget
 
-#minden buszhoz maximum 5 jarat lehet hozzarendelve
-
+#cel a koztes km-ek minimalizalasa
 
 
 

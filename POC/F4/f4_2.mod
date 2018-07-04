@@ -38,7 +38,7 @@ s.t. SubsequentBatch {(p,b,1) in Tasks :b!=1}:
 	stime[p,b,1] >= stime [p,b-1,1];
 
 s.t. Sequencing{(p,b,n,u,p2,b2,n2) in Conflicts}:
-	stime[p2,b2,n2] >= ctime[p,b,n] - M *(3-X[p,b,n,p2,b2,n2]-choose[p,b,n,u]-choose[p2,b2,n2,u]);
+	stime[p2,b2,n2] >= ctime[p,b,n] - M *(1-X[p,b,n,p2,b2,n2]);
 #stime[p2,n2] >= ctime[p,n] ha X[p,n,p2,n2] == 1 és ugyanabban a Unitban vannak choose[p,n,u]==1 és choose[p2,n2,u]==1 
 
 s.t. Orderaround{(p,b,n,u,p2,b2,n2) in Conflicts}:

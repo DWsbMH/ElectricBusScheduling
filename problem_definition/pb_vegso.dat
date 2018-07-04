@@ -1,0 +1,27 @@
+set Helyek;
+param tav{h1 in Helyek, h2 in Helyek}; #km
+param ido{h1 in Helyek, h2 in Helyk}; #perc
+
+set Toltoallomasok;
+param hely{Toltoallomasok} symbolic, in Helyek;
+param toltessebesseg{Toltoallomasok}; #watt/perc
+
+param nJarat;
+set Jaratok := 1 .. nJarat;
+param honnan{Jaratok} symbolic, in Helyek;
+param hova{Jaratok} symbolic, in Helyek;
+param mikortol{Jaratok}; #perc
+param meddig{Jaratok}; #perc
+param tav{Jaratok}; #km
+
+
+param nBusz;
+set Buszok := 1..nBusz;
+
+param maxkapacitas{Buszok}; #watt
+param bazisallomas{Buszok}, symbolic, in Helyek;
+param fogyasztas{Buszak}; #watt/km
+
+
+
+

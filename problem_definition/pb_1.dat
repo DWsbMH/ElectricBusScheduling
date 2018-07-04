@@ -1,0 +1,28 @@
+set Helyek;
+param tav{h1 in Helyek, h2 in Helyek}; #km
+param ido{h1 in Helyek, h2 in Helyk}; #perc
+
+
+
+param nJarat;
+set Jaratok := 1 .. nJarat;
+param honnan{Jaratok} symbolic, in Helyek;
+param hova{Jaratok} symbolic, in Helyek;
+param mikortol{Jaratok}; #perc
+param meddig{Jaratok}; #perc
+param fogyasztas{Jaratok}; #watt
+
+
+param nBusz;
+set Buszok := 1..nBusz;
+
+#minden busz vegtelen meretu akksival van
+#tok mindegy honnet indul es hol er veget
+
+#minden buszhoz maximum 5 jarat lehet hozzarendelve
+
+
+
+
+
+

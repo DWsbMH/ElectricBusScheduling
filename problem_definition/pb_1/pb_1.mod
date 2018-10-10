@@ -18,9 +18,6 @@ set Buszok := 1..nBusz;
 var hozzarendel{Jaratok,Buszok}, binary;
 var atmegy{Buszok,Jaratok,Jaratok}, binary;
 
-#minden busz maximum 5 járatot vállalhat
-s.t. mindenBuszMaximumOtJaratot {b in Buszok} : sum {j in Jaratok} hozzarendel[j,b]<=5;
-
 #minden járat el legyen végezve
 s.t. mindenJaratElvegezve {j in Jaratok} : sum {b in Buszok} hozzarendel[j,b]=1;
 

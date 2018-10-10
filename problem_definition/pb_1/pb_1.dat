@@ -1,0 +1,80 @@
+set Helyek := A B C D;
+param tav: A  B  C  D :=
+		A  0 14 17  8
+		B 14  0  5 10
+		C 17  5  0 20
+		D  8 10 20  0
+; #km
+
+param ido: A  B  C  D :=
+		A  0 21 26 12
+		B 21  0  8 15
+		C 26  8  0 30
+		D 12 15 30  0
+; #perc
+
+param nJarat := 12;
+set Jaratok := 1 .. nJarat;
+
+param honnan:
+1 A
+2 C
+3 A
+4 B
+5 B
+6 C
+7 D
+8 B
+9 A
+10 D
+11 D
+12 C
+;
+
+param hova:
+1 B
+2 D
+3 C
+4 A
+5 C
+6 A
+7 A
+8 D
+9 D
+10 B
+11 C
+12 B
+;
+
+param mikortol:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+; #perc
+
+param meddig:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+; #perc
+
+param nBusz := 3;
+set Buszok := 1..nBusz;

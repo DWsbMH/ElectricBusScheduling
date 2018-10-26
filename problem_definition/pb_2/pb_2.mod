@@ -17,6 +17,9 @@ set Buszok := 1..nBusz;
 
 param depo{Buszok} symbolic, in Helyek;
 
+
+param M:=10000;
+
 var hozzarendel{Jaratok,Buszok}, binary;
 var atmegy{Buszok,Jaratok,Jaratok}, binary;
 
@@ -44,25 +47,32 @@ s.t. Atmegyconstraint_elesito{b in Buszok, j in Jaratok, j2 in Jaratok}:
 s.t. Atmegyconstraint_elesito2{b in Buszok, j in Jaratok, j2 in Jaratok,jkoztes in Jaratok: mikortol[jkoztes]>=meddig[j] && meddig[jkoztes] <= mikortol[j2]}:
   atmegy[b,j,j2]<=1-hozzarendel[jkoztes,b];
 
-#elso jarat beallitas -> a jaratok kozul amiket elvallal a busz, a legkisebb kezdoideju
-#kezdetben minden 1
-s.t. elsoInit{b in Buszok, j in Jaratok: hozzarendel[j,b]=1}:
-  elsojarate[j,b]=1;
+s.t. CsakAkkorLehetElsoHaHozzarendelt{b in Buszok, j in Jaratok}:
+  elsojarate[j,b] <= hozzarendel[j,b];
 
-s.t. elsoBeallit{b in Buszok, j in Jaratok, j2 in Jaratok: j!=j2 && hozzarendel[j,b]=1 && hozzarendel[j2,b]=1 && mikortol[j]<mikortol[j2]}: 
-  elsojarate[j2,b]<1 - elsojarate[j,b];
+s.t. Legfeljebbegyelsojarat{b in Buszok}:
+  sum{j in Jaratok} elsojarate[j,b] <= 1;
 
-#utolso jarat beallitas -> a jaratok kozul amiket elvallal a busz, a legnagyobb kezdoideju
-#kezdetben minden 1
-s.t. utolsoInit{b in Buszok, j in Jaratok: hozzarendel[j,b]=1}:
-  utolsojarate[j,b]=1;
+# redundans a kettovel felettivel de lehet gyorsit
+s.t. Nincselsojarathanincshozzarendelvesemmi{b in Buszok}:
+  sum{j in Jaratok} elsojarate[j,b] <= sum{j in Jaratok} hozzarendel[j,b];
 
-s.t. utolsoBeallit{b in Buszok, j in Jaratok, j2 in Jaratok: j!=j2 && hozzarendel[j,b]=1 && hozzarendel[j2,b]=1 && meddig[j]>meddig[j2]}: 
-  utolsojarate[j2,b]<1 - utolsojarate[j,b];
+s.t. Kellelsojarathavanlegalabbegyhozzarendelve{b in Buszok}:
+  sum{j in Jaratok} elsojarate[j,b] >= sum{j in Jaratok} hozzarendel[j,b] / card(Jaratok);
+
+s.t. Kesobbijaratnemlehetelsohamarvankorabbihozzarendelt
+  {b in Buszok, j in Jaratok,j2 in Jaratok: mikortol[j]>mikortol[j2]}:
+  elsojarate[j,b] <= 0 + M * (1- hozzarendel[j2,b]);
+
+#TODO utolsojarat
 
 #cel a koztes km-ek minimalizalasa-minimális legyen az átjutási km : minden buszra a járatainál az utolsó helytõl a következõ helyig lévõ távolságok összege
-minimize Koztestav: sum {b in Buszok, j1 in Jaratok, j2 in Jaratok} tav[hova[j1],honnan[j2]]*atmegy[b,j1,j2]
-+sum {b in Buszok, j3 in Jaratok}elsojarate[j,b]*tav[honnan[j3],depo[b]]+sum {b in Buszok, j3 in Jaratok}utolsojarate[j,b]*tav[hova[j3],depo[b]];
+minimize Koztestav:
+sum {b in Buszok, j1 in Jaratok, j2 in Jaratok} tav[hova[j1],honnan[j2]]*atmegy[b,j1,j2]
++
+sum {b in Buszok, j in Jaratok} elsojarate[j,b]*tav[depo[b],honnan[j]]
++
+sum {b in Buszok, j in Jaratok} utolsojarate[j,b]*tav[hova[j],depo[b]];
 
 solve;
 
@@ -73,6 +83,8 @@ for{b in Buszok}
   printf "Busz %d:\n",b;
   for{j in Jaratok:hozzarendel[j,b]=1}
     printf "\tJarat %d: %s(%g) -> %s(%g)\n",j,honnan[j],mikortol[j],hova[j],meddig[j];
+  for{j in Jaratok: elsojarate[j,b]=1}
+    printf "\tElsojarat: Depo --%g--> Jarat %d : %s(%g) -> %s(%g)\n",tav[depo[b],honnan[j]],j,depo[b],0,honnan[j],mikortol[j];
   for{j in Jaratok, j2 in Jaratok: atmegy[b,j,j2]=1}
     printf "\tAtmenes: Jarat %d --%g--> Jarat %d : %s(%g) -> %s(%g)\n",j,tav[hova[j],honnan[j2]],j2,hova[j],meddig[j],honnan[j2],mikortol[j2];
   

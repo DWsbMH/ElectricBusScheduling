@@ -75,6 +75,21 @@ param meddig:=
 12 3100
 ; #perc
 
+param tav2:=
+1 16
+2 21
+3 19
+4 15
+5 9
+6 20
+7 9
+8 11
+9 10
+10 12
+11 21
+12 6
+;
+
 param nBusz := 3;
 
 param depo:=

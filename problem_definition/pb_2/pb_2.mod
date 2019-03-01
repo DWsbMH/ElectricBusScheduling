@@ -47,7 +47,6 @@ s.t. Atmegyconstraint_elesito{b in Buszok, j in Jaratok, j2 in Jaratok}:
 s.t. Atmegyconstraint_elesito2{b in Buszok, j in Jaratok, j2 in Jaratok,jkoztes in Jaratok: mikortol[jkoztes]>=meddig[j] && meddig[jkoztes] <= mikortol[j2]}:
   atmegy[b,j,j2]<=1-hozzarendel[jkoztes,b];
 
-
 #Elso jarat constraintek
 s.t. CsakAkkorLehetElsoHaHozzarendelt{b in Buszok, j in Jaratok}:
   elsojarate[j,b] <= hozzarendel[j,b];

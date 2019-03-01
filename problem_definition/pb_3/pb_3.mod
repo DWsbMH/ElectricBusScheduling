@@ -111,6 +111,7 @@ sum {b in Buszok, j in Jaratok} elsojarate[j,b]*tav[depo[b],honnan[j]]
 +
 sum {b in Buszok, j in Jaratok} utolsojarate[j,b]*tav[hova[j],depo[b]];
 
+
 solve;
 
 printf "Osszes tavolsag: %g\n", Koztestav;

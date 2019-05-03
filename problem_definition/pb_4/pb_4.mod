@@ -18,7 +18,7 @@ set Buszok := 1..nBusz;
 
 param depo{Buszok} symbolic, in Helyek;
 
-param toltes{Buszok}; #km amennyit egy tankolassal tud menni 
+param toltes{Buszok}; # Watt
 
 param M:=10000;
 
@@ -104,18 +104,13 @@ s.t. hasznalatkiszamitas {b in Buszok}:
   = osszhasznalat[b];
 
 s.t. maxtoltes{b in Buszok}:
-  osszhasznalat[b] <= toltes[b];
+  osszfogyasztas[b] <= toltes[b];
 
 s.t. osszesfogyasztas{b in Buszok}:
-  osszfogyasztas[b] <= osszhasznalat[b]*fogyasztas[b];
+  osszfogyasztas[b] = osszhasznalat[b]*fogyasztas[b];
 
 #cel a koztes km-ek minimalizalasa-minimális legyen az átjutási km : minden buszra a járatainál az utolsó helytol a következo helyig lévo távolságok összege
-minimize Koztestav:
-sum {b in Buszok, j1 in Jaratok, j2 in Jaratok} tav[hova[j1],honnan[j2]]*atmegy[b,j1,j2]
-+
-sum {b in Buszok, j in Jaratok} elsojarate[j,b]*tav[depo[b],honnan[j]]
-+
-sum {b in Buszok, j in Jaratok} utolsojarate[j,b]*tav[hova[j],depo[b]];
+minimize osszfogyasztas_minden_buszra: sum {b in Buszok} osszfogyasztas[b];
 
 solve;
 

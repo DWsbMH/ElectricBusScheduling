@@ -13,121 +13,35 @@ param ido: A  B  C  D :=
 		D 12 15 30  0
 ; #perc
 
-set Jaratok := j1 j2 j3 j4 j5 ... j12  t1 t2 t3 t4 t5;
+set Jaratok := j1 j2 j3 j4 j5 j6 j7 j8 j9 j10 j11 j12 t1 t2 t3 t4 t5;
 set Toltojaraok  := t1 t2 t3 t4 t5;
 
-param honnan:=
-j1 A
-j2 C
-j3 A
-j4 B
-j5 B
-j6 C
-j7 D
-j8 B
-j9 A
-j10 D
-j11 D
-j12 C
-t1  A
-t2  A
-t3  A
-t4  A
-t5  A
-;
-
-param hova:=
-1 B
-2 D
-3 C
-4 A
-5 C
-6 A
-7 A
-8 D
-9 D
-10 B
-11 C
-12 B
-t1  A
-t2  A
-t3  A
-t4  A
-t5  A
-;
-
-param mikortol:=
-1 10 
-2 10
-3 10
-4 1010
-5 1010
-6 1010
-7 2010
-8 2010
-9 2010
-10 3010
-11 3010
-12 3010
-t1  0
-t2  120
-t3  240
-t4  360
-t5  480
-; #perc
-
-param meddig:=
-1 100
-2 100
-3 100
-4 1100
-5 1100
-6 1100
-7 2100
-8 2100
-9 2100
-10 3100
-11 3100
-12 3100
-t1  120
-t2  240
-t3  360
-t4  380
-t5  600
-; #perc
-
-param tav2:=
-1 16
-2 21
-3 19
-4 15
-5 9
-6 20
-7 9
-8 11
-9 10
-10 12
-11 21
-12 6
-t1  0
-t2  0
-t3  0
-t4  0
-t5  0
+param : honnan hova mikortol meddig tav2:=
+j1  A B 10   100  16
+j2  C D 10   100  21
+j3  A C 10   100  19
+j4  B A 1010 1100 15
+j5  B C 1010 1100 9
+j6  C A 1010 1100 20
+j7  D A 2010 2100 9
+j8  B D 2010 2100 11
+j9  A D 2010 2100 10
+j10 D B 3010 3100 12
+j11 D C 3010 3100 21
+j12 C B 3010 3100 6
+t1  A A 0    120  0
+t2  A A 120  240  0
+t3  A A 240  360  0
+t4  A A 360  480  0
+t5  A A 480  600  0
 ;
 
 param nBusz := 3;
 
-param depo:=
-1 A
-2 B
-3 A
+param depo toltes fogyasztas:=
+1 A 200 2
+2 B 300 4
+3 A 250 3
 ;
 
-param toltes:=
-1 200
-2 300
-3 250
-;
-
-param Toltoallomastoltes := ;
+param Toltoallomastoltes := 25; #watt/perc

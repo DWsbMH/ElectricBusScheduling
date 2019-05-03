@@ -93,7 +93,7 @@ s.t. KorabbiJaratNemLehetUtolsoHaMarVanKesobbiHozzarendelt
 s.t. hasznalatkiszamitas {b in Buszok}:
   sum {j1 in Jaratok, j2 in Jaratok} tav[hova[j1],honnan[j2]]*atmegy[b,j1,j2]
   +
-  sum {j in Jaratok}elsojarate[j,b]*tav[honnan[j],depo[b]]
+  sum {j in Jaratok}elsojarate[j,b]*tav[depo[b],honnan[j]]
   +
   sum {j in Jaratok}utolsojarate[j,b]*tav[hova[j],depo[b]]
   +

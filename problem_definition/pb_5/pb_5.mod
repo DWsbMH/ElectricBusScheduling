@@ -36,8 +36,8 @@ var osszhasznalat{Buszok}>=0; #km
 var osszfogyasztas{Buszok}>=0; #toltes
 
 #a busz toltottsege az adott jarat elott es utan
-var toltottsege{Jaratok,Buszok}>=0;
-var toltottsegu{Jaratok,Buszok}>=0;
+var toltottsege{j in Jaratok,b in Buszok}>=0,<=maxtoltes[b];
+var toltottsegu{j in Jaratok,b in Buszok}>=0,<=maxtoltes[b];
 
 
 #minden járat el legyen végezve
@@ -100,17 +100,9 @@ s.t. KorabbiJaratNemLehetUtolsoHaMarVanKesobbiHozzarendelt
   utolsojarate[j,b] <= 0 + M * (1- hozzarendel[j2,b]);
 
 
-#elotte utana toltottsegi max
-s.t. Elotte{b in Buszok, j in Jaratok}:
-  toltottsege[j,b]<=maxtoltes[b];
-
-s.t. Utana{b in Buszok, j in Jaratok}:
-  toltottsegu[j,b]<=maxtoltes[b];
-
-
 #ha egy busz elvegzi j1 utam a j2 jaratot
 s.t. ElotteToltottseg{b in Buszok, j1 in Jaratok, j2 in Jaratok}:
-  toltottsege[j2,b]<=toltottsegu[j1,b]+M*(3-atmegy[b,j1,j2]-hozzarendel[j1,b]-hozzarendel[j2,b]);
+  toltottsege[j2,b]<=toltottsegu[j1,b] -tav[hova[j1],honnan[j2]]*fogyasztas[b]+M*(1-atmegy[b,j1,j2]);
 
 
 #ha egy b busz elvegzi a j jaratot
@@ -135,9 +127,7 @@ s.t. hasznalatkiszamitas {b in Buszok}:
   
 
 s.t. osszesfogyasztas{b in Buszok}:
-  osszfogyasztas[b] <= osszhasznalat[b]*fogyasztas[b]
-  +
-  sum{tj in Toltojaratok} hozzarendel[tj,b]*maxtoltes[b];
+  osszfogyasztas[b] = osszhasznalat[b]*fogyasztas[b];
 
 #mikor menjen tolteni?
 
@@ -145,18 +135,19 @@ minimize osszfogyasztas_minden_buszra: sum {b in Buszok} osszfogyasztas[b];
 
 solve;
 
-printf "Osszes tavolsag: %g\n", Koztestav;
+printf "Osszes fogyasztas: %g\n", sum{b in Buszok} osszfogyasztas[b];
+
 
 for{b in Buszok}
 {
   printf "Busz %d:\n",b;
-  printf "Ossz futott km  / toltes: %g / %g \n",osszhasznalat[b],toltes[b];
+  printf "Ossz futott km  / toltes: %g / %g \n",osszhasznalat[b],osszfogyasztas[b];
   for{j in Jaratok:hozzarendel[j,b]=1}
-    printf "\tJarat %d: %s(%g) --%g--> %s(%g)\n",j,honnan[j],mikortol[j],tav[honnan[j],hova[j]],hova[j],meddig[j];
+    printf "\tJarat %s: %s(%g) --%g--> %s(%g)\n",j,honnan[j],mikortol[j],tav[honnan[j],hova[j]],hova[j],meddig[j];
   for{j in Jaratok: elsojarate[j,b]=1}
-    printf "\tElsojarat: Depo --%g--> Jarat %d : %s(%g) -> %s(%g)\n",tav[depo[b],honnan[j]],j,depo[b],0,honnan[j],mikortol[j];
+    printf "\tElsojarat: Depo --%g--> Jarat %s : %s(%g) -> %s(%g)\n",tav[depo[b],honnan[j]],j,depo[b],0,honnan[j],mikortol[j];
   for{j in Jaratok, j2 in Jaratok: atmegy[b,j,j2]=1}
-    printf "\tAtmenes: Jarat %d --%g--> Jarat %d : %s(%g) -> %s(%g)\n",j,tav[hova[j],honnan[j2]],j2,hova[j],meddig[j],honnan[j2],mikortol[j2];
+    printf "\tAtmenes: Jarat %s --%g--> Jarat %s : %s(%g) -> %s(%g)\n",j,tav[hova[j],honnan[j2]],j2,hova[j],meddig[j],honnan[j2],mikortol[j2];
   
 }
 end;

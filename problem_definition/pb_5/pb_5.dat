@@ -30,16 +30,16 @@ j10 D B 3010 3100 12
 j11 D C 3010 3100 21
 j12 C B 3010 3100 6
 t1  A A 0    120  0
-t2  A A 120  240  0
-t3  A A 240  360  0
-t4  A A 360  480  0
+t2  A A 1120  1240  0
+t3  A A 1240  1360  0
+t4  A A 2360  2480  0
 t5  A A 480  600  0
 ;
 
 param nBusz := 3;
 
-param depo maxtoltes fogyasztas:=
-1 A 200 2
-2 B 300 4
-3 A 250 3
+param : depo maxtoltes fogyasztas:=
+1 A 100 2
+2 B 200 4
+3 A 150 3
 ;

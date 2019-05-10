@@ -14,7 +14,7 @@ param ido: A  B  C  D :=
 ; #perc
 
 set Jaratok := j1 j2 j3 j4 j5 j6 j7 j8 j9 j10 j11 j12 t1 t2 t3 t4 t5;
-set Toltojaraok  := t1 t2 t3 t4 t5;
+set Toltojaratok  := t1 t2 t3 t4 t5;
 
 param : honnan hova mikortol meddig tav2:=
 j1  A B 10   100  16
@@ -38,10 +38,8 @@ t5  A A 480  600  0
 
 param nBusz := 3;
 
-param depo toltes fogyasztas:=
+param depo maxtoltes fogyasztas:=
 1 A 200 2
 2 B 300 4
 3 A 250 3
 ;
-
-param Toltoallomastoltes := 25; #watt/perc

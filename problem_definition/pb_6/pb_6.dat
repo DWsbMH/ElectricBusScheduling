@@ -17,18 +17,18 @@ param ido: A  B  C  D :=
 set Jaratok := j1 j2 j3 j4 j5 j6 j7 j8 j9 j10 j11 j12;
 
 param : honnan hova mikortol meddig tav2:=
-j1  A B 10   100  16
-j2  C D 10   100  21
-j3  A C 10   100  19
-j4  B A 1010 1100 15
-j5  B C 1010 1100 9
-j6  C A 1010 1100 20
-j7  D A 2010 2100 9
-j8  B D 2010 2100 11
-j9  A D 2010 2100 10
-j10 D B 3010 3100 12
-j11 D C 3010 3100 21
-j12 C B 3010 3100 6
+j1  A B 30   100  16
+j2  C D 10   80  21
+j3  A C 20   90  19
+j4  B A 110 200 15
+j5  B C 140 210 9
+j6  C A 150 240 20
+j7  D A 250 290 9
+j8  B D 350 400 11
+j9  A D 600 700 10
+j10 D B 800 900 12
+j11 D C 1000 1100 21
+j12 C B 90 130 6
 ;
 
 
@@ -45,3 +45,4 @@ param : depo maxtoltes fogyasztas:=
 2 B 200 4
 3 A 150 3
 ;
+end;

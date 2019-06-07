@@ -10,8 +10,7 @@ param mikortol{Jaratok}; #perc
 param meddig{Jaratok}; #perc
 param tav2 {Jaratok}; #valodi tavolsag a jarat 2 vegpontja kozott
 
-#azok a járatpárok amik nem mehetnek egy busszal
-set kulonbozobusz := setof{j in Jaratok, j2 in Jaratok: mikortol[j]<=mikortol[j2] && mikortol[j2]<meddig[j]+ido[hova[j],honnan[j2]] && j!=j2} (j,j2);
+
 
 set Toltohelyek;
 
@@ -21,20 +20,23 @@ param toltes_slot;
 set Toltojaratok := setof {t in Toltohelyek, s in 1..(TH/toltes_slot)}
  t & '_' & s;
 
-param _hely{t in Toltojaratok} := substr(t,1,1);
+param _hely{t in Toltojaratok} symbolic := substr(t,1,1);
 param _slot{t in Toltojaratok} := substr(t,3);
 
 set MindenJarat := Jaratok union Toltojaratok;
 
-param honnan_tolto {t in Toltojaratok}:= _hely[t];
 
-param honnan_minden{m in MindenJarat} := if m in Jaratok then honnan[m]
+
+
+param honnan_tolto {t in Toltojaratok} symbolic:= _hely[t];
+
+param honnan_minden{m in MindenJarat} symbolic := if m in Jaratok then honnan[m]
                         else honnan_tolto[m];
 
 
-param hova_tolto {t in Toltojaratok}:= _hely[t];
+param hova_tolto {t in Toltojaratok} symbolic:= _hely[t];
 
-param hova_minden{m in MindenJarat} := if m in Jaratok then hova[m]
+param hova_minden{m in MindenJarat} symbolic:= if m in Jaratok then hova[m]
                         else hova_tolto[m];
 
 
@@ -50,11 +52,13 @@ param meddig_minden{m in MindenJarat} := if m in Jaratok then meddig[m]
                         else meddig_tolto[m];
 
 
-param tav2_tolto {t in Toltojaratok}:= (_slot[t])-(_slot[t]);
+param tav2_tolto {t in Toltojaratok}:= tav[_hely[t],_hely[t]];
 
 param tav2_minden{m in MindenJarat} := if m in Jaratok then tav2[m]
                         else tav2_tolto[m];
 
+#azok a járatpárok amik nem mehetnek egy busszal
+set kulonbozobusz := setof{j in MindenJarat, j2 in MindenJarat: mikortol_minden[j]<=mikortol_minden[j2] && mikortol_minden[j2]<meddig_minden[j]+ido[hova_minden[j],honnan_minden[j2]] && j!=j2} (j,j2);
 
 param nBusz;
 set Buszok := 1..nBusz;
@@ -170,8 +174,6 @@ s.t. hasznalatkiszamitas {b in Buszok}:
 
 s.t. osszesfogyasztas{b in Buszok}:
   osszfogyasztas[b] = osszhasznalat[b]*fogyasztas[b];
-
-#mikor menjen tolteni?
 
 minimize osszfogyasztas_minden_buszra: sum {b in Buszok} osszfogyasztas[b];
 

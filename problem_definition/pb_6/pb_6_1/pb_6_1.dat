@@ -41,7 +41,7 @@ param toltes_slot :=180;
 param nBusz := 3;
 
 param : depo maxtoltes fogyasztas:=
-1 A 100 2
+1 A 300 2
 2 B 200 4
 3 A 150 3
 ;

@@ -84,6 +84,8 @@ var osszfogyasztas{Buszok}>=0; #toltes
 #a busz toltottsege az adott jarat elott es utan
 var toltottsege{j in MindenJarat,b in Buszok}>=0,<=maxtoltes[b];
 var toltottsegu{j in MindenJarat,b in Buszok}>=0,<=maxtoltes[b];
+var tolteselejen{b in Buszok}>=0,<=maxtoltes[b];
+var toltesvegen{b in Buszok}>=0,<=maxtoltes[b];
 
 
 #minden járat el legyen végezve
@@ -96,7 +98,7 @@ s.t. OsszeferhetetlenJaratok{(j,j2) in kulonbozobusz, b in Buszok}:
   hozzarendel[j,b]+hozzarendel[j2,b]<=1;
 
 #atmegy 1 lesz ha mindkettohöz hozzá van rendelve és nincs köztes
-s.t. Atmegyconstraint{b in Buszok, j in MindenJarat, j2 in MindenJarat:mikortol_minden[j2]>meddig_minden[j] }:
+s.t. Atmegyconstraint{b in Buszok, j in MindenJarat, j2 in MindenJarat:mikortol_minden[j2]>=meddig_minden[j] }:
   atmegy[b,j,j2]
   + sum {jkoztes in MindenJarat: mikortol_minden[jkoztes]>=meddig_minden[j] && meddig_minden[jkoztes] <= mikortol_minden[j2]} hozzarendel[jkoztes,b]
   >=-1+hozzarendel[j,b]+hozzarendel[j2,b];
@@ -146,14 +148,26 @@ s.t. KorabbiJaratNemLehetUtolsoHaMarVanKesobbiHozzarendelt
   utolsojarate[j,b] <= 0 + M * (1- hozzarendel[j2,b]);
 
 
+# Depobol erjen oda az elsobe
+s.t. DepobolToltottseg{b in Buszok, j in MindenJarat}:
+  toltottsege[j,b]<=tolteselejen[b]-tav[depo[b],honnan_minden[j]]*fogyasztas[b]
+  +M*(1-elsojarate[j,b]);
+
+
+# Depoba a vegen erjen oda
+s.t. DepobaToltottseg{b in Buszok, j in MindenJarat}:
+  toltesvegen[b]<=toltottsegu[j,b]-tav[hova_minden[j],depo[b]]*fogyasztas[b]
+  +M*(1-utolsojarate[j,b]);
+
 #ha egy busz elvegzi j1 utam a j2 jaratot
 s.t. ElotteToltottseg{b in Buszok, j1 in MindenJarat, j2 in MindenJarat}:
-  toltottsege[j2,b]<=toltottsegu[j1,b] -tav[hova_minden[j1],honnan_minden[j2]]*fogyasztas[b]+M*(1-atmegy[b,j1,j2]);
+  toltottsege[j2,b]<=toltottsegu[j1,b] -tav[hova_minden[j1],honnan_minden[j2]]*fogyasztas[b]
+  +M*(1-atmegy[b,j1,j2]);
 
 
 #ha egy b busz elvegzi a j jaratot
 s.t. UtanaToltottseg{b in Buszok, j in Jaratok}:
-  toltottsegu[j,b]<=toltottsege[j,b]-tav[hova[j],honnan[j]]*fogyasztas[b]+M*(1-hozzarendel[j,b]);
+  toltottsegu[j,b]<=toltottsege[j,b]-tav2[j]*fogyasztas[b]+M*(1-hozzarendel[j,b]);
 
 
 #ha egy b busz elvegzi a tj toltojaratot (feltoltodik maxra)
@@ -179,10 +193,39 @@ minimize osszfogyasztas_minden_buszra: sum {b in Buszok} osszfogyasztas[b];
 
 solve;
 
-printf "BUSZ;JARAT;HONNAN;MIKORTOL;HOVA;MEDDIG;TAVOLSAG;TELOTT;TUTAN\n";
-for{b in Buszok,j in MindenJarat:hozzarendel[j,b]=1}
+
+for{b in Buszok}
 {
-  printf "%g;%s;%s;%g;%s;%g;%g;%g;%g\n",b,j,honnan_minden[j],mikortol_minden[j],hova_minden[j],meddig_minden[j],tav[honnan_minden[j],hova_minden[j]],toltottsege[j,b],toltottsegu[j,b];
+  printf "BUSZ;JARAT;HONNAN;MIKORTOL;HOVA;MEDDIG;TAVOLSAG;TELOTT;TUTAN\n";
+  for{j in MindenJarat:hozzarendel[j,b]=1}
+  {
+    printf "%g;%s;",b,j;  
+    printf "%s;%g;%s;%g;",honnan_minden[j],mikortol_minden[j],hova_minden[j],meddig_minden[j];
+    printf "%g;%g;%g\n",tav2_minden[j],toltottsege[j,b],toltottsegu[j,b];
+
+  }
+  for{j1 in MindenJarat, j2 in MindenJarat: atmegy[b,j1,j2]=1}
+  {    
+    printf "%g;Atmegy %s->%s;",b,j1,j2;  
+    printf "%s;%g;%s;%g;",hova_minden[j1],meddig_minden[j1],honnan_minden[j2],mikortol_minden[j2];
+    printf "%g;%g;%g\n",tav[hova_minden[j1],honnan_minden[j2]],toltottsegu[j1,b],toltottsege[j2,b];
+  }
+
+  for{j in MindenJarat: elsojarate[j,b]=1}
+  {    
+    printf "%g;Depobol odamegy %s;",b,j;  
+    printf "%s;%g;%s;%g;",depo[b],mikortol_minden[j]-ido[depo[b],honnan_minden[j]],honnan_minden[j],mikortol_minden[j];
+    printf "%g;%g;%g\n",tav[depo[b],honnan_minden[j]],tolteselejen[b],toltottsege[j,b];
+  }
+
+  for{j in MindenJarat: utolsojarate[j,b]=1}
+  {    
+    printf "%g;Depoba odamegy %s;",b,j;  
+    printf "%s;%g;%s;%g;",hova_minden[j],meddig_minden[j],depo[b],meddig_minden[j]+ido[hova_minden[j],depo[b]];
+    printf "%g;%g;%g\n",tav[hova_minden[j],depo[b]],toltottsegu[j,b],toltesvegen[b];
+  }
+
+  printf "\n\n\n\n";
 
 }
 

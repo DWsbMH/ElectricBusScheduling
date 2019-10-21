@@ -1,0 +1,60 @@
+BUSZ;JARAT;HONNAN;MIKORTOL;HOVA;MEDDIG;TAVOLSAG;TELOTT;TUTAN
+1;j2;Revai;274;Egyetem;307;9.4;30;18.25
+1;j6;Virag;377;Revai;416;12.3;15.375;0
+1;Atmegy j2->j6;Egyetem;307;Virag;377;2.3;18.25;15.375
+1;Depobol odamegy j2;Revai;274;Revai;274;0;30;30
+1;Depoba odamegy j6;Revai;416;Revai;416;0;0;0
+
+
+
+
+BUSZ;JARAT;HONNAN;MIKORTOL;HOVA;MEDDIG;TAVOLSAG;TELOTT;TUTAN
+2;j3;Virag;325;Revai;364;12.3;27.125;11.75
+2;j12;Revai;392;Egyetem;425;9.4;11.75;0
+2;Atmegy j3->j12;Revai;364;Revai;392;0;11.75;11.75
+2;Depobol odamegy j3;Egyetem;319;Virag;325;2.3;30;27.125
+2;Depoba odamegy j12;Egyetem;425;Egyetem;425;0;0;0
+
+
+
+
+BUSZ;JARAT;HONNAN;MIKORTOL;HOVA;MEDDIG;TAVOLSAG;TELOTT;TUTAN
+3;j7;Revai;330;Egyetem;363;9.4;29.375;17.625
+3;j11;Revai;377;Egyetem;410;9.4;14.625;2.875
+3;Atmegy j7->j11;Egyetem;363;Revai;377;2.4;17.625;14.625
+3;Depobol odamegy j7;Virag;327;Revai;330;0.5;30;29.375
+3;Depoba odamegy j11;Egyetem;410;Virag;416;2.3;2.875;0
+
+
+
+
+BUSZ;JARAT;HONNAN;MIKORTOL;HOVA;MEDDIG;TAVOLSAG;TELOTT;TUTAN
+4;j5;Virag;355;Revai;394;12.3;32;16.625
+4;j10;Virag;410;Revai;449;12.3;16;0.625
+4;Atmegy j5->j10;Revai;394;Virag;410;0.5;16.625;16
+4;Depobol odamegy j5;Virag;355;Virag;355;0;32;32
+4;Depoba odamegy j10;Revai;449;Virag;452;0.5;0.625;0
+
+
+
+
+BUSZ;JARAT;HONNAN;MIKORTOL;HOVA;MEDDIG;TAVOLSAG;TELOTT;TUTAN
+5;j1;Virag;295;Revai;334;12.3;30;14.625
+5;j9;Revai;362;Egyetem;395;9.4;14.625;2.875
+5;Atmegy j1->j9;Revai;334;Revai;362;0;14.625;14.625
+5;Depobol odamegy j1;Virag;295;Virag;295;0;30;30
+5;Depoba odamegy j9;Egyetem;395;Virag;401;2.3;2.875;0
+
+
+
+
+BUSZ;JARAT;HONNAN;MIKORTOL;HOVA;MEDDIG;TAVOLSAG;TELOTT;TUTAN
+6;j4;Revai;300;Egyetem;333;9.4;30.625;18.875
+6;j8;Virag;392;Revai;431;12.3;16;0.625
+6;Atmegy j4->j8;Egyetem;333;Virag;392;2.3;18.875;16
+6;Depobol odamegy j4;Virag;297;Revai;300;0.5;31.25;30.625
+6;Depoba odamegy j8;Revai;431;Virag;434;0.5;0.625;0
+
+
+
+

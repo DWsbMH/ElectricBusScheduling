@@ -1,0 +1,47 @@
+set Helyek := Revai Virag Egyetem;
+
+param tav: Revai  Virag  Egyetem:=
+	Revai   0     0.5    2.4
+	Virag   0.5   0      2.3
+	Egyetem 2.4   2.3    0
+
+; #km
+
+param ido: Revai  Virag  Egyetem:=
+	Revai   0  3  7
+	Virag   3  0  6
+	Egyetem 7  6  0
+; #perc
+
+set Jaratok := j1 j2 j3 j4 j5 j6 j7 j8 j9 j10 j11 j12;
+
+param : honnan hova mikortol meddig tav2:=
+j1  Virag Revai   295 334 12.3
+j2  Revai Egyetem 274 307 9.4
+j3  Virag Revai   325 364 12.3
+j4  Revai Egyetem 300 333 9.4
+j5  Virag Revai   355 394 12.3
+j6  Virag Revai   377 416 12.3
+j7  Revai Egyetem 330 363 9.4
+j8  Virag Revai   392 431 12.3
+j9  Revai Egyetem 362 395 9.4
+j10 Virag Revai   410 449 12.3
+j11 Revai Egyetem 377 410 9.4
+j12 Revai Egyetem 392 425 9.4
+;
+
+
+set Toltohelyek:= Revai;
+
+param toltes_slot :=360;
+
+
+param nBusz := 3;
+
+param : depo maxtoltes fogyasztas:=
+1 Revai 313 1.25
+2 Egyetem 313 1.25
+3 Virag 313 1.25
+;
+#kWatt , kWatt/km
+end;

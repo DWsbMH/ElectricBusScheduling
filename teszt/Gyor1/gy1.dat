@@ -36,12 +36,15 @@ set Toltohelyek:= Revai;
 param toltes_slot :=360;
 
 
-param nBusz := 3;
+param nBusz := 6;
 
 param : depo maxtoltes fogyasztas:=
 1 Revai 313 1.25
 2 Egyetem 313 1.25
 3 Virag 313 1.25
+4 Virag 313 1.25
+5 Virag 313 1.25
+6 Virag 313 1.25
 ;
 #kWatt , kWatt/km
 end;

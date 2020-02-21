@@ -18,10 +18,10 @@ param TH := max {j in Jaratok} meddig[j]; #time horizon
 param toltes_slot;
 
 set Toltojaratok := setof {t in Toltohelyek, s in 1..(TH/toltes_slot)}
- t & '_' & s;
+ (100+s) & '_' & t;
 
-param _hely{t in Toltojaratok} symbolic := substr(t,1,1);
-param _slot{t in Toltojaratok} := substr(t,3);
+param _hely{t in Toltojaratok} symbolic := substr(t,5);
+param _slot{t in Toltojaratok} := substr(t,2,2);
 
 set MindenJarat := Jaratok union Toltojaratok;
 
@@ -58,7 +58,8 @@ param tav2_minden{m in MindenJarat} := if m in Jaratok then tav2[m]
                         else tav2_tolto[m];
 
 #azok a járatpárok amik nem mehetnek egy busszal
-set kulonbozobusz := setof{j in MindenJarat, j2 in MindenJarat: mikortol_minden[j]<=mikortol_minden[j2] && mikortol_minden[j2]<meddig_minden[j]+ido[hova_minden[j],honnan_minden[j2]] && j!=j2} (j,j2);
+set kulonbozobusz := setof{j in MindenJarat, j2 in MindenJarat : mikortol_minden[j]<=mikortol_minden[j2] && mikortol_minden[j2]<meddig_minden[j]+ido[hova_minden[j],honnan_minden[j2]] && j!=j2}
+(j,j2);
 
 param nBusz;
 set Buszok := 1..nBusz;

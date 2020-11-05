@@ -1,0 +1,39 @@
+set Helyek := A B C D;
+param tav: A  B  C  D :=
+		A  0 14 17  8
+		B 14  0  5 10
+		C 17  5  0 20
+		D  8 10 20  0
+; #km
+
+param ido: A  B  C  D :=
+		A  0 21 26 12
+		B 21  0  8 15
+		C 26  8  0 30
+		D 12 15 30  0
+; #perc
+
+param jaratszam := 12;
+
+param : honnan hova mikortol meddig tav2:=
+1  A B 10   35   16
+2  C D 10   45   21
+3  A C 70   100  19
+4  B A 40   65   16
+5  B C 20   30   8
+6  C A 105  135  19
+7  D A 50   65   10
+8  B D 110  130  12
+9  A D 140  155  10
+10 D B 160  180  12
+11 D C 55   90   21
+12 C B 95   105  8
+;
+
+param buszszam := 3;
+
+param : depo maxtoltes:=
+1 A 100
+2 B 200
+3 A 150
+;

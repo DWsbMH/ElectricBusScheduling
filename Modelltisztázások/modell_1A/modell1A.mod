@@ -9,7 +9,7 @@ param hova{Jaratok} symbolic, in Helyek;
 param mikortol{Jaratok}; #perc
 param meddig{Jaratok}; #perc
 
-set kulonbozobusz := setof{j in Jaratok, j2 in Jaratok: mikortol[j]<=mikortol[j2] && mikortol[j2]<meddig[j]+ido[hova[j],honnan[j2]] && j!=j2} (j,j2);
+set Kulonbozobusz := setof{j in Jaratok, j2 in Jaratok: mikortol[j]<=mikortol[j2] && mikortol[j2]<meddig[j]+ido[hova[j],honnan[j2]] && j!=j2} (j,j2);
 
 param buszszam;
 set Buszok := 1..buszszam;
@@ -19,7 +19,7 @@ var atmenet{Buszok,Jaratok,Jaratok}, binary;
 
 s.t. JaratokElvegzese {j in Jaratok} : sum {b in Buszok} hozzarendel[j,b]=1;
 
-s.t. OsszeferhetetlenJaratok{(j,j2) in kulonbozobusz, b in Buszok}:
+s.t. OsszeferhetetlenJaratok{(j,j2) in Kulonbozobusz, b in Buszok}:
   hozzarendel[j,b]+hozzarendel[j2,b]<=1;
 
 s.t. AtmenetKorlatozas{b in Buszok, j in Jaratok, j2 in Jaratok:mikortol[j2]>meddig[j] }:
@@ -34,7 +34,6 @@ s.t. AtmenetKorlatozas_elesito2
   {b in Buszok, j in Jaratok, j2 in Jaratok,jkoztes in Jaratok: mikortol[jkoztes]>=meddig[j] && meddig[jkoztes] <= mikortol[j2]}:
   atmenet[b,j,j2]<=1-hozzarendel[jkoztes,b];
 
-#cel a koztes km-ek minimalizalasa-minimális legyen az átjutási km : minden buszra a járatainál az utolsó helytõl a következõ helyig lévõ távolságok összege
 minimize Koztestav: sum {b in Buszok, j1 in Jaratok, j2 in Jaratok} tav[hova[j1],honnan[j2]]*atmenet[b,j1,j2];
 
 solve;

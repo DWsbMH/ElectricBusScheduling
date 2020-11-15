@@ -1,0 +1,45 @@
+set Helyek := A B C D;
+param tav: A  B  C  D :=
+		A  0 14 17  8
+		B 14  0  5 10
+		C 17  5  0 20
+		D  8 10 20  0
+; #km
+
+param ido: A  B  C  D :=
+		A  0 21 26 12
+		B 21  0  8 15
+		C 26  8  0 30
+		D 12 15 30  0
+; #perc
+
+set Jaratok := j1 j2 j3 j4 j5 j6 j7 j8 j9 j10 j11 j12 t1 t2 t3 t4 t5;
+set Toltojaratok  := t1 t2 t3 t4 t5;
+
+param : honnan hova mikortol meddig tav2:=
+j1  A B 0   25   16
+j2  C D 50   85   21
+j3  A C 100   130  19
+j4  B A 150   175   16
+j5  B C 200   210   8
+j6  C A 250  280  19
+j7  D A 300   315   10
+j8  B D 350  370  12
+j9  A D 400  415  10
+j10 D B 450  470  12
+j11 D C 500   515   21
+j12 C B 550   560  8
+t1  A A 120   180  0
+t2  A A 180   240  0
+t3  A A 240  300  0
+t4  A A 300  360  0
+t5  A A 360  420  0
+;
+
+param buszszam := 3;
+
+param : depo maxtoltes fogyasztas:=
+1 A 100 2
+2 B 200 4
+3 A 150 3
+;

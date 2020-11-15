@@ -8,14 +8,13 @@ param honnan{Jaratok} symbolic, in Helyek;
 param hova{Jaratok} symbolic, in Helyek;
 param mikortol{Jaratok}; #perc
 param meddig{Jaratok}; #perc
-param tav2 {Jaratok}; #valodi tavolsag a jarat 2 vegpontja kozott
-
-set kulonbozobusz := setof{j in Jaratok, j2 in Jaratok: mikortol[j]<=mikortol[j2] && mikortol[j2]<meddig[j]+ido[hova[j],honnan[j2]] && j!=j2} (j,j2);
+param tav2 {Jaratok}; #km
+set Kulonbozobusz := setof{j in Jaratok, j2 in Jaratok: mikortol[j]<=mikortol[j2] && mikortol[j2]<meddig[j]+ido[hova[j],honnan[j2]] && j!=j2} (j,j2);
 
 param buszszam;
 set Buszok := 1..buszszam;
 param depo{Buszok} symbolic, in Helyek;
-param maxtoltes{Buszok}; #km amennyit egy tankolassal tud menni 
+param maxtoltes{Buszok}; #km
 
 param M:=10000;
 
@@ -29,7 +28,7 @@ var osszhasznalat{Buszok}>=0; #km
 
 s.t. JaratokElvegzese {j in Jaratok} : sum {b in Buszok} hozzarendel[j,b]=1;
 
-s.t. OsszeferhetetlenJaratok{(j,j2) in kulonbozobusz, b in Buszok}:
+s.t. OsszeferhetetlenJaratok{(j,j2) in Kulonbozobusz, b in Buszok}:
   hozzarendel[j,b]+hozzarendel[j2,b]<=1;
 
 s.t. AtmenetKorlatozas{b in Buszok, j in Jaratok, j2 in Jaratok:mikortol[j2]>meddig[j] }:
@@ -43,7 +42,7 @@ s.t. AtmenetKorlatozas_elesito1{b in Buszok, j in Jaratok, j2 in Jaratok}:
 s.t. AtmenetKorlatozas_elesito2{b in Buszok, j in Jaratok, j2 in Jaratok,jkoztes in Jaratok: mikortol[jkoztes]>=meddig[j] && meddig[jkoztes] <= mikortol[j2]}:
   atmenet[b,j,j2]<=1-hozzarendel[jkoztes,b];
 
-#Elso jarat constraintek
+#Elso jarat korlatozasok
 s.t. ElsoHozzarendeles{b in Buszok, j in Jaratok}:
   elsojarat[j,b] <= hozzarendel[j,b];
 
@@ -76,8 +75,7 @@ s.t. SzuksegesUtolso{b in Buszok}:
 
 s.t. KorabbiNemUtolso{b in Buszok, j in Jaratok,j2 in Jaratok: mikortol[j]<mikortol[j2]}:
   utolsojarat[j,b] <= 0 + M * (1- hozzarendel[j2,b]);
-  
-#csak annyit mehetek a busszal amennyit a maxtoltese bir (depotol utazasok atmenetek depoba vissza)
+
 s.t. OsszhasznalatKiszamitas {b in Buszok}:
   sum {j1 in Jaratok, j2 in Jaratok} tav[hova[j1],honnan[j2]]*atmenet[b,j1,j2]
   +
@@ -91,7 +89,6 @@ s.t. OsszhasznalatKiszamitas {b in Buszok}:
 s.t. MaxHasznalat{b in Buszok}:
   osszhasznalat[b] <= maxtoltes[b];
 
-#cel a koztes km-ek minimalizalasa-minimális legyen az átjutási km : minden buszra a járatainál az utolsó helytol a következo helyig lévo távolságok összege
 minimize Koztestav:
 sum {b in Buszok, j1 in Jaratok, j2 in Jaratok} tav[hova[j1],honnan[j2]]*atmenet[b,j1,j2]
 +

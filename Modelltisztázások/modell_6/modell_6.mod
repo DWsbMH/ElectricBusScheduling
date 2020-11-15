@@ -149,12 +149,12 @@ for{b in Buszok}
   printf "Busz %d:\n",b;
   printf "Ossz futott km  / Osszfogyasztas / maxtoltes: %g / %g / %g\n",osszhasznalat[b],osszfogyasztas[b],maxtoltes[b];
   for{j in MindenJarat:hozzarendel[j,b]=1}
-    printf "\tJarat %s: %s(%g) --%g--> %s(%g) (%g)->(%g)\n",j,honnan_minden[j],mikortol_minden[j],tav[honnan_minden[j],hova_minden[j]],hova_minden[j],meddig_minden[j],toltottsege[j,b],toltottsegu[j,b];
+    printf "\tJarat %s: %s(%g) --%g--> %s(%g) (%g)->(%g)\n",j,honnan_minden[j],mikortol_minden[j],tav2_minden[j],hova_minden[j],meddig_minden[j],toltottsege[j,b],toltottsegu[j,b];
   for{j in MindenJarat: elsojarat[j,b]=1}
     printf "\tElsojarat: Depo --%g--> Jarat %s : %s(%g) -> %s(%g) (%g)->(%g)\n",tav[depo[b],honnan_minden[j]],j,depo[b],0,honnan_minden[j],mikortol_minden[j],toltottsege[j,b],toltottsegu[j,b];
   for{j in MindenJarat, j2 in MindenJarat: atmenet[b,j,j2]=1}
     printf "\tAtmenes: Jarat %s --%g--> Jarat %s : %s(%g) -> %s(%g) (%g)->(%g)\n",j,tav[hova_minden[j],honnan_minden[j2]],j2,hova_minden[j],meddig_minden[j],honnan_minden[j2],mikortol_minden[j2],toltottsege[j,b],toltottsegu[j,b];
-  for{j in Jaratok: utolsojarat[j,b]=1}
+  for{j in MindenJarat: utolsojarat[j,b]=1}
     printf "\tUtolsojarat: Jarat %s --%g--> Depo : %s(%g) -> %s(%g) (%g)->(%g)\n",j,tav[hova_minden[j],depo[b]],hova_minden[j],meddig_minden[j],depo[b],meddig_minden[j]+ido[hova_minden[j],depo[b]],toltottsege[j,b],toltottsegu[j,b];
 }
 end;

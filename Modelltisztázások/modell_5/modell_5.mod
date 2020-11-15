@@ -117,7 +117,7 @@ for{b in Buszok}
   printf "Busz %d:\n",b;
   printf "Ossz futott km  / Osszfogyasztas / maxtoltes: %g / %g / %g\n",osszhasznalat[b],osszfogyasztas[b],maxtoltes[b];
   for{j in Jaratok:hozzarendel[j,b]=1}
-    printf "\tJarat %s: %s(%g) --%g--> %s(%g) (%g)->(%g)\n",j,honnan[j],mikortol[j],tav[honnan[j],hova[j]],hova[j],meddig[j],toltottsege[j,b],toltottsegu[j,b];
+    printf "\tJarat %s: %s(%g) --%g--> %s(%g) (%g)->(%g)\n",j,honnan[j],mikortol[j],tav2[j],hova[j],meddig[j],toltottsege[j,b],toltottsegu[j,b];
   for{j in Jaratok: elsojarat[j,b]=1}
     printf "\tElsojarat: Depo --%g--> Jarat %s : %s(%g) -> %s(%g) (%g)->(%g)\n",tav[depo[b],honnan[j]],j,depo[b],0,honnan[j],mikortol[j],toltottsege[j,b],toltottsegu[j,b];
   for{j in Jaratok, j2 in Jaratok: atmenet[b,j,j2]=1}

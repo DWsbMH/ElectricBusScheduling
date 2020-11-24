@@ -48,7 +48,7 @@ param buszszam;
 set Buszok := 1..buszszam;
 param depo{Buszok} symbolic, in Helyek;
 param maxtoltes{Buszok}; # Watt
-param fogyasztas{Buszok}; #Watt/km
+param fogyasztas{Buszok}; #Wattora
 
 param M:=10000;
 

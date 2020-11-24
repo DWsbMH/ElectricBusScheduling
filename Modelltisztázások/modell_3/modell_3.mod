@@ -14,7 +14,7 @@ set Kulonbozobusz := setof{j in Jaratok, j2 in Jaratok: mikortol[j]<=mikortol[j2
 param buszszam;
 set Buszok := 1..buszszam;
 param depo{Buszok} symbolic, in Helyek;
-param maxtoltes{Buszok}; #km
+param maxtav{Buszok}; #km
 
 param M:=10000;
 
@@ -87,7 +87,7 @@ s.t. OsszhasznalatKiszamitas {b in Buszok}:
   = osszhasznalat[b];
 
 s.t. MaxHasznalat{b in Buszok}:
-  osszhasznalat[b] <= maxtoltes[b];
+  osszhasznalat[b] <= maxtav[b];
 
 minimize Koztestav:
 sum {b in Buszok, j1 in Jaratok, j2 in Jaratok} tav[hova[j1],honnan[j2]]*atmenet[b,j1,j2]
@@ -103,7 +103,7 @@ printf "Osszes tavolsag: %g\n", Koztestav;
 for{b in Buszok}
 {
   printf "Busz %d:\n",b;
-  printf "Ossz futott km  / maxtoltes: %g / %g \n",osszhasznalat[b],maxtoltes[b];
+  printf "Ossz futott km  / maxtav: %g / %g \n",osszhasznalat[b],maxtav[b];
   for{j in Jaratok:hozzarendel[j,b]=1}
     printf "\tJarat %d: %s(%g) --%g--> %s(%g)\n",j,honnan[j],mikortol[j],tav2[j],hova[j],meddig[j];
   for{j in Jaratok: elsojarat[j,b]=1}

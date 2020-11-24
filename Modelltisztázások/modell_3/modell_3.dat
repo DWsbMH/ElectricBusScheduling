@@ -32,7 +32,7 @@ param : honnan hova mikortol meddig tav2:=
 
 param buszszam := 3;
 
-param : depo maxtoltes:=
+param : depo maxtav:=
 1 A 200
 2 B 300
 3 A 250

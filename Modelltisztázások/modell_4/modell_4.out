@@ -3,7 +3,7 @@ Rows:       1537
 Columns:    546 (540 integer, 540 binary)
 Non-zeros:  4773
 Status:     INTEGER OPTIMAL
-Objective:  osszfogyasztas_minden_buszra = 600 (MINimum)
+Objective:  Buszok_osszes_fogyasztasa = 600 (MINimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
@@ -451,869 +451,869 @@ Objective:  osszfogyasztas_minden_buszra = 600 (MINimum)
                                    1            -1               
    222 AtmenetKorlatozas[3,12,10]
                                    1            -1               
-   223 AtmenetKorlatozas_elesito[1,1,1]
+   223 AtmenetKorlatozas_elesito1[1,1,1]
                                    0                          -0 
-   224 AtmenetKorlatozas_elesito[1,1,2]
+   224 AtmenetKorlatozas_elesito1[1,1,2]
                                 -0.5                          -0 
-   225 AtmenetKorlatozas_elesito[1,1,3]
+   225 AtmenetKorlatozas_elesito1[1,1,3]
                                    0                          -0 
-   226 AtmenetKorlatozas_elesito[1,1,4]
+   226 AtmenetKorlatozas_elesito1[1,1,4]
                                    0                          -0 
-   227 AtmenetKorlatozas_elesito[1,1,5]
+   227 AtmenetKorlatozas_elesito1[1,1,5]
                                    0                          -0 
-   228 AtmenetKorlatozas_elesito[1,1,6]
+   228 AtmenetKorlatozas_elesito1[1,1,6]
                                    0                          -0 
-   229 AtmenetKorlatozas_elesito[1,1,7]
+   229 AtmenetKorlatozas_elesito1[1,1,7]
                                    0                          -0 
-   230 AtmenetKorlatozas_elesito[1,1,8]
+   230 AtmenetKorlatozas_elesito1[1,1,8]
                                 -0.5                          -0 
-   231 AtmenetKorlatozas_elesito[1,1,9]
+   231 AtmenetKorlatozas_elesito1[1,1,9]
                                    0                          -0 
-   232 AtmenetKorlatozas_elesito[1,1,10]
+   232 AtmenetKorlatozas_elesito1[1,1,10]
                                    0                          -0 
-   233 AtmenetKorlatozas_elesito[1,1,11]
+   233 AtmenetKorlatozas_elesito1[1,1,11]
                                 -0.5                          -0 
-   234 AtmenetKorlatozas_elesito[1,1,12]
+   234 AtmenetKorlatozas_elesito1[1,1,12]
                                 -0.5                          -0 
-   235 AtmenetKorlatozas_elesito[1,2,1]
+   235 AtmenetKorlatozas_elesito1[1,2,1]
                                 -0.5                          -0 
-   236 AtmenetKorlatozas_elesito[1,2,2]
+   236 AtmenetKorlatozas_elesito1[1,2,2]
                                   -1                          -0 
-   237 AtmenetKorlatozas_elesito[1,2,3]
+   237 AtmenetKorlatozas_elesito1[1,2,3]
                                 -0.5                          -0 
-   238 AtmenetKorlatozas_elesito[1,2,4]
+   238 AtmenetKorlatozas_elesito1[1,2,4]
                                 -0.5                          -0 
-   239 AtmenetKorlatozas_elesito[1,2,5]
+   239 AtmenetKorlatozas_elesito1[1,2,5]
                                 -0.5                          -0 
-   240 AtmenetKorlatozas_elesito[1,2,6]
+   240 AtmenetKorlatozas_elesito1[1,2,6]
                                 -0.5                          -0 
-   241 AtmenetKorlatozas_elesito[1,2,7]
+   241 AtmenetKorlatozas_elesito1[1,2,7]
                                 -0.5                          -0 
-   242 AtmenetKorlatozas_elesito[1,2,8]
+   242 AtmenetKorlatozas_elesito1[1,2,8]
                                   -1                          -0 
-   243 AtmenetKorlatozas_elesito[1,2,9]
+   243 AtmenetKorlatozas_elesito1[1,2,9]
                                 -0.5                          -0 
-   244 AtmenetKorlatozas_elesito[1,2,10]
+   244 AtmenetKorlatozas_elesito1[1,2,10]
                                 -0.5                          -0 
-   245 AtmenetKorlatozas_elesito[1,2,11]
+   245 AtmenetKorlatozas_elesito1[1,2,11]
                                    0                          -0 
-   246 AtmenetKorlatozas_elesito[1,2,12]
+   246 AtmenetKorlatozas_elesito1[1,2,12]
                                   -1                          -0 
-   247 AtmenetKorlatozas_elesito[1,3,1]
+   247 AtmenetKorlatozas_elesito1[1,3,1]
                                    0                          -0 
-   248 AtmenetKorlatozas_elesito[1,3,2]
+   248 AtmenetKorlatozas_elesito1[1,3,2]
                                 -0.5                          -0 
-   249 AtmenetKorlatozas_elesito[1,3,3]
+   249 AtmenetKorlatozas_elesito1[1,3,3]
                                    0                          -0 
-   250 AtmenetKorlatozas_elesito[1,3,4]
+   250 AtmenetKorlatozas_elesito1[1,3,4]
                                    0                          -0 
-   251 AtmenetKorlatozas_elesito[1,3,5]
+   251 AtmenetKorlatozas_elesito1[1,3,5]
                                    0                          -0 
-   252 AtmenetKorlatozas_elesito[1,3,6]
+   252 AtmenetKorlatozas_elesito1[1,3,6]
                                    0                          -0 
-   253 AtmenetKorlatozas_elesito[1,3,7]
+   253 AtmenetKorlatozas_elesito1[1,3,7]
                                    0                          -0 
-   254 AtmenetKorlatozas_elesito[1,3,8]
+   254 AtmenetKorlatozas_elesito1[1,3,8]
                                 -0.5                          -0 
-   255 AtmenetKorlatozas_elesito[1,3,9]
+   255 AtmenetKorlatozas_elesito1[1,3,9]
                                    0                          -0 
-   256 AtmenetKorlatozas_elesito[1,3,10]
+   256 AtmenetKorlatozas_elesito1[1,3,10]
                                    0                          -0 
-   257 AtmenetKorlatozas_elesito[1,3,11]
+   257 AtmenetKorlatozas_elesito1[1,3,11]
                                 -0.5                          -0 
-   258 AtmenetKorlatozas_elesito[1,3,12]
+   258 AtmenetKorlatozas_elesito1[1,3,12]
                                 -0.5                          -0 
-   259 AtmenetKorlatozas_elesito[1,4,1]
+   259 AtmenetKorlatozas_elesito1[1,4,1]
                                    0                          -0 
-   260 AtmenetKorlatozas_elesito[1,4,2]
+   260 AtmenetKorlatozas_elesito1[1,4,2]
                                 -0.5                          -0 
-   261 AtmenetKorlatozas_elesito[1,4,3]
+   261 AtmenetKorlatozas_elesito1[1,4,3]
                                    0                          -0 
-   262 AtmenetKorlatozas_elesito[1,4,4]
+   262 AtmenetKorlatozas_elesito1[1,4,4]
                                    0                          -0 
-   263 AtmenetKorlatozas_elesito[1,4,5]
+   263 AtmenetKorlatozas_elesito1[1,4,5]
                                    0                          -0 
-   264 AtmenetKorlatozas_elesito[1,4,6]
+   264 AtmenetKorlatozas_elesito1[1,4,6]
                                    0                          -0 
-   265 AtmenetKorlatozas_elesito[1,4,7]
+   265 AtmenetKorlatozas_elesito1[1,4,7]
                                    0                          -0 
-   266 AtmenetKorlatozas_elesito[1,4,8]
+   266 AtmenetKorlatozas_elesito1[1,4,8]
                                 -0.5                          -0 
-   267 AtmenetKorlatozas_elesito[1,4,9]
+   267 AtmenetKorlatozas_elesito1[1,4,9]
                                    0                          -0 
-   268 AtmenetKorlatozas_elesito[1,4,10]
+   268 AtmenetKorlatozas_elesito1[1,4,10]
                                    0                          -0 
-   269 AtmenetKorlatozas_elesito[1,4,11]
+   269 AtmenetKorlatozas_elesito1[1,4,11]
                                 -0.5                          -0 
-   270 AtmenetKorlatozas_elesito[1,4,12]
+   270 AtmenetKorlatozas_elesito1[1,4,12]
                                 -0.5                          -0 
-   271 AtmenetKorlatozas_elesito[1,5,1]
+   271 AtmenetKorlatozas_elesito1[1,5,1]
                                    0                          -0 
-   272 AtmenetKorlatozas_elesito[1,5,2]
+   272 AtmenetKorlatozas_elesito1[1,5,2]
                                 -0.5                          -0 
-   273 AtmenetKorlatozas_elesito[1,5,3]
+   273 AtmenetKorlatozas_elesito1[1,5,3]
                                    0                          -0 
-   274 AtmenetKorlatozas_elesito[1,5,4]
+   274 AtmenetKorlatozas_elesito1[1,5,4]
                                    0                          -0 
-   275 AtmenetKorlatozas_elesito[1,5,5]
+   275 AtmenetKorlatozas_elesito1[1,5,5]
                                    0                          -0 
-   276 AtmenetKorlatozas_elesito[1,5,6]
+   276 AtmenetKorlatozas_elesito1[1,5,6]
                                    0                          -0 
-   277 AtmenetKorlatozas_elesito[1,5,7]
+   277 AtmenetKorlatozas_elesito1[1,5,7]
                                    0                          -0 
-   278 AtmenetKorlatozas_elesito[1,5,8]
+   278 AtmenetKorlatozas_elesito1[1,5,8]
                                 -0.5                          -0 
-   279 AtmenetKorlatozas_elesito[1,5,9]
+   279 AtmenetKorlatozas_elesito1[1,5,9]
                                    0                          -0 
-   280 AtmenetKorlatozas_elesito[1,5,10]
+   280 AtmenetKorlatozas_elesito1[1,5,10]
                                    0                          -0 
-   281 AtmenetKorlatozas_elesito[1,5,11]
+   281 AtmenetKorlatozas_elesito1[1,5,11]
                                 -0.5                          -0 
-   282 AtmenetKorlatozas_elesito[1,5,12]
+   282 AtmenetKorlatozas_elesito1[1,5,12]
                                 -0.5                          -0 
-   283 AtmenetKorlatozas_elesito[1,6,1]
+   283 AtmenetKorlatozas_elesito1[1,6,1]
                                    0                          -0 
-   284 AtmenetKorlatozas_elesito[1,6,2]
+   284 AtmenetKorlatozas_elesito1[1,6,2]
                                 -0.5                          -0 
-   285 AtmenetKorlatozas_elesito[1,6,3]
+   285 AtmenetKorlatozas_elesito1[1,6,3]
                                    0                          -0 
-   286 AtmenetKorlatozas_elesito[1,6,4]
+   286 AtmenetKorlatozas_elesito1[1,6,4]
                                    0                          -0 
-   287 AtmenetKorlatozas_elesito[1,6,5]
+   287 AtmenetKorlatozas_elesito1[1,6,5]
                                    0                          -0 
-   288 AtmenetKorlatozas_elesito[1,6,6]
+   288 AtmenetKorlatozas_elesito1[1,6,6]
                                    0                          -0 
-   289 AtmenetKorlatozas_elesito[1,6,7]
+   289 AtmenetKorlatozas_elesito1[1,6,7]
                                    0                          -0 
-   290 AtmenetKorlatozas_elesito[1,6,8]
+   290 AtmenetKorlatozas_elesito1[1,6,8]
                                 -0.5                          -0 
-   291 AtmenetKorlatozas_elesito[1,6,9]
+   291 AtmenetKorlatozas_elesito1[1,6,9]
                                    0                          -0 
-   292 AtmenetKorlatozas_elesito[1,6,10]
+   292 AtmenetKorlatozas_elesito1[1,6,10]
                                    0                          -0 
-   293 AtmenetKorlatozas_elesito[1,6,11]
+   293 AtmenetKorlatozas_elesito1[1,6,11]
                                 -0.5                          -0 
-   294 AtmenetKorlatozas_elesito[1,6,12]
+   294 AtmenetKorlatozas_elesito1[1,6,12]
                                 -0.5                          -0 
-   295 AtmenetKorlatozas_elesito[1,7,1]
+   295 AtmenetKorlatozas_elesito1[1,7,1]
                                    0                          -0 
-   296 AtmenetKorlatozas_elesito[1,7,2]
+   296 AtmenetKorlatozas_elesito1[1,7,2]
                                 -0.5                          -0 
-   297 AtmenetKorlatozas_elesito[1,7,3]
+   297 AtmenetKorlatozas_elesito1[1,7,3]
                                    0                          -0 
-   298 AtmenetKorlatozas_elesito[1,7,4]
+   298 AtmenetKorlatozas_elesito1[1,7,4]
                                    0                          -0 
-   299 AtmenetKorlatozas_elesito[1,7,5]
+   299 AtmenetKorlatozas_elesito1[1,7,5]
                                    0                          -0 
-   300 AtmenetKorlatozas_elesito[1,7,6]
+   300 AtmenetKorlatozas_elesito1[1,7,6]
                                    0                          -0 
-   301 AtmenetKorlatozas_elesito[1,7,7]
+   301 AtmenetKorlatozas_elesito1[1,7,7]
                                    0                          -0 
-   302 AtmenetKorlatozas_elesito[1,7,8]
+   302 AtmenetKorlatozas_elesito1[1,7,8]
                                 -0.5                          -0 
-   303 AtmenetKorlatozas_elesito[1,7,9]
+   303 AtmenetKorlatozas_elesito1[1,7,9]
                                    0                          -0 
-   304 AtmenetKorlatozas_elesito[1,7,10]
+   304 AtmenetKorlatozas_elesito1[1,7,10]
                                    0                          -0 
-   305 AtmenetKorlatozas_elesito[1,7,11]
+   305 AtmenetKorlatozas_elesito1[1,7,11]
                                 -0.5                          -0 
-   306 AtmenetKorlatozas_elesito[1,7,12]
+   306 AtmenetKorlatozas_elesito1[1,7,12]
                                 -0.5                          -0 
-   307 AtmenetKorlatozas_elesito[1,8,1]
+   307 AtmenetKorlatozas_elesito1[1,8,1]
                                 -0.5                          -0 
-   308 AtmenetKorlatozas_elesito[1,8,2]
+   308 AtmenetKorlatozas_elesito1[1,8,2]
                                   -1                          -0 
-   309 AtmenetKorlatozas_elesito[1,8,3]
+   309 AtmenetKorlatozas_elesito1[1,8,3]
                                 -0.5                          -0 
-   310 AtmenetKorlatozas_elesito[1,8,4]
+   310 AtmenetKorlatozas_elesito1[1,8,4]
                                 -0.5                          -0 
-   311 AtmenetKorlatozas_elesito[1,8,5]
+   311 AtmenetKorlatozas_elesito1[1,8,5]
                                 -0.5                          -0 
-   312 AtmenetKorlatozas_elesito[1,8,6]
+   312 AtmenetKorlatozas_elesito1[1,8,6]
                                 -0.5                          -0 
-   313 AtmenetKorlatozas_elesito[1,8,7]
+   313 AtmenetKorlatozas_elesito1[1,8,7]
                                 -0.5                          -0 
-   314 AtmenetKorlatozas_elesito[1,8,8]
+   314 AtmenetKorlatozas_elesito1[1,8,8]
                                   -1                          -0 
-   315 AtmenetKorlatozas_elesito[1,8,9]
+   315 AtmenetKorlatozas_elesito1[1,8,9]
                                 -0.5                          -0 
-   316 AtmenetKorlatozas_elesito[1,8,10]
+   316 AtmenetKorlatozas_elesito1[1,8,10]
                                 -0.5                          -0 
-   317 AtmenetKorlatozas_elesito[1,8,11]
+   317 AtmenetKorlatozas_elesito1[1,8,11]
                                   -1                          -0 
-   318 AtmenetKorlatozas_elesito[1,8,12]
+   318 AtmenetKorlatozas_elesito1[1,8,12]
                                   -1                          -0 
-   319 AtmenetKorlatozas_elesito[1,9,1]
+   319 AtmenetKorlatozas_elesito1[1,9,1]
                                    0                          -0 
-   320 AtmenetKorlatozas_elesito[1,9,2]
+   320 AtmenetKorlatozas_elesito1[1,9,2]
                                 -0.5                          -0 
-   321 AtmenetKorlatozas_elesito[1,9,3]
+   321 AtmenetKorlatozas_elesito1[1,9,3]
                                    0                          -0 
-   322 AtmenetKorlatozas_elesito[1,9,4]
+   322 AtmenetKorlatozas_elesito1[1,9,4]
                                    0                          -0 
-   323 AtmenetKorlatozas_elesito[1,9,5]
+   323 AtmenetKorlatozas_elesito1[1,9,5]
                                    0                          -0 
-   324 AtmenetKorlatozas_elesito[1,9,6]
+   324 AtmenetKorlatozas_elesito1[1,9,6]
                                    0                          -0 
-   325 AtmenetKorlatozas_elesito[1,9,7]
+   325 AtmenetKorlatozas_elesito1[1,9,7]
                                    0                          -0 
-   326 AtmenetKorlatozas_elesito[1,9,8]
+   326 AtmenetKorlatozas_elesito1[1,9,8]
                                 -0.5                          -0 
-   327 AtmenetKorlatozas_elesito[1,9,9]
+   327 AtmenetKorlatozas_elesito1[1,9,9]
                                    0                          -0 
-   328 AtmenetKorlatozas_elesito[1,9,10]
+   328 AtmenetKorlatozas_elesito1[1,9,10]
                                    0                          -0 
-   329 AtmenetKorlatozas_elesito[1,9,11]
+   329 AtmenetKorlatozas_elesito1[1,9,11]
                                 -0.5                          -0 
-   330 AtmenetKorlatozas_elesito[1,9,12]
+   330 AtmenetKorlatozas_elesito1[1,9,12]
                                 -0.5                          -0 
-   331 AtmenetKorlatozas_elesito[1,10,1]
+   331 AtmenetKorlatozas_elesito1[1,10,1]
                                    0                          -0 
-   332 AtmenetKorlatozas_elesito[1,10,2]
+   332 AtmenetKorlatozas_elesito1[1,10,2]
                                 -0.5                          -0 
-   333 AtmenetKorlatozas_elesito[1,10,3]
+   333 AtmenetKorlatozas_elesito1[1,10,3]
                                    0                          -0 
-   334 AtmenetKorlatozas_elesito[1,10,4]
+   334 AtmenetKorlatozas_elesito1[1,10,4]
                                    0                          -0 
-   335 AtmenetKorlatozas_elesito[1,10,5]
+   335 AtmenetKorlatozas_elesito1[1,10,5]
                                    0                          -0 
-   336 AtmenetKorlatozas_elesito[1,10,6]
+   336 AtmenetKorlatozas_elesito1[1,10,6]
                                    0                          -0 
-   337 AtmenetKorlatozas_elesito[1,10,7]
+   337 AtmenetKorlatozas_elesito1[1,10,7]
                                    0                          -0 
-   338 AtmenetKorlatozas_elesito[1,10,8]
+   338 AtmenetKorlatozas_elesito1[1,10,8]
                                 -0.5                          -0 
-   339 AtmenetKorlatozas_elesito[1,10,9]
+   339 AtmenetKorlatozas_elesito1[1,10,9]
                                    0                          -0 
-   340 AtmenetKorlatozas_elesito[1,10,10]
+   340 AtmenetKorlatozas_elesito1[1,10,10]
                                    0                          -0 
-   341 AtmenetKorlatozas_elesito[1,10,11]
+   341 AtmenetKorlatozas_elesito1[1,10,11]
                                 -0.5                          -0 
-   342 AtmenetKorlatozas_elesito[1,10,12]
+   342 AtmenetKorlatozas_elesito1[1,10,12]
                                 -0.5                          -0 
-   343 AtmenetKorlatozas_elesito[1,11,1]
+   343 AtmenetKorlatozas_elesito1[1,11,1]
                                 -0.5                          -0 
-   344 AtmenetKorlatozas_elesito[1,11,2]
+   344 AtmenetKorlatozas_elesito1[1,11,2]
                                   -1                          -0 
-   345 AtmenetKorlatozas_elesito[1,11,3]
+   345 AtmenetKorlatozas_elesito1[1,11,3]
                                 -0.5                          -0 
-   346 AtmenetKorlatozas_elesito[1,11,4]
+   346 AtmenetKorlatozas_elesito1[1,11,4]
                                 -0.5                          -0 
-   347 AtmenetKorlatozas_elesito[1,11,5]
+   347 AtmenetKorlatozas_elesito1[1,11,5]
                                 -0.5                          -0 
-   348 AtmenetKorlatozas_elesito[1,11,6]
+   348 AtmenetKorlatozas_elesito1[1,11,6]
                                 -0.5                          -0 
-   349 AtmenetKorlatozas_elesito[1,11,7]
+   349 AtmenetKorlatozas_elesito1[1,11,7]
                                 -0.5                          -0 
-   350 AtmenetKorlatozas_elesito[1,11,8]
+   350 AtmenetKorlatozas_elesito1[1,11,8]
                                   -1                          -0 
-   351 AtmenetKorlatozas_elesito[1,11,9]
+   351 AtmenetKorlatozas_elesito1[1,11,9]
                                 -0.5                          -0 
-   352 AtmenetKorlatozas_elesito[1,11,10]
+   352 AtmenetKorlatozas_elesito1[1,11,10]
                                 -0.5                          -0 
-   353 AtmenetKorlatozas_elesito[1,11,11]
+   353 AtmenetKorlatozas_elesito1[1,11,11]
                                   -1                          -0 
-   354 AtmenetKorlatozas_elesito[1,11,12]
+   354 AtmenetKorlatozas_elesito1[1,11,12]
                                    0                          -0 
-   355 AtmenetKorlatozas_elesito[1,12,1]
+   355 AtmenetKorlatozas_elesito1[1,12,1]
                                 -0.5                          -0 
-   356 AtmenetKorlatozas_elesito[1,12,2]
+   356 AtmenetKorlatozas_elesito1[1,12,2]
                                   -1                          -0 
-   357 AtmenetKorlatozas_elesito[1,12,3]
+   357 AtmenetKorlatozas_elesito1[1,12,3]
                                 -0.5                          -0 
-   358 AtmenetKorlatozas_elesito[1,12,4]
+   358 AtmenetKorlatozas_elesito1[1,12,4]
                                 -0.5                          -0 
-   359 AtmenetKorlatozas_elesito[1,12,5]
+   359 AtmenetKorlatozas_elesito1[1,12,5]
                                 -0.5                          -0 
-   360 AtmenetKorlatozas_elesito[1,12,6]
+   360 AtmenetKorlatozas_elesito1[1,12,6]
                                 -0.5                          -0 
-   361 AtmenetKorlatozas_elesito[1,12,7]
+   361 AtmenetKorlatozas_elesito1[1,12,7]
                                 -0.5                          -0 
-   362 AtmenetKorlatozas_elesito[1,12,8]
+   362 AtmenetKorlatozas_elesito1[1,12,8]
                                    0                          -0 
-   363 AtmenetKorlatozas_elesito[1,12,9]
+   363 AtmenetKorlatozas_elesito1[1,12,9]
                                 -0.5                          -0 
-   364 AtmenetKorlatozas_elesito[1,12,10]
+   364 AtmenetKorlatozas_elesito1[1,12,10]
                                 -0.5                          -0 
-   365 AtmenetKorlatozas_elesito[1,12,11]
+   365 AtmenetKorlatozas_elesito1[1,12,11]
                                   -1                          -0 
-   366 AtmenetKorlatozas_elesito[1,12,12]
+   366 AtmenetKorlatozas_elesito1[1,12,12]
                                   -1                          -0 
-   367 AtmenetKorlatozas_elesito[2,1,1]
+   367 AtmenetKorlatozas_elesito1[2,1,1]
                                    0                          -0 
-   368 AtmenetKorlatozas_elesito[2,1,2]
+   368 AtmenetKorlatozas_elesito1[2,1,2]
                                    0                          -0 
-   369 AtmenetKorlatozas_elesito[2,1,3]
+   369 AtmenetKorlatozas_elesito1[2,1,3]
                                    0                          -0 
-   370 AtmenetKorlatozas_elesito[2,1,4]
+   370 AtmenetKorlatozas_elesito1[2,1,4]
                                 -0.5                          -0 
-   371 AtmenetKorlatozas_elesito[2,1,5]
+   371 AtmenetKorlatozas_elesito1[2,1,5]
                                 -0.5                          -0 
-   372 AtmenetKorlatozas_elesito[2,1,6]
+   372 AtmenetKorlatozas_elesito1[2,1,6]
                                    0                          -0 
-   373 AtmenetKorlatozas_elesito[2,1,7]
+   373 AtmenetKorlatozas_elesito1[2,1,7]
                                    0                          -0 
-   374 AtmenetKorlatozas_elesito[2,1,8]
+   374 AtmenetKorlatozas_elesito1[2,1,8]
                                    0                          -0 
-   375 AtmenetKorlatozas_elesito[2,1,9]
+   375 AtmenetKorlatozas_elesito1[2,1,9]
                                 -0.5                          -0 
-   376 AtmenetKorlatozas_elesito[2,1,10]
+   376 AtmenetKorlatozas_elesito1[2,1,10]
                                 -0.5                          -0 
-   377 AtmenetKorlatozas_elesito[2,1,11]
+   377 AtmenetKorlatozas_elesito1[2,1,11]
                                    0                          -0 
-   378 AtmenetKorlatozas_elesito[2,1,12]
+   378 AtmenetKorlatozas_elesito1[2,1,12]
                                    0                          -0 
-   379 AtmenetKorlatozas_elesito[2,2,1]
+   379 AtmenetKorlatozas_elesito1[2,2,1]
                                    0                          -0 
-   380 AtmenetKorlatozas_elesito[2,2,2]
+   380 AtmenetKorlatozas_elesito1[2,2,2]
                                    0                          -0 
-   381 AtmenetKorlatozas_elesito[2,2,3]
+   381 AtmenetKorlatozas_elesito1[2,2,3]
                                    0                          -0 
-   382 AtmenetKorlatozas_elesito[2,2,4]
+   382 AtmenetKorlatozas_elesito1[2,2,4]
                                 -0.5                          -0 
-   383 AtmenetKorlatozas_elesito[2,2,5]
+   383 AtmenetKorlatozas_elesito1[2,2,5]
                                 -0.5                          -0 
-   384 AtmenetKorlatozas_elesito[2,2,6]
+   384 AtmenetKorlatozas_elesito1[2,2,6]
                                    0                          -0 
-   385 AtmenetKorlatozas_elesito[2,2,7]
+   385 AtmenetKorlatozas_elesito1[2,2,7]
                                    0                          -0 
-   386 AtmenetKorlatozas_elesito[2,2,8]
+   386 AtmenetKorlatozas_elesito1[2,2,8]
                                    0                          -0 
-   387 AtmenetKorlatozas_elesito[2,2,9]
+   387 AtmenetKorlatozas_elesito1[2,2,9]
                                 -0.5                          -0 
-   388 AtmenetKorlatozas_elesito[2,2,10]
+   388 AtmenetKorlatozas_elesito1[2,2,10]
                                 -0.5                          -0 
-   389 AtmenetKorlatozas_elesito[2,2,11]
+   389 AtmenetKorlatozas_elesito1[2,2,11]
                                    0                          -0 
-   390 AtmenetKorlatozas_elesito[2,2,12]
+   390 AtmenetKorlatozas_elesito1[2,2,12]
                                    0                          -0 
-   391 AtmenetKorlatozas_elesito[2,3,1]
+   391 AtmenetKorlatozas_elesito1[2,3,1]
                                    0                          -0 
-   392 AtmenetKorlatozas_elesito[2,3,2]
+   392 AtmenetKorlatozas_elesito1[2,3,2]
                                    0                          -0 
-   393 AtmenetKorlatozas_elesito[2,3,3]
+   393 AtmenetKorlatozas_elesito1[2,3,3]
                                    0                          -0 
-   394 AtmenetKorlatozas_elesito[2,3,4]
+   394 AtmenetKorlatozas_elesito1[2,3,4]
                                 -0.5                          -0 
-   395 AtmenetKorlatozas_elesito[2,3,5]
+   395 AtmenetKorlatozas_elesito1[2,3,5]
                                 -0.5                          -0 
-   396 AtmenetKorlatozas_elesito[2,3,6]
+   396 AtmenetKorlatozas_elesito1[2,3,6]
                                    0                          -0 
-   397 AtmenetKorlatozas_elesito[2,3,7]
+   397 AtmenetKorlatozas_elesito1[2,3,7]
                                    0                          -0 
-   398 AtmenetKorlatozas_elesito[2,3,8]
+   398 AtmenetKorlatozas_elesito1[2,3,8]
                                    0                          -0 
-   399 AtmenetKorlatozas_elesito[2,3,9]
+   399 AtmenetKorlatozas_elesito1[2,3,9]
                                 -0.5                          -0 
-   400 AtmenetKorlatozas_elesito[2,3,10]
+   400 AtmenetKorlatozas_elesito1[2,3,10]
                                 -0.5                          -0 
-   401 AtmenetKorlatozas_elesito[2,3,11]
+   401 AtmenetKorlatozas_elesito1[2,3,11]
                                    0                          -0 
-   402 AtmenetKorlatozas_elesito[2,3,12]
+   402 AtmenetKorlatozas_elesito1[2,3,12]
                                    0                          -0 
-   403 AtmenetKorlatozas_elesito[2,4,1]
+   403 AtmenetKorlatozas_elesito1[2,4,1]
                                 -0.5                          -0 
-   404 AtmenetKorlatozas_elesito[2,4,2]
+   404 AtmenetKorlatozas_elesito1[2,4,2]
                                 -0.5                          -0 
-   405 AtmenetKorlatozas_elesito[2,4,3]
+   405 AtmenetKorlatozas_elesito1[2,4,3]
                                 -0.5                          -0 
-   406 AtmenetKorlatozas_elesito[2,4,4]
+   406 AtmenetKorlatozas_elesito1[2,4,4]
                                   -1                          -0 
-   407 AtmenetKorlatozas_elesito[2,4,5]
+   407 AtmenetKorlatozas_elesito1[2,4,5]
                                   -1                          -0 
-   408 AtmenetKorlatozas_elesito[2,4,6]
+   408 AtmenetKorlatozas_elesito1[2,4,6]
                                 -0.5                          -0 
-   409 AtmenetKorlatozas_elesito[2,4,7]
+   409 AtmenetKorlatozas_elesito1[2,4,7]
                                 -0.5                          -0 
-   410 AtmenetKorlatozas_elesito[2,4,8]
+   410 AtmenetKorlatozas_elesito1[2,4,8]
                                 -0.5                          -0 
-   411 AtmenetKorlatozas_elesito[2,4,9]
+   411 AtmenetKorlatozas_elesito1[2,4,9]
                                    0                          -0 
-   412 AtmenetKorlatozas_elesito[2,4,10]
+   412 AtmenetKorlatozas_elesito1[2,4,10]
                                   -1                          -0 
-   413 AtmenetKorlatozas_elesito[2,4,11]
+   413 AtmenetKorlatozas_elesito1[2,4,11]
                                 -0.5                          -0 
-   414 AtmenetKorlatozas_elesito[2,4,12]
+   414 AtmenetKorlatozas_elesito1[2,4,12]
                                 -0.5                          -0 
-   415 AtmenetKorlatozas_elesito[2,5,1]
+   415 AtmenetKorlatozas_elesito1[2,5,1]
                                 -0.5                          -0 
-   416 AtmenetKorlatozas_elesito[2,5,2]
+   416 AtmenetKorlatozas_elesito1[2,5,2]
                                 -0.5                          -0 
-   417 AtmenetKorlatozas_elesito[2,5,3]
+   417 AtmenetKorlatozas_elesito1[2,5,3]
                                 -0.5                          -0 
-   418 AtmenetKorlatozas_elesito[2,5,4]
+   418 AtmenetKorlatozas_elesito1[2,5,4]
                                    0                          -0 
-   419 AtmenetKorlatozas_elesito[2,5,5]
+   419 AtmenetKorlatozas_elesito1[2,5,5]
                                   -1                          -0 
-   420 AtmenetKorlatozas_elesito[2,5,6]
+   420 AtmenetKorlatozas_elesito1[2,5,6]
                                 -0.5                          -0 
-   421 AtmenetKorlatozas_elesito[2,5,7]
+   421 AtmenetKorlatozas_elesito1[2,5,7]
                                 -0.5                          -0 
-   422 AtmenetKorlatozas_elesito[2,5,8]
+   422 AtmenetKorlatozas_elesito1[2,5,8]
                                 -0.5                          -0 
-   423 AtmenetKorlatozas_elesito[2,5,9]
+   423 AtmenetKorlatozas_elesito1[2,5,9]
                                   -1                          -0 
-   424 AtmenetKorlatozas_elesito[2,5,10]
+   424 AtmenetKorlatozas_elesito1[2,5,10]
                                   -1                          -0 
-   425 AtmenetKorlatozas_elesito[2,5,11]
+   425 AtmenetKorlatozas_elesito1[2,5,11]
                                 -0.5                          -0 
-   426 AtmenetKorlatozas_elesito[2,5,12]
+   426 AtmenetKorlatozas_elesito1[2,5,12]
                                 -0.5                          -0 
-   427 AtmenetKorlatozas_elesito[2,6,1]
+   427 AtmenetKorlatozas_elesito1[2,6,1]
                                    0                          -0 
-   428 AtmenetKorlatozas_elesito[2,6,2]
+   428 AtmenetKorlatozas_elesito1[2,6,2]
                                    0                          -0 
-   429 AtmenetKorlatozas_elesito[2,6,3]
+   429 AtmenetKorlatozas_elesito1[2,6,3]
                                    0                          -0 
-   430 AtmenetKorlatozas_elesito[2,6,4]
+   430 AtmenetKorlatozas_elesito1[2,6,4]
                                 -0.5                          -0 
-   431 AtmenetKorlatozas_elesito[2,6,5]
+   431 AtmenetKorlatozas_elesito1[2,6,5]
                                 -0.5                          -0 
-   432 AtmenetKorlatozas_elesito[2,6,6]
+   432 AtmenetKorlatozas_elesito1[2,6,6]
                                    0                          -0 
-   433 AtmenetKorlatozas_elesito[2,6,7]
+   433 AtmenetKorlatozas_elesito1[2,6,7]
                                    0                          -0 
-   434 AtmenetKorlatozas_elesito[2,6,8]
+   434 AtmenetKorlatozas_elesito1[2,6,8]
                                    0                          -0 
-   435 AtmenetKorlatozas_elesito[2,6,9]
+   435 AtmenetKorlatozas_elesito1[2,6,9]
                                 -0.5                          -0 
-   436 AtmenetKorlatozas_elesito[2,6,10]
+   436 AtmenetKorlatozas_elesito1[2,6,10]
                                 -0.5                          -0 
-   437 AtmenetKorlatozas_elesito[2,6,11]
+   437 AtmenetKorlatozas_elesito1[2,6,11]
                                    0                          -0 
-   438 AtmenetKorlatozas_elesito[2,6,12]
+   438 AtmenetKorlatozas_elesito1[2,6,12]
                                    0                          -0 
-   439 AtmenetKorlatozas_elesito[2,7,1]
+   439 AtmenetKorlatozas_elesito1[2,7,1]
                                    0                          -0 
-   440 AtmenetKorlatozas_elesito[2,7,2]
+   440 AtmenetKorlatozas_elesito1[2,7,2]
                                    0                          -0 
-   441 AtmenetKorlatozas_elesito[2,7,3]
+   441 AtmenetKorlatozas_elesito1[2,7,3]
                                    0                          -0 
-   442 AtmenetKorlatozas_elesito[2,7,4]
+   442 AtmenetKorlatozas_elesito1[2,7,4]
                                 -0.5                          -0 
-   443 AtmenetKorlatozas_elesito[2,7,5]
+   443 AtmenetKorlatozas_elesito1[2,7,5]
                                 -0.5                          -0 
-   444 AtmenetKorlatozas_elesito[2,7,6]
+   444 AtmenetKorlatozas_elesito1[2,7,6]
                                    0                          -0 
-   445 AtmenetKorlatozas_elesito[2,7,7]
+   445 AtmenetKorlatozas_elesito1[2,7,7]
                                    0                          -0 
-   446 AtmenetKorlatozas_elesito[2,7,8]
+   446 AtmenetKorlatozas_elesito1[2,7,8]
                                    0                          -0 
-   447 AtmenetKorlatozas_elesito[2,7,9]
+   447 AtmenetKorlatozas_elesito1[2,7,9]
                                 -0.5                          -0 
-   448 AtmenetKorlatozas_elesito[2,7,10]
+   448 AtmenetKorlatozas_elesito1[2,7,10]
                                 -0.5                          -0 
-   449 AtmenetKorlatozas_elesito[2,7,11]
+   449 AtmenetKorlatozas_elesito1[2,7,11]
                                    0                          -0 
-   450 AtmenetKorlatozas_elesito[2,7,12]
+   450 AtmenetKorlatozas_elesito1[2,7,12]
                                    0                          -0 
-   451 AtmenetKorlatozas_elesito[2,8,1]
+   451 AtmenetKorlatozas_elesito1[2,8,1]
                                    0                          -0 
-   452 AtmenetKorlatozas_elesito[2,8,2]
+   452 AtmenetKorlatozas_elesito1[2,8,2]
                                    0                          -0 
-   453 AtmenetKorlatozas_elesito[2,8,3]
+   453 AtmenetKorlatozas_elesito1[2,8,3]
                                    0                          -0 
-   454 AtmenetKorlatozas_elesito[2,8,4]
+   454 AtmenetKorlatozas_elesito1[2,8,4]
                                 -0.5                          -0 
-   455 AtmenetKorlatozas_elesito[2,8,5]
+   455 AtmenetKorlatozas_elesito1[2,8,5]
                                 -0.5                          -0 
-   456 AtmenetKorlatozas_elesito[2,8,6]
+   456 AtmenetKorlatozas_elesito1[2,8,6]
                                    0                          -0 
-   457 AtmenetKorlatozas_elesito[2,8,7]
+   457 AtmenetKorlatozas_elesito1[2,8,7]
                                    0                          -0 
-   458 AtmenetKorlatozas_elesito[2,8,8]
+   458 AtmenetKorlatozas_elesito1[2,8,8]
                                    0                          -0 
-   459 AtmenetKorlatozas_elesito[2,8,9]
+   459 AtmenetKorlatozas_elesito1[2,8,9]
                                 -0.5                          -0 
-   460 AtmenetKorlatozas_elesito[2,8,10]
+   460 AtmenetKorlatozas_elesito1[2,8,10]
                                 -0.5                          -0 
-   461 AtmenetKorlatozas_elesito[2,8,11]
+   461 AtmenetKorlatozas_elesito1[2,8,11]
                                    0                          -0 
-   462 AtmenetKorlatozas_elesito[2,8,12]
+   462 AtmenetKorlatozas_elesito1[2,8,12]
                                    0                          -0 
-   463 AtmenetKorlatozas_elesito[2,9,1]
+   463 AtmenetKorlatozas_elesito1[2,9,1]
                                 -0.5                          -0 
-   464 AtmenetKorlatozas_elesito[2,9,2]
+   464 AtmenetKorlatozas_elesito1[2,9,2]
                                 -0.5                          -0 
-   465 AtmenetKorlatozas_elesito[2,9,3]
+   465 AtmenetKorlatozas_elesito1[2,9,3]
                                 -0.5                          -0 
-   466 AtmenetKorlatozas_elesito[2,9,4]
+   466 AtmenetKorlatozas_elesito1[2,9,4]
                                   -1                          -0 
-   467 AtmenetKorlatozas_elesito[2,9,5]
+   467 AtmenetKorlatozas_elesito1[2,9,5]
                                   -1                          -0 
-   468 AtmenetKorlatozas_elesito[2,9,6]
+   468 AtmenetKorlatozas_elesito1[2,9,6]
                                 -0.5                          -0 
-   469 AtmenetKorlatozas_elesito[2,9,7]
+   469 AtmenetKorlatozas_elesito1[2,9,7]
                                 -0.5                          -0 
-   470 AtmenetKorlatozas_elesito[2,9,8]
+   470 AtmenetKorlatozas_elesito1[2,9,8]
                                 -0.5                          -0 
-   471 AtmenetKorlatozas_elesito[2,9,9]
+   471 AtmenetKorlatozas_elesito1[2,9,9]
                                   -1                          -0 
-   472 AtmenetKorlatozas_elesito[2,9,10]
+   472 AtmenetKorlatozas_elesito1[2,9,10]
                                    0                          -0 
-   473 AtmenetKorlatozas_elesito[2,9,11]
+   473 AtmenetKorlatozas_elesito1[2,9,11]
                                 -0.5                          -0 
-   474 AtmenetKorlatozas_elesito[2,9,12]
+   474 AtmenetKorlatozas_elesito1[2,9,12]
                                 -0.5                          -0 
-   475 AtmenetKorlatozas_elesito[2,10,1]
+   475 AtmenetKorlatozas_elesito1[2,10,1]
                                 -0.5                          -0 
-   476 AtmenetKorlatozas_elesito[2,10,2]
+   476 AtmenetKorlatozas_elesito1[2,10,2]
                                 -0.5                          -0 
-   477 AtmenetKorlatozas_elesito[2,10,3]
+   477 AtmenetKorlatozas_elesito1[2,10,3]
                                 -0.5                          -0 
-   478 AtmenetKorlatozas_elesito[2,10,4]
+   478 AtmenetKorlatozas_elesito1[2,10,4]
                                   -1                          -0 
-   479 AtmenetKorlatozas_elesito[2,10,5]
+   479 AtmenetKorlatozas_elesito1[2,10,5]
                                   -1                          -0 
-   480 AtmenetKorlatozas_elesito[2,10,6]
+   480 AtmenetKorlatozas_elesito1[2,10,6]
                                 -0.5                          -0 
-   481 AtmenetKorlatozas_elesito[2,10,7]
+   481 AtmenetKorlatozas_elesito1[2,10,7]
                                 -0.5                          -0 
-   482 AtmenetKorlatozas_elesito[2,10,8]
+   482 AtmenetKorlatozas_elesito1[2,10,8]
                                 -0.5                          -0 
-   483 AtmenetKorlatozas_elesito[2,10,9]
+   483 AtmenetKorlatozas_elesito1[2,10,9]
                                   -1                          -0 
-   484 AtmenetKorlatozas_elesito[2,10,10]
+   484 AtmenetKorlatozas_elesito1[2,10,10]
                                   -1                          -0 
-   485 AtmenetKorlatozas_elesito[2,10,11]
+   485 AtmenetKorlatozas_elesito1[2,10,11]
                                 -0.5                          -0 
-   486 AtmenetKorlatozas_elesito[2,10,12]
+   486 AtmenetKorlatozas_elesito1[2,10,12]
                                 -0.5                          -0 
-   487 AtmenetKorlatozas_elesito[2,11,1]
+   487 AtmenetKorlatozas_elesito1[2,11,1]
                                    0                          -0 
-   488 AtmenetKorlatozas_elesito[2,11,2]
+   488 AtmenetKorlatozas_elesito1[2,11,2]
                                    0                          -0 
-   489 AtmenetKorlatozas_elesito[2,11,3]
+   489 AtmenetKorlatozas_elesito1[2,11,3]
                                    0                          -0 
-   490 AtmenetKorlatozas_elesito[2,11,4]
+   490 AtmenetKorlatozas_elesito1[2,11,4]
                                 -0.5                          -0 
-   491 AtmenetKorlatozas_elesito[2,11,5]
+   491 AtmenetKorlatozas_elesito1[2,11,5]
                                 -0.5                          -0 
-   492 AtmenetKorlatozas_elesito[2,11,6]
+   492 AtmenetKorlatozas_elesito1[2,11,6]
                                    0                          -0 
-   493 AtmenetKorlatozas_elesito[2,11,7]
+   493 AtmenetKorlatozas_elesito1[2,11,7]
                                    0                          -0 
-   494 AtmenetKorlatozas_elesito[2,11,8]
+   494 AtmenetKorlatozas_elesito1[2,11,8]
                                    0                          -0 
-   495 AtmenetKorlatozas_elesito[2,11,9]
+   495 AtmenetKorlatozas_elesito1[2,11,9]
                                 -0.5                          -0 
-   496 AtmenetKorlatozas_elesito[2,11,10]
+   496 AtmenetKorlatozas_elesito1[2,11,10]
                                 -0.5                          -0 
-   497 AtmenetKorlatozas_elesito[2,11,11]
+   497 AtmenetKorlatozas_elesito1[2,11,11]
                                    0                          -0 
-   498 AtmenetKorlatozas_elesito[2,11,12]
+   498 AtmenetKorlatozas_elesito1[2,11,12]
                                    0                          -0 
-   499 AtmenetKorlatozas_elesito[2,12,1]
+   499 AtmenetKorlatozas_elesito1[2,12,1]
                                    0                          -0 
-   500 AtmenetKorlatozas_elesito[2,12,2]
+   500 AtmenetKorlatozas_elesito1[2,12,2]
                                    0                          -0 
-   501 AtmenetKorlatozas_elesito[2,12,3]
+   501 AtmenetKorlatozas_elesito1[2,12,3]
                                    0                          -0 
-   502 AtmenetKorlatozas_elesito[2,12,4]
+   502 AtmenetKorlatozas_elesito1[2,12,4]
                                 -0.5                          -0 
-   503 AtmenetKorlatozas_elesito[2,12,5]
+   503 AtmenetKorlatozas_elesito1[2,12,5]
                                 -0.5                          -0 
-   504 AtmenetKorlatozas_elesito[2,12,6]
+   504 AtmenetKorlatozas_elesito1[2,12,6]
                                    0                          -0 
-   505 AtmenetKorlatozas_elesito[2,12,7]
+   505 AtmenetKorlatozas_elesito1[2,12,7]
                                    0                          -0 
-   506 AtmenetKorlatozas_elesito[2,12,8]
+   506 AtmenetKorlatozas_elesito1[2,12,8]
                                    0                          -0 
-   507 AtmenetKorlatozas_elesito[2,12,9]
+   507 AtmenetKorlatozas_elesito1[2,12,9]
                                 -0.5                          -0 
-   508 AtmenetKorlatozas_elesito[2,12,10]
+   508 AtmenetKorlatozas_elesito1[2,12,10]
                                 -0.5                          -0 
-   509 AtmenetKorlatozas_elesito[2,12,11]
+   509 AtmenetKorlatozas_elesito1[2,12,11]
                                    0                          -0 
-   510 AtmenetKorlatozas_elesito[2,12,12]
+   510 AtmenetKorlatozas_elesito1[2,12,12]
                                    0                          -0 
-   511 AtmenetKorlatozas_elesito[3,1,1]
+   511 AtmenetKorlatozas_elesito1[3,1,1]
                                   -1                          -0 
-   512 AtmenetKorlatozas_elesito[3,1,2]
+   512 AtmenetKorlatozas_elesito1[3,1,2]
                                 -0.5                          -0 
-   513 AtmenetKorlatozas_elesito[3,1,3]
+   513 AtmenetKorlatozas_elesito1[3,1,3]
                                   -1                          -0 
-   514 AtmenetKorlatozas_elesito[3,1,4]
+   514 AtmenetKorlatozas_elesito1[3,1,4]
                                 -0.5                          -0 
-   515 AtmenetKorlatozas_elesito[3,1,5]
+   515 AtmenetKorlatozas_elesito1[3,1,5]
                                 -0.5                          -0 
-   516 AtmenetKorlatozas_elesito[3,1,6]
+   516 AtmenetKorlatozas_elesito1[3,1,6]
                                   -1                          -0 
-   517 AtmenetKorlatozas_elesito[3,1,7]
+   517 AtmenetKorlatozas_elesito1[3,1,7]
                                    0                          -0 
-   518 AtmenetKorlatozas_elesito[3,1,8]
+   518 AtmenetKorlatozas_elesito1[3,1,8]
                                 -0.5                          -0 
-   519 AtmenetKorlatozas_elesito[3,1,9]
+   519 AtmenetKorlatozas_elesito1[3,1,9]
                                 -0.5                          -0 
-   520 AtmenetKorlatozas_elesito[3,1,10]
+   520 AtmenetKorlatozas_elesito1[3,1,10]
                                 -0.5                          -0 
-   521 AtmenetKorlatozas_elesito[3,1,11]
+   521 AtmenetKorlatozas_elesito1[3,1,11]
                                 -0.5                          -0 
-   522 AtmenetKorlatozas_elesito[3,1,12]
+   522 AtmenetKorlatozas_elesito1[3,1,12]
                                 -0.5                          -0 
-   523 AtmenetKorlatozas_elesito[3,2,1]
+   523 AtmenetKorlatozas_elesito1[3,2,1]
                                 -0.5                          -0 
-   524 AtmenetKorlatozas_elesito[3,2,2]
+   524 AtmenetKorlatozas_elesito1[3,2,2]
                                    0                          -0 
-   525 AtmenetKorlatozas_elesito[3,2,3]
+   525 AtmenetKorlatozas_elesito1[3,2,3]
                                 -0.5                          -0 
-   526 AtmenetKorlatozas_elesito[3,2,4]
+   526 AtmenetKorlatozas_elesito1[3,2,4]
                                    0                          -0 
-   527 AtmenetKorlatozas_elesito[3,2,5]
+   527 AtmenetKorlatozas_elesito1[3,2,5]
                                    0                          -0 
-   528 AtmenetKorlatozas_elesito[3,2,6]
+   528 AtmenetKorlatozas_elesito1[3,2,6]
                                 -0.5                          -0 
-   529 AtmenetKorlatozas_elesito[3,2,7]
+   529 AtmenetKorlatozas_elesito1[3,2,7]
                                 -0.5                          -0 
-   530 AtmenetKorlatozas_elesito[3,2,8]
+   530 AtmenetKorlatozas_elesito1[3,2,8]
                                    0                          -0 
-   531 AtmenetKorlatozas_elesito[3,2,9]
+   531 AtmenetKorlatozas_elesito1[3,2,9]
                                    0                          -0 
-   532 AtmenetKorlatozas_elesito[3,2,10]
+   532 AtmenetKorlatozas_elesito1[3,2,10]
                                    0                          -0 
-   533 AtmenetKorlatozas_elesito[3,2,11]
+   533 AtmenetKorlatozas_elesito1[3,2,11]
                                    0                          -0 
-   534 AtmenetKorlatozas_elesito[3,2,12]
+   534 AtmenetKorlatozas_elesito1[3,2,12]
                                    0                          -0 
-   535 AtmenetKorlatozas_elesito[3,3,1]
+   535 AtmenetKorlatozas_elesito1[3,3,1]
                                   -1                          -0 
-   536 AtmenetKorlatozas_elesito[3,3,2]
+   536 AtmenetKorlatozas_elesito1[3,3,2]
                                 -0.5                          -0 
-   537 AtmenetKorlatozas_elesito[3,3,3]
+   537 AtmenetKorlatozas_elesito1[3,3,3]
                                   -1                          -0 
-   538 AtmenetKorlatozas_elesito[3,3,4]
+   538 AtmenetKorlatozas_elesito1[3,3,4]
                                 -0.5                          -0 
-   539 AtmenetKorlatozas_elesito[3,3,5]
+   539 AtmenetKorlatozas_elesito1[3,3,5]
                                 -0.5                          -0 
-   540 AtmenetKorlatozas_elesito[3,3,6]
+   540 AtmenetKorlatozas_elesito1[3,3,6]
                                    0                          -0 
-   541 AtmenetKorlatozas_elesito[3,3,7]
+   541 AtmenetKorlatozas_elesito1[3,3,7]
                                   -1                          -0 
-   542 AtmenetKorlatozas_elesito[3,3,8]
+   542 AtmenetKorlatozas_elesito1[3,3,8]
                                 -0.5                          -0 
-   543 AtmenetKorlatozas_elesito[3,3,9]
+   543 AtmenetKorlatozas_elesito1[3,3,9]
                                 -0.5                          -0 
-   544 AtmenetKorlatozas_elesito[3,3,10]
+   544 AtmenetKorlatozas_elesito1[3,3,10]
                                 -0.5                          -0 
-   545 AtmenetKorlatozas_elesito[3,3,11]
+   545 AtmenetKorlatozas_elesito1[3,3,11]
                                 -0.5                          -0 
-   546 AtmenetKorlatozas_elesito[3,3,12]
+   546 AtmenetKorlatozas_elesito1[3,3,12]
                                 -0.5                          -0 
-   547 AtmenetKorlatozas_elesito[3,4,1]
+   547 AtmenetKorlatozas_elesito1[3,4,1]
                                 -0.5                          -0 
-   548 AtmenetKorlatozas_elesito[3,4,2]
+   548 AtmenetKorlatozas_elesito1[3,4,2]
                                    0                          -0 
-   549 AtmenetKorlatozas_elesito[3,4,3]
+   549 AtmenetKorlatozas_elesito1[3,4,3]
                                 -0.5                          -0 
-   550 AtmenetKorlatozas_elesito[3,4,4]
+   550 AtmenetKorlatozas_elesito1[3,4,4]
                                    0                          -0 
-   551 AtmenetKorlatozas_elesito[3,4,5]
+   551 AtmenetKorlatozas_elesito1[3,4,5]
                                    0                          -0 
-   552 AtmenetKorlatozas_elesito[3,4,6]
+   552 AtmenetKorlatozas_elesito1[3,4,6]
                                 -0.5                          -0 
-   553 AtmenetKorlatozas_elesito[3,4,7]
+   553 AtmenetKorlatozas_elesito1[3,4,7]
                                 -0.5                          -0 
-   554 AtmenetKorlatozas_elesito[3,4,8]
+   554 AtmenetKorlatozas_elesito1[3,4,8]
                                    0                          -0 
-   555 AtmenetKorlatozas_elesito[3,4,9]
+   555 AtmenetKorlatozas_elesito1[3,4,9]
                                    0                          -0 
-   556 AtmenetKorlatozas_elesito[3,4,10]
+   556 AtmenetKorlatozas_elesito1[3,4,10]
                                    0                          -0 
-   557 AtmenetKorlatozas_elesito[3,4,11]
+   557 AtmenetKorlatozas_elesito1[3,4,11]
                                    0                          -0 
-   558 AtmenetKorlatozas_elesito[3,4,12]
+   558 AtmenetKorlatozas_elesito1[3,4,12]
                                    0                          -0 
-   559 AtmenetKorlatozas_elesito[3,5,1]
+   559 AtmenetKorlatozas_elesito1[3,5,1]
                                 -0.5                          -0 
-   560 AtmenetKorlatozas_elesito[3,5,2]
+   560 AtmenetKorlatozas_elesito1[3,5,2]
                                    0                          -0 
-   561 AtmenetKorlatozas_elesito[3,5,3]
+   561 AtmenetKorlatozas_elesito1[3,5,3]
                                 -0.5                          -0 
-   562 AtmenetKorlatozas_elesito[3,5,4]
+   562 AtmenetKorlatozas_elesito1[3,5,4]
                                    0                          -0 
-   563 AtmenetKorlatozas_elesito[3,5,5]
+   563 AtmenetKorlatozas_elesito1[3,5,5]
                                    0                          -0 
-   564 AtmenetKorlatozas_elesito[3,5,6]
+   564 AtmenetKorlatozas_elesito1[3,5,6]
                                 -0.5                          -0 
-   565 AtmenetKorlatozas_elesito[3,5,7]
+   565 AtmenetKorlatozas_elesito1[3,5,7]
                                 -0.5                          -0 
-   566 AtmenetKorlatozas_elesito[3,5,8]
+   566 AtmenetKorlatozas_elesito1[3,5,8]
                                    0                          -0 
-   567 AtmenetKorlatozas_elesito[3,5,9]
+   567 AtmenetKorlatozas_elesito1[3,5,9]
                                    0                          -0 
-   568 AtmenetKorlatozas_elesito[3,5,10]
+   568 AtmenetKorlatozas_elesito1[3,5,10]
                                    0                          -0 
-   569 AtmenetKorlatozas_elesito[3,5,11]
+   569 AtmenetKorlatozas_elesito1[3,5,11]
                                    0                          -0 
-   570 AtmenetKorlatozas_elesito[3,5,12]
+   570 AtmenetKorlatozas_elesito1[3,5,12]
                                    0                          -0 
-   571 AtmenetKorlatozas_elesito[3,6,1]
+   571 AtmenetKorlatozas_elesito1[3,6,1]
                                   -1                          -0 
-   572 AtmenetKorlatozas_elesito[3,6,2]
+   572 AtmenetKorlatozas_elesito1[3,6,2]
                                 -0.5                          -0 
-   573 AtmenetKorlatozas_elesito[3,6,3]
+   573 AtmenetKorlatozas_elesito1[3,6,3]
                                   -1                          -0 
-   574 AtmenetKorlatozas_elesito[3,6,4]
+   574 AtmenetKorlatozas_elesito1[3,6,4]
                                 -0.5                          -0 
-   575 AtmenetKorlatozas_elesito[3,6,5]
+   575 AtmenetKorlatozas_elesito1[3,6,5]
                                 -0.5                          -0 
-   576 AtmenetKorlatozas_elesito[3,6,6]
+   576 AtmenetKorlatozas_elesito1[3,6,6]
                                   -1                          -0 
-   577 AtmenetKorlatozas_elesito[3,6,7]
+   577 AtmenetKorlatozas_elesito1[3,6,7]
                                   -1                          -0 
-   578 AtmenetKorlatozas_elesito[3,6,8]
+   578 AtmenetKorlatozas_elesito1[3,6,8]
                                 -0.5                          -0 
-   579 AtmenetKorlatozas_elesito[3,6,9]
+   579 AtmenetKorlatozas_elesito1[3,6,9]
                                 -0.5                          -0 
-   580 AtmenetKorlatozas_elesito[3,6,10]
+   580 AtmenetKorlatozas_elesito1[3,6,10]
                                 -0.5                          -0 
-   581 AtmenetKorlatozas_elesito[3,6,11]
+   581 AtmenetKorlatozas_elesito1[3,6,11]
                                 -0.5                          -0 
-   582 AtmenetKorlatozas_elesito[3,6,12]
+   582 AtmenetKorlatozas_elesito1[3,6,12]
                                 -0.5                          -0 
-   583 AtmenetKorlatozas_elesito[3,7,1]
+   583 AtmenetKorlatozas_elesito1[3,7,1]
                                   -1                          -0 
-   584 AtmenetKorlatozas_elesito[3,7,2]
+   584 AtmenetKorlatozas_elesito1[3,7,2]
                                 -0.5                          -0 
-   585 AtmenetKorlatozas_elesito[3,7,3]
+   585 AtmenetKorlatozas_elesito1[3,7,3]
                                    0                          -0 
-   586 AtmenetKorlatozas_elesito[3,7,4]
+   586 AtmenetKorlatozas_elesito1[3,7,4]
                                 -0.5                          -0 
-   587 AtmenetKorlatozas_elesito[3,7,5]
+   587 AtmenetKorlatozas_elesito1[3,7,5]
                                 -0.5                          -0 
-   588 AtmenetKorlatozas_elesito[3,7,6]
+   588 AtmenetKorlatozas_elesito1[3,7,6]
                                   -1                          -0 
-   589 AtmenetKorlatozas_elesito[3,7,7]
+   589 AtmenetKorlatozas_elesito1[3,7,7]
                                   -1                          -0 
-   590 AtmenetKorlatozas_elesito[3,7,8]
+   590 AtmenetKorlatozas_elesito1[3,7,8]
                                 -0.5                          -0 
-   591 AtmenetKorlatozas_elesito[3,7,9]
+   591 AtmenetKorlatozas_elesito1[3,7,9]
                                 -0.5                          -0 
-   592 AtmenetKorlatozas_elesito[3,7,10]
+   592 AtmenetKorlatozas_elesito1[3,7,10]
                                 -0.5                          -0 
-   593 AtmenetKorlatozas_elesito[3,7,11]
+   593 AtmenetKorlatozas_elesito1[3,7,11]
                                 -0.5                          -0 
-   594 AtmenetKorlatozas_elesito[3,7,12]
+   594 AtmenetKorlatozas_elesito1[3,7,12]
                                 -0.5                          -0 
-   595 AtmenetKorlatozas_elesito[3,8,1]
+   595 AtmenetKorlatozas_elesito1[3,8,1]
                                 -0.5                          -0 
-   596 AtmenetKorlatozas_elesito[3,8,2]
+   596 AtmenetKorlatozas_elesito1[3,8,2]
                                    0                          -0 
-   597 AtmenetKorlatozas_elesito[3,8,3]
+   597 AtmenetKorlatozas_elesito1[3,8,3]
                                 -0.5                          -0 
-   598 AtmenetKorlatozas_elesito[3,8,4]
+   598 AtmenetKorlatozas_elesito1[3,8,4]
                                    0                          -0 
-   599 AtmenetKorlatozas_elesito[3,8,5]
+   599 AtmenetKorlatozas_elesito1[3,8,5]
                                    0                          -0 
-   600 AtmenetKorlatozas_elesito[3,8,6]
+   600 AtmenetKorlatozas_elesito1[3,8,6]
                                 -0.5                          -0 
-   601 AtmenetKorlatozas_elesito[3,8,7]
+   601 AtmenetKorlatozas_elesito1[3,8,7]
                                 -0.5                          -0 
-   602 AtmenetKorlatozas_elesito[3,8,8]
+   602 AtmenetKorlatozas_elesito1[3,8,8]
                                    0                          -0 
-   603 AtmenetKorlatozas_elesito[3,8,9]
+   603 AtmenetKorlatozas_elesito1[3,8,9]
                                    0                          -0 
-   604 AtmenetKorlatozas_elesito[3,8,10]
+   604 AtmenetKorlatozas_elesito1[3,8,10]
                                    0                          -0 
-   605 AtmenetKorlatozas_elesito[3,8,11]
+   605 AtmenetKorlatozas_elesito1[3,8,11]
                                    0                          -0 
-   606 AtmenetKorlatozas_elesito[3,8,12]
+   606 AtmenetKorlatozas_elesito1[3,8,12]
                                    0                          -0 
-   607 AtmenetKorlatozas_elesito[3,9,1]
+   607 AtmenetKorlatozas_elesito1[3,9,1]
                                 -0.5                          -0 
-   608 AtmenetKorlatozas_elesito[3,9,2]
+   608 AtmenetKorlatozas_elesito1[3,9,2]
                                    0                          -0 
-   609 AtmenetKorlatozas_elesito[3,9,3]
+   609 AtmenetKorlatozas_elesito1[3,9,3]
                                 -0.5                          -0 
-   610 AtmenetKorlatozas_elesito[3,9,4]
+   610 AtmenetKorlatozas_elesito1[3,9,4]
                                    0                          -0 
-   611 AtmenetKorlatozas_elesito[3,9,5]
+   611 AtmenetKorlatozas_elesito1[3,9,5]
                                    0                          -0 
-   612 AtmenetKorlatozas_elesito[3,9,6]
+   612 AtmenetKorlatozas_elesito1[3,9,6]
                                 -0.5                          -0 
-   613 AtmenetKorlatozas_elesito[3,9,7]
+   613 AtmenetKorlatozas_elesito1[3,9,7]
                                 -0.5                          -0 
-   614 AtmenetKorlatozas_elesito[3,9,8]
+   614 AtmenetKorlatozas_elesito1[3,9,8]
                                    0                          -0 
-   615 AtmenetKorlatozas_elesito[3,9,9]
+   615 AtmenetKorlatozas_elesito1[3,9,9]
                                    0                          -0 
-   616 AtmenetKorlatozas_elesito[3,9,10]
+   616 AtmenetKorlatozas_elesito1[3,9,10]
                                    0                          -0 
-   617 AtmenetKorlatozas_elesito[3,9,11]
+   617 AtmenetKorlatozas_elesito1[3,9,11]
                                    0                          -0 
-   618 AtmenetKorlatozas_elesito[3,9,12]
+   618 AtmenetKorlatozas_elesito1[3,9,12]
                                    0                          -0 
-   619 AtmenetKorlatozas_elesito[3,10,1]
+   619 AtmenetKorlatozas_elesito1[3,10,1]
                                 -0.5                          -0 
-   620 AtmenetKorlatozas_elesito[3,10,2]
+   620 AtmenetKorlatozas_elesito1[3,10,2]
                                    0                          -0 
-   621 AtmenetKorlatozas_elesito[3,10,3]
+   621 AtmenetKorlatozas_elesito1[3,10,3]
                                 -0.5                          -0 
-   622 AtmenetKorlatozas_elesito[3,10,4]
+   622 AtmenetKorlatozas_elesito1[3,10,4]
                                    0                          -0 
-   623 AtmenetKorlatozas_elesito[3,10,5]
+   623 AtmenetKorlatozas_elesito1[3,10,5]
                                    0                          -0 
-   624 AtmenetKorlatozas_elesito[3,10,6]
+   624 AtmenetKorlatozas_elesito1[3,10,6]
                                 -0.5                          -0 
-   625 AtmenetKorlatozas_elesito[3,10,7]
+   625 AtmenetKorlatozas_elesito1[3,10,7]
                                 -0.5                          -0 
-   626 AtmenetKorlatozas_elesito[3,10,8]
+   626 AtmenetKorlatozas_elesito1[3,10,8]
                                    0                          -0 
-   627 AtmenetKorlatozas_elesito[3,10,9]
+   627 AtmenetKorlatozas_elesito1[3,10,9]
                                    0                          -0 
-   628 AtmenetKorlatozas_elesito[3,10,10]
+   628 AtmenetKorlatozas_elesito1[3,10,10]
                                    0                          -0 
-   629 AtmenetKorlatozas_elesito[3,10,11]
+   629 AtmenetKorlatozas_elesito1[3,10,11]
                                    0                          -0 
-   630 AtmenetKorlatozas_elesito[3,10,12]
+   630 AtmenetKorlatozas_elesito1[3,10,12]
                                    0                          -0 
-   631 AtmenetKorlatozas_elesito[3,11,1]
+   631 AtmenetKorlatozas_elesito1[3,11,1]
                                 -0.5                          -0 
-   632 AtmenetKorlatozas_elesito[3,11,2]
+   632 AtmenetKorlatozas_elesito1[3,11,2]
                                    0                          -0 
-   633 AtmenetKorlatozas_elesito[3,11,3]
+   633 AtmenetKorlatozas_elesito1[3,11,3]
                                 -0.5                          -0 
-   634 AtmenetKorlatozas_elesito[3,11,4]
+   634 AtmenetKorlatozas_elesito1[3,11,4]
                                    0                          -0 
-   635 AtmenetKorlatozas_elesito[3,11,5]
+   635 AtmenetKorlatozas_elesito1[3,11,5]
                                    0                          -0 
-   636 AtmenetKorlatozas_elesito[3,11,6]
+   636 AtmenetKorlatozas_elesito1[3,11,6]
                                 -0.5                          -0 
-   637 AtmenetKorlatozas_elesito[3,11,7]
+   637 AtmenetKorlatozas_elesito1[3,11,7]
                                 -0.5                          -0 
-   638 AtmenetKorlatozas_elesito[3,11,8]
+   638 AtmenetKorlatozas_elesito1[3,11,8]
                                    0                          -0 
-   639 AtmenetKorlatozas_elesito[3,11,9]
+   639 AtmenetKorlatozas_elesito1[3,11,9]
                                    0                          -0 
-   640 AtmenetKorlatozas_elesito[3,11,10]
+   640 AtmenetKorlatozas_elesito1[3,11,10]
                                    0                          -0 
-   641 AtmenetKorlatozas_elesito[3,11,11]
+   641 AtmenetKorlatozas_elesito1[3,11,11]
                                    0                          -0 
-   642 AtmenetKorlatozas_elesito[3,11,12]
+   642 AtmenetKorlatozas_elesito1[3,11,12]
                                    0                          -0 
-   643 AtmenetKorlatozas_elesito[3,12,1]
+   643 AtmenetKorlatozas_elesito1[3,12,1]
                                 -0.5                          -0 
-   644 AtmenetKorlatozas_elesito[3,12,2]
+   644 AtmenetKorlatozas_elesito1[3,12,2]
                                    0                          -0 
-   645 AtmenetKorlatozas_elesito[3,12,3]
+   645 AtmenetKorlatozas_elesito1[3,12,3]
                                 -0.5                          -0 
-   646 AtmenetKorlatozas_elesito[3,12,4]
+   646 AtmenetKorlatozas_elesito1[3,12,4]
                                    0                          -0 
-   647 AtmenetKorlatozas_elesito[3,12,5]
+   647 AtmenetKorlatozas_elesito1[3,12,5]
                                    0                          -0 
-   648 AtmenetKorlatozas_elesito[3,12,6]
+   648 AtmenetKorlatozas_elesito1[3,12,6]
                                 -0.5                          -0 
-   649 AtmenetKorlatozas_elesito[3,12,7]
+   649 AtmenetKorlatozas_elesito1[3,12,7]
                                 -0.5                          -0 
-   650 AtmenetKorlatozas_elesito[3,12,8]
+   650 AtmenetKorlatozas_elesito1[3,12,8]
                                    0                          -0 
-   651 AtmenetKorlatozas_elesito[3,12,9]
+   651 AtmenetKorlatozas_elesito1[3,12,9]
                                    0                          -0 
-   652 AtmenetKorlatozas_elesito[3,12,10]
+   652 AtmenetKorlatozas_elesito1[3,12,10]
                                    0                          -0 
-   653 AtmenetKorlatozas_elesito[3,12,11]
+   653 AtmenetKorlatozas_elesito1[3,12,11]
                                    0                          -0 
-   654 AtmenetKorlatozas_elesito[3,12,12]
+   654 AtmenetKorlatozas_elesito1[3,12,12]
                                    0                          -0 
    655 AtmenetKorlatozas_elesito2[1,1,3,4]
                                    0                           1 
@@ -3079,7 +3079,7 @@ Objective:  osszfogyasztas_minden_buszra = 600 (MINimum)
                                  204                         300 
   1536 MaxFogyasztas[3]
                                  222                         250 
-  1537 osszfogyasztas_minden_buszra
+  1537 Buszok_osszes_fogyasztasa
                                  600                             
 
    No. Column name       Activity     Lower bound   Upper bound

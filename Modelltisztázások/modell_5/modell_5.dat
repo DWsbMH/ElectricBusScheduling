@@ -13,7 +13,7 @@ param ido: A  B  C  D :=
 		D 12 15 30  0
 ; #perc
 
-set Jaratok := j1 j2 j3 j4 j5 j6 j7 j8 j9 j10 j11 j12 t1 t2 t3 t4 t5;
+set MindenJarat := j1 j2 j3 j4 j5 j6 j7 j8 j9 j10 j11 j12 t1 t2 t3 t4 t5;
 set Toltojaratok  := t1 t2 t3 t4 t5;
 
 param : honnan hova mikortol meddig tav2:=

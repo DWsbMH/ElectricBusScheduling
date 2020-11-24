@@ -117,6 +117,14 @@ s.t. KorabbiNemUtolso{b in Buszok, j in MindenJarat,j2 in MindenJarat: mikortol_
   utolsojarat[j,b] <= 0 + M * (1- hozzarendel[j2,b]);
 
 #Toltottsegi szint korlatozasok
+s.t. DepobolToltottseg{b in Buszok, j in MindenJarat}:
+  toltottsege[j,b]<=maxtoltes[b]-tav[depo[b],honnan_minden[j]]*fogyasztas[b]
+  +M*(1-elsojarat[j,b]);
+
+s.t. DepobaToltottseg{b in Buszok, j in MindenJarat}:
+  toltottsegu[j,b]>=tav[hova_minden[j],depo[b]]*fogyasztas[b]
+  -M*(1-utolsojarat[j,b]);
+
 s.t. JaratElottiToltottseg{b in Buszok, j1 in MindenJarat, j2 in MindenJarat}:
   toltottsege[j2,b]<=toltottsegu[j1,b] -tav[hova_minden[j1],honnan_minden[j2]]*fogyasztas[b]+M*(1-atmenet[b,j1,j2]);
 

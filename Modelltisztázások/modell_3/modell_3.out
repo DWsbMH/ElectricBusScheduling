@@ -64,9 +64,9 @@ Objective:  Koztestav = 40 (MINimum)
     28 OsszeferhetetlenJaratok[3,12,1]
                                    1                           1 
     29 OsszeferhetetlenJaratok[3,12,2]
-                                   1                           1 
-    30 OsszeferhetetlenJaratok[3,12,3]
                                    0                           1 
+    30 OsszeferhetetlenJaratok[3,12,3]
+                                   1                           1 
     31 OsszeferhetetlenJaratok[4,7,1]
                                    0                           1 
     32 OsszeferhetetlenJaratok[4,7,2]
@@ -94,9 +94,9 @@ Objective:  Koztestav = 40 (MINimum)
     43 OsszeferhetetlenJaratok[6,8,1]
                                    1                           1 
     44 OsszeferhetetlenJaratok[6,8,2]
-                                   1                           1 
-    45 OsszeferhetetlenJaratok[6,8,3]
                                    0                           1 
+    45 OsszeferhetetlenJaratok[6,8,3]
+                                   1                           1 
     46 OsszeferhetetlenJaratok[7,11,1]
                                    1                           1 
     47 OsszeferhetetlenJaratok[7,11,2]
@@ -112,15 +112,15 @@ Objective:  Koztestav = 40 (MINimum)
     52 OsszeferhetetlenJaratok[11,3,1]
                                    1                           1 
     53 OsszeferhetetlenJaratok[11,3,2]
-                                   1                           1 
-    54 OsszeferhetetlenJaratok[11,3,3]
                                    0                           1 
+    54 OsszeferhetetlenJaratok[11,3,3]
+                                   1                           1 
     55 OsszeferhetetlenJaratok[12,6,1]
                                    1                           1 
     56 OsszeferhetetlenJaratok[12,6,2]
-                                   1                           1 
-    57 OsszeferhetetlenJaratok[12,6,3]
                                    0                           1 
+    57 OsszeferhetetlenJaratok[12,6,3]
+                                   1                           1 
     58 AtmenetKorlatozas[1,1,3]
                                    0            -1               
     59 AtmenetKorlatozas[1,1,4]
@@ -232,7 +232,7 @@ Objective:  Koztestav = 40 (MINimum)
    112 AtmenetKorlatozas[1,12,10]
                                    0            -1               
    113 AtmenetKorlatozas[2,1,3]
-                                   0            -1               
+                                   1            -1               
    114 AtmenetKorlatozas[2,1,4]
                                   -1            -1               
    115 AtmenetKorlatozas[2,1,6]
@@ -240,35 +240,35 @@ Objective:  Koztestav = 40 (MINimum)
    116 AtmenetKorlatozas[2,1,7]
                                    0            -1               
    117 AtmenetKorlatozas[2,1,8]
-                                   2            -1               
+                                   1            -1               
    118 AtmenetKorlatozas[2,1,9]
-                                   2            -1               
+                                   0            -1               
    119 AtmenetKorlatozas[2,1,10]
-                                   3            -1               
+                                   1            -1               
    120 AtmenetKorlatozas[2,1,11]
                                    0            -1               
    121 AtmenetKorlatozas[2,1,12]
                                    1            -1               
    122 AtmenetKorlatozas[2,2,3]
-                                  -1            -1               
+                                   0            -1               
    123 AtmenetKorlatozas[2,2,6]
                                    0            -1               
    124 AtmenetKorlatozas[2,2,7]
                                    0            -1               
    125 AtmenetKorlatozas[2,2,8]
-                                   1            -1               
+                                   0            -1               
    126 AtmenetKorlatozas[2,2,9]
-                                   1            -1               
+                                  -1            -1               
    127 AtmenetKorlatozas[2,2,10]
-                                   2            -1               
+                                   0            -1               
    128 AtmenetKorlatozas[2,2,11]
                                    0            -1               
    129 AtmenetKorlatozas[2,2,12]
                                    0            -1               
    130 AtmenetKorlatozas[2,3,6]
-                                  -1            -1               
+                                   0            -1               
    131 AtmenetKorlatozas[2,3,8]
-                                  -1            -1               
+                                   0            -1               
    132 AtmenetKorlatozas[2,3,9]
                                   -1            -1               
    133 AtmenetKorlatozas[2,3,10]
@@ -278,15 +278,15 @@ Objective:  Koztestav = 40 (MINimum)
    135 AtmenetKorlatozas[2,4,6]
                                   -1            -1               
    136 AtmenetKorlatozas[2,4,8]
-                                   0            -1               
+                                  -1            -1               
    137 AtmenetKorlatozas[2,4,9]
-                                   0            -1               
+                                  -1            -1               
    138 AtmenetKorlatozas[2,4,10]
-                                   1            -1               
+                                  -1            -1               
    139 AtmenetKorlatozas[2,4,12]
                                   -1            -1               
    140 AtmenetKorlatozas[2,5,3]
-                                  -1            -1               
+                                   0            -1               
    141 AtmenetKorlatozas[2,5,4]
                                   -1            -1               
    142 AtmenetKorlatozas[2,5,6]
@@ -294,11 +294,11 @@ Objective:  Koztestav = 40 (MINimum)
    143 AtmenetKorlatozas[2,5,7]
                                   -1            -1               
    144 AtmenetKorlatozas[2,5,8]
-                                   1            -1               
+                                   0            -1               
    145 AtmenetKorlatozas[2,5,9]
-                                   1            -1               
+                                  -1            -1               
    146 AtmenetKorlatozas[2,5,10]
-                                   2            -1               
+                                   0            -1               
    147 AtmenetKorlatozas[2,5,11]
                                   -1            -1               
    148 AtmenetKorlatozas[2,5,12]
@@ -306,17 +306,17 @@ Objective:  Koztestav = 40 (MINimum)
    149 AtmenetKorlatozas[2,6,9]
                                   -1            -1               
    150 AtmenetKorlatozas[2,6,10]
-                                  -1            -1               
+                                   0            -1               
    151 AtmenetKorlatozas[2,7,3]
-                                  -1            -1               
+                                   0            -1               
    152 AtmenetKorlatozas[2,7,6]
                                    0            -1               
    153 AtmenetKorlatozas[2,7,8]
-                                   1            -1               
+                                   0            -1               
    154 AtmenetKorlatozas[2,7,9]
-                                   1            -1               
+                                  -1            -1               
    155 AtmenetKorlatozas[2,7,10]
-                                   2            -1               
+                                   0            -1               
    156 AtmenetKorlatozas[2,7,12]
                                    0            -1               
    157 AtmenetKorlatozas[2,8,9]
@@ -326,23 +326,23 @@ Objective:  Koztestav = 40 (MINimum)
    159 AtmenetKorlatozas[2,9,10]
                                   -1            -1               
    160 AtmenetKorlatozas[2,11,6]
-                                  -1            -1               
+                                   0            -1               
    161 AtmenetKorlatozas[2,11,8]
                                    0            -1               
    162 AtmenetKorlatozas[2,11,9]
-                                   0            -1               
+                                  -1            -1               
    163 AtmenetKorlatozas[2,11,10]
-                                   1            -1               
+                                   0            -1               
    164 AtmenetKorlatozas[2,11,12]
                                    0            -1               
    165 AtmenetKorlatozas[2,12,8]
                                    0            -1               
    166 AtmenetKorlatozas[2,12,9]
-                                   0            -1               
+                                  -1            -1               
    167 AtmenetKorlatozas[2,12,10]
-                                   1            -1               
-   168 AtmenetKorlatozas[3,1,3]
                                    0            -1               
+   168 AtmenetKorlatozas[3,1,3]
+                                  -1            -1               
    169 AtmenetKorlatozas[3,1,4]
                                   -1            -1               
    170 AtmenetKorlatozas[3,1,6]
@@ -350,53 +350,53 @@ Objective:  Koztestav = 40 (MINimum)
    171 AtmenetKorlatozas[3,1,7]
                                   -1            -1               
    172 AtmenetKorlatozas[3,1,8]
-                                   0            -1               
+                                   1            -1               
    173 AtmenetKorlatozas[3,1,9]
-                                   0            -1               
+                                   2            -1               
    174 AtmenetKorlatozas[3,1,10]
-                                   0            -1               
+                                   2            -1               
    175 AtmenetKorlatozas[3,1,11]
                                   -1            -1               
    176 AtmenetKorlatozas[3,1,12]
                                    0            -1               
    177 AtmenetKorlatozas[3,2,3]
-                                   1            -1               
+                                   0            -1               
    178 AtmenetKorlatozas[3,2,6]
                                    1            -1               
    179 AtmenetKorlatozas[3,2,7]
                                   -1            -1               
    180 AtmenetKorlatozas[3,2,8]
-                                   1            -1               
+                                   2            -1               
    181 AtmenetKorlatozas[3,2,9]
-                                   1            -1               
+                                   3            -1               
    182 AtmenetKorlatozas[3,2,10]
-                                   1            -1               
+                                   3            -1               
    183 AtmenetKorlatozas[3,2,11]
                                    0            -1               
    184 AtmenetKorlatozas[3,2,12]
                                    1            -1               
    185 AtmenetKorlatozas[3,3,6]
-                                   0            -1               
+                                  -1            -1               
    186 AtmenetKorlatozas[3,3,8]
-                                   0            -1               
+                                  -1            -1               
    187 AtmenetKorlatozas[3,3,9]
                                    0            -1               
    188 AtmenetKorlatozas[3,3,10]
                                    0            -1               
    189 AtmenetKorlatozas[3,4,3]
-                                   0            -1               
+                                  -1            -1               
    190 AtmenetKorlatozas[3,4,6]
                                    0            -1               
    191 AtmenetKorlatozas[3,4,8]
-                                   0            -1               
+                                   1            -1               
    192 AtmenetKorlatozas[3,4,9]
-                                   0            -1               
+                                   2            -1               
    193 AtmenetKorlatozas[3,4,10]
-                                   0            -1               
+                                   2            -1               
    194 AtmenetKorlatozas[3,4,12]
                                    0            -1               
    195 AtmenetKorlatozas[3,5,3]
-                                   1            -1               
+                                   0            -1               
    196 AtmenetKorlatozas[3,5,4]
                                    0            -1               
    197 AtmenetKorlatozas[3,5,6]
@@ -404,29 +404,29 @@ Objective:  Koztestav = 40 (MINimum)
    198 AtmenetKorlatozas[3,5,7]
                                   -1            -1               
    199 AtmenetKorlatozas[3,5,8]
-                                   1            -1               
+                                   2            -1               
    200 AtmenetKorlatozas[3,5,9]
-                                   1            -1               
+                                   3            -1               
    201 AtmenetKorlatozas[3,5,10]
-                                   1            -1               
+                                   3            -1               
    202 AtmenetKorlatozas[3,5,11]
                                    0            -1               
    203 AtmenetKorlatozas[3,5,12]
                                    1            -1               
    204 AtmenetKorlatozas[3,6,9]
-                                   0            -1               
+                                  -1            -1               
    205 AtmenetKorlatozas[3,6,10]
-                                   0            -1               
+                                  -1            -1               
    206 AtmenetKorlatozas[3,7,3]
                                   -1            -1               
    207 AtmenetKorlatozas[3,7,6]
                                   -1            -1               
    208 AtmenetKorlatozas[3,7,8]
-                                  -1            -1               
+                                   0            -1               
    209 AtmenetKorlatozas[3,7,9]
-                                  -1            -1               
+                                   1            -1               
    210 AtmenetKorlatozas[3,7,10]
-                                  -1            -1               
+                                   1            -1               
    211 AtmenetKorlatozas[3,7,12]
                                   -1            -1               
    212 AtmenetKorlatozas[3,8,9]
@@ -436,21 +436,21 @@ Objective:  Koztestav = 40 (MINimum)
    214 AtmenetKorlatozas[3,9,10]
                                    0            -1               
    215 AtmenetKorlatozas[3,11,6]
-                                   0            -1               
+                                  -1            -1               
    216 AtmenetKorlatozas[3,11,8]
                                    0            -1               
    217 AtmenetKorlatozas[3,11,9]
-                                   0            -1               
+                                   1            -1               
    218 AtmenetKorlatozas[3,11,10]
-                                   0            -1               
+                                   1            -1               
    219 AtmenetKorlatozas[3,11,12]
                                    0            -1               
    220 AtmenetKorlatozas[3,12,8]
                                    0            -1               
    221 AtmenetKorlatozas[3,12,9]
-                                   0            -1               
+                                   1            -1               
    222 AtmenetKorlatozas[3,12,10]
-                                   0            -1               
+                                   1            -1               
    223 AtmenetKorlatozas_elesito1[1,1,1]
                                    0                          -0 
    224 AtmenetKorlatozas_elesito1[1,1,2]
@@ -744,13 +744,13 @@ Objective:  Koztestav = 40 (MINimum)
    368 AtmenetKorlatozas_elesito1[2,1,2]
                                    0                          -0 
    369 AtmenetKorlatozas_elesito1[2,1,3]
-                                -0.5                          -0 
+                                   0                          -0 
    370 AtmenetKorlatozas_elesito1[2,1,4]
                                 -0.5                          -0 
    371 AtmenetKorlatozas_elesito1[2,1,5]
                                 -0.5                          -0 
    372 AtmenetKorlatozas_elesito1[2,1,6]
-                                -0.5                          -0 
+                                   0                          -0 
    373 AtmenetKorlatozas_elesito1[2,1,7]
                                    0                          -0 
    374 AtmenetKorlatozas_elesito1[2,1,8]
@@ -768,13 +768,13 @@ Objective:  Koztestav = 40 (MINimum)
    380 AtmenetKorlatozas_elesito1[2,2,2]
                                    0                          -0 
    381 AtmenetKorlatozas_elesito1[2,2,3]
-                                -0.5                          -0 
+                                   0                          -0 
    382 AtmenetKorlatozas_elesito1[2,2,4]
                                 -0.5                          -0 
    383 AtmenetKorlatozas_elesito1[2,2,5]
                                 -0.5                          -0 
    384 AtmenetKorlatozas_elesito1[2,2,6]
-                                -0.5                          -0 
+                                   0                          -0 
    385 AtmenetKorlatozas_elesito1[2,2,7]
                                    0                          -0 
    386 AtmenetKorlatozas_elesito1[2,2,8]
@@ -788,47 +788,47 @@ Objective:  Koztestav = 40 (MINimum)
    390 AtmenetKorlatozas_elesito1[2,2,12]
                                    0                          -0 
    391 AtmenetKorlatozas_elesito1[2,3,1]
-                                -0.5                          -0 
+                                   0                          -0 
    392 AtmenetKorlatozas_elesito1[2,3,2]
-                                -0.5                          -0 
+                                   0                          -0 
    393 AtmenetKorlatozas_elesito1[2,3,3]
-                                  -1                          -0 
+                                   0                          -0 
    394 AtmenetKorlatozas_elesito1[2,3,4]
-                                  -1                          -0 
+                                -0.5                          -0 
    395 AtmenetKorlatozas_elesito1[2,3,5]
-                                  -1                          -0 
+                                -0.5                          -0 
    396 AtmenetKorlatozas_elesito1[2,3,6]
                                    0                          -0 
    397 AtmenetKorlatozas_elesito1[2,3,7]
-                                -0.5                          -0 
+                                   0                          -0 
    398 AtmenetKorlatozas_elesito1[2,3,8]
-                                -0.5                          -0 
+                                   0                          -0 
    399 AtmenetKorlatozas_elesito1[2,3,9]
-                                  -1                          -0 
+                                -0.5                          -0 
    400 AtmenetKorlatozas_elesito1[2,3,10]
-                                  -1                          -0 
+                                -0.5                          -0 
    401 AtmenetKorlatozas_elesito1[2,3,11]
-                                -0.5                          -0 
+                                   0                          -0 
    402 AtmenetKorlatozas_elesito1[2,3,12]
-                                -0.5                          -0 
+                                   0                          -0 
    403 AtmenetKorlatozas_elesito1[2,4,1]
                                 -0.5                          -0 
    404 AtmenetKorlatozas_elesito1[2,4,2]
                                 -0.5                          -0 
    405 AtmenetKorlatozas_elesito1[2,4,3]
-                                   0                          -0 
+                                -0.5                          -0 
    406 AtmenetKorlatozas_elesito1[2,4,4]
                                   -1                          -0 
    407 AtmenetKorlatozas_elesito1[2,4,5]
                                   -1                          -0 
    408 AtmenetKorlatozas_elesito1[2,4,6]
-                                  -1                          -0 
+                                -0.5                          -0 
    409 AtmenetKorlatozas_elesito1[2,4,7]
                                 -0.5                          -0 
    410 AtmenetKorlatozas_elesito1[2,4,8]
                                 -0.5                          -0 
    411 AtmenetKorlatozas_elesito1[2,4,9]
-                                  -1                          -0 
+                                   0                          -0 
    412 AtmenetKorlatozas_elesito1[2,4,10]
                                   -1                          -0 
    413 AtmenetKorlatozas_elesito1[2,4,11]
@@ -840,13 +840,13 @@ Objective:  Koztestav = 40 (MINimum)
    416 AtmenetKorlatozas_elesito1[2,5,2]
                                 -0.5                          -0 
    417 AtmenetKorlatozas_elesito1[2,5,3]
-                                  -1                          -0 
+                                -0.5                          -0 
    418 AtmenetKorlatozas_elesito1[2,5,4]
                                    0                          -0 
    419 AtmenetKorlatozas_elesito1[2,5,5]
                                   -1                          -0 
    420 AtmenetKorlatozas_elesito1[2,5,6]
-                                  -1                          -0 
+                                -0.5                          -0 
    421 AtmenetKorlatozas_elesito1[2,5,7]
                                 -0.5                          -0 
    422 AtmenetKorlatozas_elesito1[2,5,8]
@@ -860,41 +860,41 @@ Objective:  Koztestav = 40 (MINimum)
    426 AtmenetKorlatozas_elesito1[2,5,12]
                                 -0.5                          -0 
    427 AtmenetKorlatozas_elesito1[2,6,1]
-                                -0.5                          -0 
-   428 AtmenetKorlatozas_elesito1[2,6,2]
-                                -0.5                          -0 
-   429 AtmenetKorlatozas_elesito1[2,6,3]
-                                  -1                          -0 
-   430 AtmenetKorlatozas_elesito1[2,6,4]
-                                  -1                          -0 
-   431 AtmenetKorlatozas_elesito1[2,6,5]
-                                  -1                          -0 
-   432 AtmenetKorlatozas_elesito1[2,6,6]
-                                  -1                          -0 
-   433 AtmenetKorlatozas_elesito1[2,6,7]
-                                -0.5                          -0 
-   434 AtmenetKorlatozas_elesito1[2,6,8]
-                                -0.5                          -0 
-   435 AtmenetKorlatozas_elesito1[2,6,9]
                                    0                          -0 
+   428 AtmenetKorlatozas_elesito1[2,6,2]
+                                   0                          -0 
+   429 AtmenetKorlatozas_elesito1[2,6,3]
+                                   0                          -0 
+   430 AtmenetKorlatozas_elesito1[2,6,4]
+                                -0.5                          -0 
+   431 AtmenetKorlatozas_elesito1[2,6,5]
+                                -0.5                          -0 
+   432 AtmenetKorlatozas_elesito1[2,6,6]
+                                   0                          -0 
+   433 AtmenetKorlatozas_elesito1[2,6,7]
+                                   0                          -0 
+   434 AtmenetKorlatozas_elesito1[2,6,8]
+                                   0                          -0 
+   435 AtmenetKorlatozas_elesito1[2,6,9]
+                                -0.5                          -0 
    436 AtmenetKorlatozas_elesito1[2,6,10]
-                                  -1                          -0 
+                                -0.5                          -0 
    437 AtmenetKorlatozas_elesito1[2,6,11]
-                                -0.5                          -0 
+                                   0                          -0 
    438 AtmenetKorlatozas_elesito1[2,6,12]
-                                -0.5                          -0 
+                                   0                          -0 
    439 AtmenetKorlatozas_elesito1[2,7,1]
                                    0                          -0 
    440 AtmenetKorlatozas_elesito1[2,7,2]
                                    0                          -0 
    441 AtmenetKorlatozas_elesito1[2,7,3]
-                                -0.5                          -0 
+                                   0                          -0 
    442 AtmenetKorlatozas_elesito1[2,7,4]
                                 -0.5                          -0 
    443 AtmenetKorlatozas_elesito1[2,7,5]
                                 -0.5                          -0 
    444 AtmenetKorlatozas_elesito1[2,7,6]
-                                -0.5                          -0 
+                                   0                          -0 
    445 AtmenetKorlatozas_elesito1[2,7,7]
                                    0                          -0 
    446 AtmenetKorlatozas_elesito1[2,7,8]
@@ -912,13 +912,13 @@ Objective:  Koztestav = 40 (MINimum)
    452 AtmenetKorlatozas_elesito1[2,8,2]
                                    0                          -0 
    453 AtmenetKorlatozas_elesito1[2,8,3]
-                                -0.5                          -0 
+                                   0                          -0 
    454 AtmenetKorlatozas_elesito1[2,8,4]
                                 -0.5                          -0 
    455 AtmenetKorlatozas_elesito1[2,8,5]
                                 -0.5                          -0 
    456 AtmenetKorlatozas_elesito1[2,8,6]
-                                -0.5                          -0 
+                                   0                          -0 
    457 AtmenetKorlatozas_elesito1[2,8,7]
                                    0                          -0 
    458 AtmenetKorlatozas_elesito1[2,8,8]
@@ -936,13 +936,13 @@ Objective:  Koztestav = 40 (MINimum)
    464 AtmenetKorlatozas_elesito1[2,9,2]
                                 -0.5                          -0 
    465 AtmenetKorlatozas_elesito1[2,9,3]
-                                  -1                          -0 
+                                -0.5                          -0 
    466 AtmenetKorlatozas_elesito1[2,9,4]
                                   -1                          -0 
    467 AtmenetKorlatozas_elesito1[2,9,5]
                                   -1                          -0 
    468 AtmenetKorlatozas_elesito1[2,9,6]
-                                  -1                          -0 
+                                -0.5                          -0 
    469 AtmenetKorlatozas_elesito1[2,9,7]
                                 -0.5                          -0 
    470 AtmenetKorlatozas_elesito1[2,9,8]
@@ -960,13 +960,13 @@ Objective:  Koztestav = 40 (MINimum)
    476 AtmenetKorlatozas_elesito1[2,10,2]
                                 -0.5                          -0 
    477 AtmenetKorlatozas_elesito1[2,10,3]
-                                  -1                          -0 
+                                -0.5                          -0 
    478 AtmenetKorlatozas_elesito1[2,10,4]
                                   -1                          -0 
    479 AtmenetKorlatozas_elesito1[2,10,5]
                                   -1                          -0 
    480 AtmenetKorlatozas_elesito1[2,10,6]
-                                  -1                          -0 
+                                -0.5                          -0 
    481 AtmenetKorlatozas_elesito1[2,10,7]
                                 -0.5                          -0 
    482 AtmenetKorlatozas_elesito1[2,10,8]
@@ -984,13 +984,13 @@ Objective:  Koztestav = 40 (MINimum)
    488 AtmenetKorlatozas_elesito1[2,11,2]
                                    0                          -0 
    489 AtmenetKorlatozas_elesito1[2,11,3]
-                                -0.5                          -0 
+                                   0                          -0 
    490 AtmenetKorlatozas_elesito1[2,11,4]
                                 -0.5                          -0 
    491 AtmenetKorlatozas_elesito1[2,11,5]
                                 -0.5                          -0 
    492 AtmenetKorlatozas_elesito1[2,11,6]
-                                -0.5                          -0 
+                                   0                          -0 
    493 AtmenetKorlatozas_elesito1[2,11,7]
                                    0                          -0 
    494 AtmenetKorlatozas_elesito1[2,11,8]
@@ -1008,13 +1008,13 @@ Objective:  Koztestav = 40 (MINimum)
    500 AtmenetKorlatozas_elesito1[2,12,2]
                                    0                          -0 
    501 AtmenetKorlatozas_elesito1[2,12,3]
-                                -0.5                          -0 
+                                   0                          -0 
    502 AtmenetKorlatozas_elesito1[2,12,4]
                                 -0.5                          -0 
    503 AtmenetKorlatozas_elesito1[2,12,5]
                                 -0.5                          -0 
    504 AtmenetKorlatozas_elesito1[2,12,6]
-                                -0.5                          -0 
+                                   0                          -0 
    505 AtmenetKorlatozas_elesito1[2,12,7]
                                    0                          -0 
    506 AtmenetKorlatozas_elesito1[2,12,8]
@@ -1032,13 +1032,13 @@ Objective:  Koztestav = 40 (MINimum)
    512 AtmenetKorlatozas_elesito1[3,1,2]
                                 -0.5                          -0 
    513 AtmenetKorlatozas_elesito1[3,1,3]
-                                -0.5                          -0 
+                                  -1                          -0 
    514 AtmenetKorlatozas_elesito1[3,1,4]
                                 -0.5                          -0 
    515 AtmenetKorlatozas_elesito1[3,1,5]
                                 -0.5                          -0 
    516 AtmenetKorlatozas_elesito1[3,1,6]
-                                -0.5                          -0 
+                                  -1                          -0 
    517 AtmenetKorlatozas_elesito1[3,1,7]
                                    0                          -0 
    518 AtmenetKorlatozas_elesito1[3,1,8]
@@ -1056,13 +1056,13 @@ Objective:  Koztestav = 40 (MINimum)
    524 AtmenetKorlatozas_elesito1[3,2,2]
                                    0                          -0 
    525 AtmenetKorlatozas_elesito1[3,2,3]
-                                   0                          -0 
+                                -0.5                          -0 
    526 AtmenetKorlatozas_elesito1[3,2,4]
                                    0                          -0 
    527 AtmenetKorlatozas_elesito1[3,2,5]
                                    0                          -0 
    528 AtmenetKorlatozas_elesito1[3,2,6]
-                                   0                          -0 
+                                -0.5                          -0 
    529 AtmenetKorlatozas_elesito1[3,2,7]
                                 -0.5                          -0 
    530 AtmenetKorlatozas_elesito1[3,2,8]
@@ -1076,41 +1076,41 @@ Objective:  Koztestav = 40 (MINimum)
    534 AtmenetKorlatozas_elesito1[3,2,12]
                                    0                          -0 
    535 AtmenetKorlatozas_elesito1[3,3,1]
-                                -0.5                          -0 
+                                  -1                          -0 
    536 AtmenetKorlatozas_elesito1[3,3,2]
-                                   0                          -0 
+                                -0.5                          -0 
    537 AtmenetKorlatozas_elesito1[3,3,3]
-                                   0                          -0 
+                                  -1                          -0 
    538 AtmenetKorlatozas_elesito1[3,3,4]
-                                   0                          -0 
+                                -0.5                          -0 
    539 AtmenetKorlatozas_elesito1[3,3,5]
-                                   0                          -0 
+                                -0.5                          -0 
    540 AtmenetKorlatozas_elesito1[3,3,6]
                                    0                          -0 
    541 AtmenetKorlatozas_elesito1[3,3,7]
-                                -0.5                          -0 
+                                  -1                          -0 
    542 AtmenetKorlatozas_elesito1[3,3,8]
-                                   0                          -0 
+                                -0.5                          -0 
    543 AtmenetKorlatozas_elesito1[3,3,9]
-                                   0                          -0 
+                                -0.5                          -0 
    544 AtmenetKorlatozas_elesito1[3,3,10]
-                                   0                          -0 
+                                -0.5                          -0 
    545 AtmenetKorlatozas_elesito1[3,3,11]
-                                   0                          -0 
+                                -0.5                          -0 
    546 AtmenetKorlatozas_elesito1[3,3,12]
-                                   0                          -0 
+                                -0.5                          -0 
    547 AtmenetKorlatozas_elesito1[3,4,1]
                                 -0.5                          -0 
    548 AtmenetKorlatozas_elesito1[3,4,2]
                                    0                          -0 
    549 AtmenetKorlatozas_elesito1[3,4,3]
-                                   0                          -0 
+                                -0.5                          -0 
    550 AtmenetKorlatozas_elesito1[3,4,4]
                                    0                          -0 
    551 AtmenetKorlatozas_elesito1[3,4,5]
                                    0                          -0 
    552 AtmenetKorlatozas_elesito1[3,4,6]
-                                   0                          -0 
+                                -0.5                          -0 
    553 AtmenetKorlatozas_elesito1[3,4,7]
                                 -0.5                          -0 
    554 AtmenetKorlatozas_elesito1[3,4,8]
@@ -1128,13 +1128,13 @@ Objective:  Koztestav = 40 (MINimum)
    560 AtmenetKorlatozas_elesito1[3,5,2]
                                    0                          -0 
    561 AtmenetKorlatozas_elesito1[3,5,3]
-                                   0                          -0 
+                                -0.5                          -0 
    562 AtmenetKorlatozas_elesito1[3,5,4]
                                    0                          -0 
    563 AtmenetKorlatozas_elesito1[3,5,5]
                                    0                          -0 
    564 AtmenetKorlatozas_elesito1[3,5,6]
-                                   0                          -0 
+                                -0.5                          -0 
    565 AtmenetKorlatozas_elesito1[3,5,7]
                                 -0.5                          -0 
    566 AtmenetKorlatozas_elesito1[3,5,8]
@@ -1148,41 +1148,41 @@ Objective:  Koztestav = 40 (MINimum)
    570 AtmenetKorlatozas_elesito1[3,5,12]
                                    0                          -0 
    571 AtmenetKorlatozas_elesito1[3,6,1]
-                                -0.5                          -0 
+                                  -1                          -0 
    572 AtmenetKorlatozas_elesito1[3,6,2]
-                                   0                          -0 
-   573 AtmenetKorlatozas_elesito1[3,6,3]
-                                   0                          -0 
-   574 AtmenetKorlatozas_elesito1[3,6,4]
-                                   0                          -0 
-   575 AtmenetKorlatozas_elesito1[3,6,5]
-                                   0                          -0 
-   576 AtmenetKorlatozas_elesito1[3,6,6]
-                                   0                          -0 
-   577 AtmenetKorlatozas_elesito1[3,6,7]
                                 -0.5                          -0 
+   573 AtmenetKorlatozas_elesito1[3,6,3]
+                                  -1                          -0 
+   574 AtmenetKorlatozas_elesito1[3,6,4]
+                                -0.5                          -0 
+   575 AtmenetKorlatozas_elesito1[3,6,5]
+                                -0.5                          -0 
+   576 AtmenetKorlatozas_elesito1[3,6,6]
+                                  -1                          -0 
+   577 AtmenetKorlatozas_elesito1[3,6,7]
+                                  -1                          -0 
    578 AtmenetKorlatozas_elesito1[3,6,8]
-                                   0                          -0 
+                                -0.5                          -0 
    579 AtmenetKorlatozas_elesito1[3,6,9]
-                                   0                          -0 
+                                -0.5                          -0 
    580 AtmenetKorlatozas_elesito1[3,6,10]
-                                   0                          -0 
+                                -0.5                          -0 
    581 AtmenetKorlatozas_elesito1[3,6,11]
-                                   0                          -0 
+                                -0.5                          -0 
    582 AtmenetKorlatozas_elesito1[3,6,12]
-                                   0                          -0 
+                                -0.5                          -0 
    583 AtmenetKorlatozas_elesito1[3,7,1]
                                   -1                          -0 
    584 AtmenetKorlatozas_elesito1[3,7,2]
                                 -0.5                          -0 
    585 AtmenetKorlatozas_elesito1[3,7,3]
-                                -0.5                          -0 
+                                   0                          -0 
    586 AtmenetKorlatozas_elesito1[3,7,4]
                                 -0.5                          -0 
    587 AtmenetKorlatozas_elesito1[3,7,5]
                                 -0.5                          -0 
    588 AtmenetKorlatozas_elesito1[3,7,6]
-                                -0.5                          -0 
+                                  -1                          -0 
    589 AtmenetKorlatozas_elesito1[3,7,7]
                                   -1                          -0 
    590 AtmenetKorlatozas_elesito1[3,7,8]
@@ -1200,13 +1200,13 @@ Objective:  Koztestav = 40 (MINimum)
    596 AtmenetKorlatozas_elesito1[3,8,2]
                                    0                          -0 
    597 AtmenetKorlatozas_elesito1[3,8,3]
-                                   0                          -0 
+                                -0.5                          -0 
    598 AtmenetKorlatozas_elesito1[3,8,4]
                                    0                          -0 
    599 AtmenetKorlatozas_elesito1[3,8,5]
                                    0                          -0 
    600 AtmenetKorlatozas_elesito1[3,8,6]
-                                   0                          -0 
+                                -0.5                          -0 
    601 AtmenetKorlatozas_elesito1[3,8,7]
                                 -0.5                          -0 
    602 AtmenetKorlatozas_elesito1[3,8,8]
@@ -1224,13 +1224,13 @@ Objective:  Koztestav = 40 (MINimum)
    608 AtmenetKorlatozas_elesito1[3,9,2]
                                    0                          -0 
    609 AtmenetKorlatozas_elesito1[3,9,3]
-                                   0                          -0 
+                                -0.5                          -0 
    610 AtmenetKorlatozas_elesito1[3,9,4]
                                    0                          -0 
    611 AtmenetKorlatozas_elesito1[3,9,5]
                                    0                          -0 
    612 AtmenetKorlatozas_elesito1[3,9,6]
-                                   0                          -0 
+                                -0.5                          -0 
    613 AtmenetKorlatozas_elesito1[3,9,7]
                                 -0.5                          -0 
    614 AtmenetKorlatozas_elesito1[3,9,8]
@@ -1248,13 +1248,13 @@ Objective:  Koztestav = 40 (MINimum)
    620 AtmenetKorlatozas_elesito1[3,10,2]
                                    0                          -0 
    621 AtmenetKorlatozas_elesito1[3,10,3]
-                                   0                          -0 
+                                -0.5                          -0 
    622 AtmenetKorlatozas_elesito1[3,10,4]
                                    0                          -0 
    623 AtmenetKorlatozas_elesito1[3,10,5]
                                    0                          -0 
    624 AtmenetKorlatozas_elesito1[3,10,6]
-                                   0                          -0 
+                                -0.5                          -0 
    625 AtmenetKorlatozas_elesito1[3,10,7]
                                 -0.5                          -0 
    626 AtmenetKorlatozas_elesito1[3,10,8]
@@ -1272,13 +1272,13 @@ Objective:  Koztestav = 40 (MINimum)
    632 AtmenetKorlatozas_elesito1[3,11,2]
                                    0                          -0 
    633 AtmenetKorlatozas_elesito1[3,11,3]
-                                   0                          -0 
+                                -0.5                          -0 
    634 AtmenetKorlatozas_elesito1[3,11,4]
                                    0                          -0 
    635 AtmenetKorlatozas_elesito1[3,11,5]
                                    0                          -0 
    636 AtmenetKorlatozas_elesito1[3,11,6]
-                                   0                          -0 
+                                -0.5                          -0 
    637 AtmenetKorlatozas_elesito1[3,11,7]
                                 -0.5                          -0 
    638 AtmenetKorlatozas_elesito1[3,11,8]
@@ -1296,13 +1296,13 @@ Objective:  Koztestav = 40 (MINimum)
    644 AtmenetKorlatozas_elesito1[3,12,2]
                                    0                          -0 
    645 AtmenetKorlatozas_elesito1[3,12,3]
-                                   0                          -0 
+                                -0.5                          -0 
    646 AtmenetKorlatozas_elesito1[3,12,4]
                                    0                          -0 
    647 AtmenetKorlatozas_elesito1[3,12,5]
                                    0                          -0 
    648 AtmenetKorlatozas_elesito1[3,12,6]
-                                   0                          -0 
+                                -0.5                          -0 
    649 AtmenetKorlatozas_elesito1[3,12,7]
                                 -0.5                          -0 
    650 AtmenetKorlatozas_elesito1[3,12,8]
@@ -1582,7 +1582,7 @@ Objective:  Koztestav = 40 (MINimum)
    787 AtmenetKorlatozas_elesito2[2,1,3,7]
                                    0                           1 
    788 AtmenetKorlatozas_elesito2[2,1,6,3]
-                                   1                           1 
+                                   0                           1 
    789 AtmenetKorlatozas_elesito2[2,1,6,4]
                                    1                           1 
    790 AtmenetKorlatozas_elesito2[2,1,6,7]
@@ -1592,7 +1592,7 @@ Objective:  Koztestav = 40 (MINimum)
    792 AtmenetKorlatozas_elesito2[2,1,6,12]
                                    0                           1 
    793 AtmenetKorlatozas_elesito2[2,1,8,3]
-                                   1                           1 
+                                   0                           1 
    794 AtmenetKorlatozas_elesito2[2,1,8,4]
                                    1                           1 
    795 AtmenetKorlatozas_elesito2[2,1,8,7]
@@ -1602,11 +1602,11 @@ Objective:  Koztestav = 40 (MINimum)
    797 AtmenetKorlatozas_elesito2[2,1,8,12]
                                    0                           1 
    798 AtmenetKorlatozas_elesito2[2,1,9,3]
-                                   1                           1 
+                                   0                           1 
    799 AtmenetKorlatozas_elesito2[2,1,9,4]
                                    1                           1 
    800 AtmenetKorlatozas_elesito2[2,1,9,6]
-                                   1                           1 
+                                   0                           1 
    801 AtmenetKorlatozas_elesito2[2,1,9,7]
                                    0                           1 
    802 AtmenetKorlatozas_elesito2[2,1,9,8]
@@ -1616,11 +1616,11 @@ Objective:  Koztestav = 40 (MINimum)
    804 AtmenetKorlatozas_elesito2[2,1,9,12]
                                    0                           1 
    805 AtmenetKorlatozas_elesito2[2,1,10,3]
-                                   1                           1 
+                                   0                           1 
    806 AtmenetKorlatozas_elesito2[2,1,10,4]
                                    1                           1 
    807 AtmenetKorlatozas_elesito2[2,1,10,6]
-                                   1                           1 
+                                   0                           1 
    808 AtmenetKorlatozas_elesito2[2,1,10,7]
                                    0                           1 
    809 AtmenetKorlatozas_elesito2[2,1,10,8]
@@ -1640,7 +1640,7 @@ Objective:  Koztestav = 40 (MINimum)
    816 AtmenetKorlatozas_elesito2[2,2,3,7]
                                    0                           1 
    817 AtmenetKorlatozas_elesito2[2,2,6,3]
-                                   1                           1 
+                                   0                           1 
    818 AtmenetKorlatozas_elesito2[2,2,6,7]
                                    0                           1 
    819 AtmenetKorlatozas_elesito2[2,2,6,11]
@@ -1648,7 +1648,7 @@ Objective:  Koztestav = 40 (MINimum)
    820 AtmenetKorlatozas_elesito2[2,2,6,12]
                                    0                           1 
    821 AtmenetKorlatozas_elesito2[2,2,8,3]
-                                   1                           1 
+                                   0                           1 
    822 AtmenetKorlatozas_elesito2[2,2,8,7]
                                    0                           1 
    823 AtmenetKorlatozas_elesito2[2,2,8,11]
@@ -1656,9 +1656,9 @@ Objective:  Koztestav = 40 (MINimum)
    824 AtmenetKorlatozas_elesito2[2,2,8,12]
                                    0                           1 
    825 AtmenetKorlatozas_elesito2[2,2,9,3]
-                                   1                           1 
+                                   0                           1 
    826 AtmenetKorlatozas_elesito2[2,2,9,6]
-                                   1                           1 
+                                   0                           1 
    827 AtmenetKorlatozas_elesito2[2,2,9,7]
                                    0                           1 
    828 AtmenetKorlatozas_elesito2[2,2,9,8]
@@ -1668,9 +1668,9 @@ Objective:  Koztestav = 40 (MINimum)
    830 AtmenetKorlatozas_elesito2[2,2,9,12]
                                    0                           1 
    831 AtmenetKorlatozas_elesito2[2,2,10,3]
-                                   1                           1 
+                                   0                           1 
    832 AtmenetKorlatozas_elesito2[2,2,10,6]
-                                   1                           1 
+                                   0                           1 
    833 AtmenetKorlatozas_elesito2[2,2,10,7]
                                    0                           1 
    834 AtmenetKorlatozas_elesito2[2,2,10,8]
@@ -1686,21 +1686,21 @@ Objective:  Koztestav = 40 (MINimum)
    839 AtmenetKorlatozas_elesito2[2,2,12,11]
                                    0                           1 
    840 AtmenetKorlatozas_elesito2[2,3,9,6]
-                                   1                           1 
+                                   0                           1 
    841 AtmenetKorlatozas_elesito2[2,3,9,8]
                                    0                           1 
    842 AtmenetKorlatozas_elesito2[2,3,10,6]
-                                   1                           1 
+                                   0                           1 
    843 AtmenetKorlatozas_elesito2[2,3,10,8]
                                    0                           1 
    844 AtmenetKorlatozas_elesito2[2,3,10,9]
                                    1                           1 
    845 AtmenetKorlatozas_elesito2[2,4,6,3]
-                                   1                           1 
+                                   0                           1 
    846 AtmenetKorlatozas_elesito2[2,4,6,12]
                                    0                           1 
    847 AtmenetKorlatozas_elesito2[2,4,8,3]
-                                   1                           1 
+                                   0                           1 
    848 AtmenetKorlatozas_elesito2[2,4,8,12]
                                    0                           1 
    849 AtmenetKorlatozas_elesito2[2,4,9,3]
@@ -1708,13 +1708,13 @@ Objective:  Koztestav = 40 (MINimum)
    850 AtmenetKorlatozas_elesito2[2,4,9,6]
                                    1                           1 
    851 AtmenetKorlatozas_elesito2[2,4,9,8]
-                                   0                           1 
+                                   1                           1 
    852 AtmenetKorlatozas_elesito2[2,4,9,12]
-                                   0                           1 
+                                   1                           1 
    853 AtmenetKorlatozas_elesito2[2,4,10,3]
-                                   1                           1 
+                                   0                           1 
    854 AtmenetKorlatozas_elesito2[2,4,10,6]
-                                   1                           1 
+                                   0                           1 
    855 AtmenetKorlatozas_elesito2[2,4,10,8]
                                    0                           1 
    856 AtmenetKorlatozas_elesito2[2,4,10,9]
@@ -1726,7 +1726,7 @@ Objective:  Koztestav = 40 (MINimum)
    859 AtmenetKorlatozas_elesito2[2,5,3,7]
                                    0                           1 
    860 AtmenetKorlatozas_elesito2[2,5,6,3]
-                                   1                           1 
+                                   0                           1 
    861 AtmenetKorlatozas_elesito2[2,5,6,4]
                                    1                           1 
    862 AtmenetKorlatozas_elesito2[2,5,6,7]
@@ -1736,7 +1736,7 @@ Objective:  Koztestav = 40 (MINimum)
    864 AtmenetKorlatozas_elesito2[2,5,6,12]
                                    0                           1 
    865 AtmenetKorlatozas_elesito2[2,5,8,3]
-                                   1                           1 
+                                   0                           1 
    866 AtmenetKorlatozas_elesito2[2,5,8,4]
                                    1                           1 
    867 AtmenetKorlatozas_elesito2[2,5,8,7]
@@ -1746,11 +1746,11 @@ Objective:  Koztestav = 40 (MINimum)
    869 AtmenetKorlatozas_elesito2[2,5,8,12]
                                    0                           1 
    870 AtmenetKorlatozas_elesito2[2,5,9,3]
-                                   1                           1 
+                                   0                           1 
    871 AtmenetKorlatozas_elesito2[2,5,9,4]
                                    1                           1 
    872 AtmenetKorlatozas_elesito2[2,5,9,6]
-                                   1                           1 
+                                   0                           1 
    873 AtmenetKorlatozas_elesito2[2,5,9,7]
                                    0                           1 
    874 AtmenetKorlatozas_elesito2[2,5,9,8]
@@ -1760,11 +1760,11 @@ Objective:  Koztestav = 40 (MINimum)
    876 AtmenetKorlatozas_elesito2[2,5,9,12]
                                    0                           1 
    877 AtmenetKorlatozas_elesito2[2,5,10,3]
-                                   1                           1 
+                                   0                           1 
    878 AtmenetKorlatozas_elesito2[2,5,10,4]
                                    1                           1 
    879 AtmenetKorlatozas_elesito2[2,5,10,6]
-                                   1                           1 
+                                   0                           1 
    880 AtmenetKorlatozas_elesito2[2,5,10,7]
                                    0                           1 
    881 AtmenetKorlatozas_elesito2[2,5,10,8]
@@ -1784,25 +1784,25 @@ Objective:  Koztestav = 40 (MINimum)
    888 AtmenetKorlatozas_elesito2[2,6,10,9]
                                    1                           1 
    889 AtmenetKorlatozas_elesito2[2,7,6,3]
-                                   1                           1 
+                                   0                           1 
    890 AtmenetKorlatozas_elesito2[2,7,6,12]
                                    0                           1 
    891 AtmenetKorlatozas_elesito2[2,7,8,3]
-                                   1                           1 
+                                   0                           1 
    892 AtmenetKorlatozas_elesito2[2,7,8,12]
                                    0                           1 
    893 AtmenetKorlatozas_elesito2[2,7,9,3]
-                                   1                           1 
+                                   0                           1 
    894 AtmenetKorlatozas_elesito2[2,7,9,6]
-                                   1                           1 
+                                   0                           1 
    895 AtmenetKorlatozas_elesito2[2,7,9,8]
                                    0                           1 
    896 AtmenetKorlatozas_elesito2[2,7,9,12]
                                    0                           1 
    897 AtmenetKorlatozas_elesito2[2,7,10,3]
-                                   1                           1 
+                                   0                           1 
    898 AtmenetKorlatozas_elesito2[2,7,10,6]
-                                   1                           1 
+                                   0                           1 
    899 AtmenetKorlatozas_elesito2[2,7,10,8]
                                    0                           1 
    900 AtmenetKorlatozas_elesito2[2,7,10,9]
@@ -1816,13 +1816,13 @@ Objective:  Koztestav = 40 (MINimum)
    904 AtmenetKorlatozas_elesito2[2,11,8,12]
                                    0                           1 
    905 AtmenetKorlatozas_elesito2[2,11,9,6]
-                                   1                           1 
+                                   0                           1 
    906 AtmenetKorlatozas_elesito2[2,11,9,8]
                                    0                           1 
    907 AtmenetKorlatozas_elesito2[2,11,9,12]
                                    0                           1 
    908 AtmenetKorlatozas_elesito2[2,11,10,6]
-                                   1                           1 
+                                   0                           1 
    909 AtmenetKorlatozas_elesito2[2,11,10,8]
                                    0                           1 
    910 AtmenetKorlatozas_elesito2[2,11,10,9]
@@ -1830,11 +1830,11 @@ Objective:  Koztestav = 40 (MINimum)
    911 AtmenetKorlatozas_elesito2[2,11,10,12]
                                    0                           1 
    912 AtmenetKorlatozas_elesito2[2,12,9,6]
-                                   1                           1 
+                                   0                           1 
    913 AtmenetKorlatozas_elesito2[2,12,9,8]
                                    0                           1 
    914 AtmenetKorlatozas_elesito2[2,12,10,6]
-                                   1                           1 
+                                   0                           1 
    915 AtmenetKorlatozas_elesito2[2,12,10,8]
                                    0                           1 
    916 AtmenetKorlatozas_elesito2[2,12,10,9]
@@ -1844,7 +1844,7 @@ Objective:  Koztestav = 40 (MINimum)
    918 AtmenetKorlatozas_elesito2[3,1,3,7]
                                    1                           1 
    919 AtmenetKorlatozas_elesito2[3,1,6,3]
-                                   0                           1 
+                                   1                           1 
    920 AtmenetKorlatozas_elesito2[3,1,6,4]
                                    0                           1 
    921 AtmenetKorlatozas_elesito2[3,1,6,7]
@@ -1854,7 +1854,7 @@ Objective:  Koztestav = 40 (MINimum)
    923 AtmenetKorlatozas_elesito2[3,1,6,12]
                                    0                           1 
    924 AtmenetKorlatozas_elesito2[3,1,8,3]
-                                   0                           1 
+                                   1                           1 
    925 AtmenetKorlatozas_elesito2[3,1,8,4]
                                    0                           1 
    926 AtmenetKorlatozas_elesito2[3,1,8,7]
@@ -1864,11 +1864,11 @@ Objective:  Koztestav = 40 (MINimum)
    928 AtmenetKorlatozas_elesito2[3,1,8,12]
                                    0                           1 
    929 AtmenetKorlatozas_elesito2[3,1,9,3]
-                                   0                           1 
+                                   1                           1 
    930 AtmenetKorlatozas_elesito2[3,1,9,4]
                                    0                           1 
    931 AtmenetKorlatozas_elesito2[3,1,9,6]
-                                   0                           1 
+                                   1                           1 
    932 AtmenetKorlatozas_elesito2[3,1,9,7]
                                    1                           1 
    933 AtmenetKorlatozas_elesito2[3,1,9,8]
@@ -1878,11 +1878,11 @@ Objective:  Koztestav = 40 (MINimum)
    935 AtmenetKorlatozas_elesito2[3,1,9,12]
                                    0                           1 
    936 AtmenetKorlatozas_elesito2[3,1,10,3]
-                                   0                           1 
+                                   1                           1 
    937 AtmenetKorlatozas_elesito2[3,1,10,4]
                                    0                           1 
    938 AtmenetKorlatozas_elesito2[3,1,10,6]
-                                   0                           1 
+                                   1                           1 
    939 AtmenetKorlatozas_elesito2[3,1,10,7]
                                    1                           1 
    940 AtmenetKorlatozas_elesito2[3,1,10,8]
@@ -1902,7 +1902,7 @@ Objective:  Koztestav = 40 (MINimum)
    947 AtmenetKorlatozas_elesito2[3,2,3,7]
                                    1                           1 
    948 AtmenetKorlatozas_elesito2[3,2,6,3]
-                                   0                           1 
+                                   1                           1 
    949 AtmenetKorlatozas_elesito2[3,2,6,7]
                                    1                           1 
    950 AtmenetKorlatozas_elesito2[3,2,6,11]
@@ -1910,7 +1910,7 @@ Objective:  Koztestav = 40 (MINimum)
    951 AtmenetKorlatozas_elesito2[3,2,6,12]
                                    0                           1 
    952 AtmenetKorlatozas_elesito2[3,2,8,3]
-                                   0                           1 
+                                   1                           1 
    953 AtmenetKorlatozas_elesito2[3,2,8,7]
                                    1                           1 
    954 AtmenetKorlatozas_elesito2[3,2,8,11]
@@ -1918,9 +1918,9 @@ Objective:  Koztestav = 40 (MINimum)
    955 AtmenetKorlatozas_elesito2[3,2,8,12]
                                    0                           1 
    956 AtmenetKorlatozas_elesito2[3,2,9,3]
-                                   0                           1 
+                                   1                           1 
    957 AtmenetKorlatozas_elesito2[3,2,9,6]
-                                   0                           1 
+                                   1                           1 
    958 AtmenetKorlatozas_elesito2[3,2,9,7]
                                    1                           1 
    959 AtmenetKorlatozas_elesito2[3,2,9,8]
@@ -1930,9 +1930,9 @@ Objective:  Koztestav = 40 (MINimum)
    961 AtmenetKorlatozas_elesito2[3,2,9,12]
                                    0                           1 
    962 AtmenetKorlatozas_elesito2[3,2,10,3]
-                                   0                           1 
+                                   1                           1 
    963 AtmenetKorlatozas_elesito2[3,2,10,6]
-                                   0                           1 
+                                   1                           1 
    964 AtmenetKorlatozas_elesito2[3,2,10,7]
                                    1                           1 
    965 AtmenetKorlatozas_elesito2[3,2,10,8]
@@ -1948,35 +1948,35 @@ Objective:  Koztestav = 40 (MINimum)
    970 AtmenetKorlatozas_elesito2[3,2,12,11]
                                    0                           1 
    971 AtmenetKorlatozas_elesito2[3,3,9,6]
-                                   0                           1 
+                                   1                           1 
    972 AtmenetKorlatozas_elesito2[3,3,9,8]
                                    0                           1 
    973 AtmenetKorlatozas_elesito2[3,3,10,6]
-                                   0                           1 
+                                   1                           1 
    974 AtmenetKorlatozas_elesito2[3,3,10,8]
                                    0                           1 
    975 AtmenetKorlatozas_elesito2[3,3,10,9]
                                    0                           1 
    976 AtmenetKorlatozas_elesito2[3,4,6,3]
-                                   0                           1 
+                                   1                           1 
    977 AtmenetKorlatozas_elesito2[3,4,6,12]
                                    0                           1 
    978 AtmenetKorlatozas_elesito2[3,4,8,3]
-                                   0                           1 
+                                   1                           1 
    979 AtmenetKorlatozas_elesito2[3,4,8,12]
                                    0                           1 
    980 AtmenetKorlatozas_elesito2[3,4,9,3]
-                                   0                           1 
+                                   1                           1 
    981 AtmenetKorlatozas_elesito2[3,4,9,6]
-                                   0                           1 
+                                   1                           1 
    982 AtmenetKorlatozas_elesito2[3,4,9,8]
                                    0                           1 
    983 AtmenetKorlatozas_elesito2[3,4,9,12]
                                    0                           1 
    984 AtmenetKorlatozas_elesito2[3,4,10,3]
-                                   0                           1 
+                                   1                           1 
    985 AtmenetKorlatozas_elesito2[3,4,10,6]
-                                   0                           1 
+                                   1                           1 
    986 AtmenetKorlatozas_elesito2[3,4,10,8]
                                    0                           1 
    987 AtmenetKorlatozas_elesito2[3,4,10,9]
@@ -1988,7 +1988,7 @@ Objective:  Koztestav = 40 (MINimum)
    990 AtmenetKorlatozas_elesito2[3,5,3,7]
                                    1                           1 
    991 AtmenetKorlatozas_elesito2[3,5,6,3]
-                                   0                           1 
+                                   1                           1 
    992 AtmenetKorlatozas_elesito2[3,5,6,4]
                                    0                           1 
    993 AtmenetKorlatozas_elesito2[3,5,6,7]
@@ -1998,7 +1998,7 @@ Objective:  Koztestav = 40 (MINimum)
    995 AtmenetKorlatozas_elesito2[3,5,6,12]
                                    0                           1 
    996 AtmenetKorlatozas_elesito2[3,5,8,3]
-                                   0                           1 
+                                   1                           1 
    997 AtmenetKorlatozas_elesito2[3,5,8,4]
                                    0                           1 
    998 AtmenetKorlatozas_elesito2[3,5,8,7]
@@ -2008,11 +2008,11 @@ Objective:  Koztestav = 40 (MINimum)
   1000 AtmenetKorlatozas_elesito2[3,5,8,12]
                                    0                           1 
   1001 AtmenetKorlatozas_elesito2[3,5,9,3]
-                                   0                           1 
+                                   1                           1 
   1002 AtmenetKorlatozas_elesito2[3,5,9,4]
                                    0                           1 
   1003 AtmenetKorlatozas_elesito2[3,5,9,6]
-                                   0                           1 
+                                   1                           1 
   1004 AtmenetKorlatozas_elesito2[3,5,9,7]
                                    1                           1 
   1005 AtmenetKorlatozas_elesito2[3,5,9,8]
@@ -2022,11 +2022,11 @@ Objective:  Koztestav = 40 (MINimum)
   1007 AtmenetKorlatozas_elesito2[3,5,9,12]
                                    0                           1 
   1008 AtmenetKorlatozas_elesito2[3,5,10,3]
-                                   0                           1 
+                                   1                           1 
   1009 AtmenetKorlatozas_elesito2[3,5,10,4]
                                    0                           1 
   1010 AtmenetKorlatozas_elesito2[3,5,10,6]
-                                   0                           1 
+                                   1                           1 
   1011 AtmenetKorlatozas_elesito2[3,5,10,7]
                                    1                           1 
   1012 AtmenetKorlatozas_elesito2[3,5,10,8]
@@ -2046,25 +2046,25 @@ Objective:  Koztestav = 40 (MINimum)
   1019 AtmenetKorlatozas_elesito2[3,6,10,9]
                                    0                           1 
   1020 AtmenetKorlatozas_elesito2[3,7,6,3]
-                                   0                           1 
+                                   1                           1 
   1021 AtmenetKorlatozas_elesito2[3,7,6,12]
                                    0                           1 
   1022 AtmenetKorlatozas_elesito2[3,7,8,3]
-                                   0                           1 
+                                   1                           1 
   1023 AtmenetKorlatozas_elesito2[3,7,8,12]
                                    0                           1 
   1024 AtmenetKorlatozas_elesito2[3,7,9,3]
-                                   0                           1 
+                                   1                           1 
   1025 AtmenetKorlatozas_elesito2[3,7,9,6]
-                                   0                           1 
+                                   1                           1 
   1026 AtmenetKorlatozas_elesito2[3,7,9,8]
                                    0                           1 
   1027 AtmenetKorlatozas_elesito2[3,7,9,12]
                                    0                           1 
   1028 AtmenetKorlatozas_elesito2[3,7,10,3]
-                                   0                           1 
+                                   1                           1 
   1029 AtmenetKorlatozas_elesito2[3,7,10,6]
-                                   0                           1 
+                                   1                           1 
   1030 AtmenetKorlatozas_elesito2[3,7,10,8]
                                    0                           1 
   1031 AtmenetKorlatozas_elesito2[3,7,10,9]
@@ -2078,13 +2078,13 @@ Objective:  Koztestav = 40 (MINimum)
   1035 AtmenetKorlatozas_elesito2[3,11,8,12]
                                    0                           1 
   1036 AtmenetKorlatozas_elesito2[3,11,9,6]
-                                   0                           1 
+                                   1                           1 
   1037 AtmenetKorlatozas_elesito2[3,11,9,8]
                                    0                           1 
   1038 AtmenetKorlatozas_elesito2[3,11,9,12]
                                    0                           1 
   1039 AtmenetKorlatozas_elesito2[3,11,10,6]
-                                   0                           1 
+                                   1                           1 
   1040 AtmenetKorlatozas_elesito2[3,11,10,8]
                                    0                           1 
   1041 AtmenetKorlatozas_elesito2[3,11,10,9]
@@ -2092,11 +2092,11 @@ Objective:  Koztestav = 40 (MINimum)
   1042 AtmenetKorlatozas_elesito2[3,11,10,12]
                                    0                           1 
   1043 AtmenetKorlatozas_elesito2[3,12,9,6]
-                                   0                           1 
+                                   1                           1 
   1044 AtmenetKorlatozas_elesito2[3,12,9,8]
                                    0                           1 
   1045 AtmenetKorlatozas_elesito2[3,12,10,6]
-                                   0                           1 
+                                   1                           1 
   1046 AtmenetKorlatozas_elesito2[3,12,10,8]
                                    0                           1 
   1047 AtmenetKorlatozas_elesito2[3,12,10,9]
@@ -2130,13 +2130,13 @@ Objective:  Koztestav = 40 (MINimum)
   1061 ElsoHozzarendeles[2,2]
                                    0                          -0 
   1062 ElsoHozzarendeles[2,3]
-                                  -1                          -0 
+                                   0                          -0 
   1063 ElsoHozzarendeles[2,4]
                                   -1                          -0 
   1064 ElsoHozzarendeles[2,5]
                                    0                          -0 
   1065 ElsoHozzarendeles[2,6]
-                                  -1                          -0 
+                                   0                          -0 
   1066 ElsoHozzarendeles[2,7]
                                    0                          -0 
   1067 ElsoHozzarendeles[2,8]
@@ -2154,13 +2154,13 @@ Objective:  Koztestav = 40 (MINimum)
   1073 ElsoHozzarendeles[3,2]
                                    0                          -0 
   1074 ElsoHozzarendeles[3,3]
-                                   0                          -0 
+                                  -1                          -0 
   1075 ElsoHozzarendeles[3,4]
                                    0                          -0 
   1076 ElsoHozzarendeles[3,5]
                                    0                          -0 
   1077 ElsoHozzarendeles[3,6]
-                                   0                          -0 
+                                  -1                          -0 
   1078 ElsoHozzarendeles[3,7]
                                   -1                          -0 
   1079 ElsoHozzarendeles[3,8]
@@ -2176,9 +2176,9 @@ Objective:  Koztestav = 40 (MINimum)
   1084 ElsoHozzarendeles2[1]
                                   -3                          -0 
   1085 ElsoHozzarendeles2[2]
-                                  -5                          -0 
+                                  -3                          -0 
   1086 ElsoHozzarendeles2[3]
-                                  -1                          -0 
+                                  -3                          -0 
   1087 LegfeljebbEgyElso[1]
                                    1                           1 
   1088 LegfeljebbEgyElso[2]
@@ -2188,9 +2188,9 @@ Objective:  Koztestav = 40 (MINimum)
   1090 SzuksegesElso[1]
                             0.666667            -0               
   1091 SzuksegesElso[2]
-                                 0.5            -0               
+                            0.666667            -0               
   1092 SzuksegesElso[3]
-                            0.833333            -0               
+                            0.666667            -0               
   1093 KesobbiNemElso[1,3,1]
                                    0                       10000 
   1094 KesobbiNemElso[1,3,2]
@@ -2348,7 +2348,7 @@ Objective:  Koztestav = 40 (MINimum)
   1170 KesobbiNemElso[2,6,2]
                                    0                       10000 
   1171 KesobbiNemElso[2,6,3]
-                               10000                       10000 
+                                   0                       10000 
   1172 KesobbiNemElso[2,6,4]
                                10000                       10000 
   1173 KesobbiNemElso[2,6,5]
@@ -2372,13 +2372,13 @@ Objective:  Koztestav = 40 (MINimum)
   1182 KesobbiNemElso[2,8,2]
                                    0                       10000 
   1183 KesobbiNemElso[2,8,3]
-                               10000                       10000 
+                                   0                       10000 
   1184 KesobbiNemElso[2,8,4]
                                10000                       10000 
   1185 KesobbiNemElso[2,8,5]
                                10000                       10000 
   1186 KesobbiNemElso[2,8,6]
-                               10000                       10000 
+                                   0                       10000 
   1187 KesobbiNemElso[2,8,7]
                                    0                       10000 
   1188 KesobbiNemElso[2,8,11]
@@ -2390,13 +2390,13 @@ Objective:  Koztestav = 40 (MINimum)
   1191 KesobbiNemElso[2,9,2]
                                    0                       10000 
   1192 KesobbiNemElso[2,9,3]
-                               10000                       10000 
+                                   0                       10000 
   1193 KesobbiNemElso[2,9,4]
                                10000                       10000 
   1194 KesobbiNemElso[2,9,5]
                                10000                       10000 
   1195 KesobbiNemElso[2,9,6]
-                               10000                       10000 
+                                   0                       10000 
   1196 KesobbiNemElso[2,9,7]
                                    0                       10000 
   1197 KesobbiNemElso[2,9,8]
@@ -2410,13 +2410,13 @@ Objective:  Koztestav = 40 (MINimum)
   1201 KesobbiNemElso[2,10,2]
                                    0                       10000 
   1202 KesobbiNemElso[2,10,3]
-                               10000                       10000 
+                                   0                       10000 
   1203 KesobbiNemElso[2,10,4]
                                10000                       10000 
   1204 KesobbiNemElso[2,10,5]
                                10000                       10000 
   1205 KesobbiNemElso[2,10,6]
-                               10000                       10000 
+                                   0                       10000 
   1206 KesobbiNemElso[2,10,7]
                                    0                       10000 
   1207 KesobbiNemElso[2,10,8]
@@ -2442,7 +2442,7 @@ Objective:  Koztestav = 40 (MINimum)
   1217 KesobbiNemElso[2,12,2]
                                    0                       10000 
   1218 KesobbiNemElso[2,12,3]
-                               10000                       10000 
+                                   0                       10000 
   1219 KesobbiNemElso[2,12,4]
                                10000                       10000 
   1220 KesobbiNemElso[2,12,5]
@@ -2478,7 +2478,7 @@ Objective:  Koztestav = 40 (MINimum)
   1235 KesobbiNemElso[3,6,2]
                                    0                       10000 
   1236 KesobbiNemElso[3,6,3]
-                                   0                       10000 
+                               10000                       10000 
   1237 KesobbiNemElso[3,6,4]
                                    0                       10000 
   1238 KesobbiNemElso[3,6,5]
@@ -2502,13 +2502,13 @@ Objective:  Koztestav = 40 (MINimum)
   1247 KesobbiNemElso[3,8,2]
                                    0                       10000 
   1248 KesobbiNemElso[3,8,3]
-                                   0                       10000 
+                               10000                       10000 
   1249 KesobbiNemElso[3,8,4]
                                    0                       10000 
   1250 KesobbiNemElso[3,8,5]
                                    0                       10000 
   1251 KesobbiNemElso[3,8,6]
-                                   0                       10000 
+                               10000                       10000 
   1252 KesobbiNemElso[3,8,7]
                                10000                       10000 
   1253 KesobbiNemElso[3,8,11]
@@ -2520,13 +2520,13 @@ Objective:  Koztestav = 40 (MINimum)
   1256 KesobbiNemElso[3,9,2]
                                    0                       10000 
   1257 KesobbiNemElso[3,9,3]
-                                   0                       10000 
+                               10000                       10000 
   1258 KesobbiNemElso[3,9,4]
                                    0                       10000 
   1259 KesobbiNemElso[3,9,5]
                                    0                       10000 
   1260 KesobbiNemElso[3,9,6]
-                                   0                       10000 
+                               10000                       10000 
   1261 KesobbiNemElso[3,9,7]
                                10000                       10000 
   1262 KesobbiNemElso[3,9,8]
@@ -2540,13 +2540,13 @@ Objective:  Koztestav = 40 (MINimum)
   1266 KesobbiNemElso[3,10,2]
                                    0                       10000 
   1267 KesobbiNemElso[3,10,3]
-                                   0                       10000 
+                               10000                       10000 
   1268 KesobbiNemElso[3,10,4]
                                    0                       10000 
   1269 KesobbiNemElso[3,10,5]
                                    0                       10000 
   1270 KesobbiNemElso[3,10,6]
-                                   0                       10000 
+                               10000                       10000 
   1271 KesobbiNemElso[3,10,7]
                                10000                       10000 
   1272 KesobbiNemElso[3,10,8]
@@ -2572,7 +2572,7 @@ Objective:  Koztestav = 40 (MINimum)
   1282 KesobbiNemElso[3,12,2]
                                    0                       10000 
   1283 KesobbiNemElso[3,12,3]
-                                   0                       10000 
+                               10000                       10000 
   1284 KesobbiNemElso[3,12,4]
                                    0                       10000 
   1285 KesobbiNemElso[3,12,5]
@@ -2610,13 +2610,13 @@ Objective:  Koztestav = 40 (MINimum)
   1301 UtolsoHozzarendeles[2,2]
                                    0                          -0 
   1302 UtolsoHozzarendeles[2,3]
-                                  -1                          -0 
+                                   0                          -0 
   1303 UtolsoHozzarendeles[2,4]
                                   -1                          -0 
   1304 UtolsoHozzarendeles[2,5]
                                   -1                          -0 
   1305 UtolsoHozzarendeles[2,6]
-                                  -1                          -0 
+                                   0                          -0 
   1306 UtolsoHozzarendeles[2,7]
                                    0                          -0 
   1307 UtolsoHozzarendeles[2,8]
@@ -2634,7 +2634,7 @@ Objective:  Koztestav = 40 (MINimum)
   1313 UtolsoHozzarendeles[3,2]
                                    0                          -0 
   1314 UtolsoHozzarendeles[3,3]
-                                   0                          -0 
+                                  -1                          -0 
   1315 UtolsoHozzarendeles[3,4]
                                    0                          -0 
   1316 UtolsoHozzarendeles[3,5]
@@ -2642,7 +2642,7 @@ Objective:  Koztestav = 40 (MINimum)
   1317 UtolsoHozzarendeles[3,6]
                                    0                          -0 
   1318 UtolsoHozzarendeles[3,7]
-                                   0                          -0 
+                                  -1                          -0 
   1319 UtolsoHozzarendeles[3,8]
                                    0                          -0 
   1320 UtolsoHozzarendeles[3,9]
@@ -2656,9 +2656,9 @@ Objective:  Koztestav = 40 (MINimum)
   1324 UtolsoHozzarendeles2[1]
                                   -3                          -0 
   1325 UtolsoHozzarendeles2[2]
-                                  -5                          -0 
+                                  -3                          -0 
   1326 UtolsoHozzarendeles2[3]
-                                  -1                          -0 
+                                  -3                          -0 
   1327 LegfeljebbEgyUtolso[1]
                                    1                           1 
   1328 LegfeljebbEgyUtolso[2]
@@ -2668,9 +2668,9 @@ Objective:  Koztestav = 40 (MINimum)
   1330 SzuksegesUtolso[1]
                             0.666667            -0               
   1331 SzuksegesUtolso[2]
-                                 0.5            -0               
+                            0.666667            -0               
   1332 SzuksegesUtolso[3]
-                            0.833333            -0               
+                            0.666667            -0               
   1333 KorabbiNemUtolso[1,1,3]
                                    0                       10000 
   1334 KorabbiNemUtolso[1,1,4]
@@ -2802,13 +2802,13 @@ Objective:  Koztestav = 40 (MINimum)
   1397 KorabbiNemUtolso[1,12,10]
                                    0                       10000 
   1398 KorabbiNemUtolso[2,1,3]
-                               10000                       10000 
+                                   0                       10000 
   1399 KorabbiNemUtolso[2,1,4]
                                10000                       10000 
   1400 KorabbiNemUtolso[2,1,5]
                                10000                       10000 
   1401 KorabbiNemUtolso[2,1,6]
-                               10000                       10000 
+                                   0                       10000 
   1402 KorabbiNemUtolso[2,1,7]
                                    0                       10000 
   1403 KorabbiNemUtolso[2,1,8]
@@ -2822,13 +2822,13 @@ Objective:  Koztestav = 40 (MINimum)
   1407 KorabbiNemUtolso[2,1,12]
                                    0                       10000 
   1408 KorabbiNemUtolso[2,2,3]
-                               10000                       10000 
+                                   0                       10000 
   1409 KorabbiNemUtolso[2,2,4]
                                10000                       10000 
   1410 KorabbiNemUtolso[2,2,5]
                                10000                       10000 
   1411 KorabbiNemUtolso[2,2,6]
-                               10000                       10000 
+                                   0                       10000 
   1412 KorabbiNemUtolso[2,2,7]
                                    0                       10000 
   1413 KorabbiNemUtolso[2,2,8]
@@ -2842,7 +2842,7 @@ Objective:  Koztestav = 40 (MINimum)
   1417 KorabbiNemUtolso[2,2,12]
                                    0                       10000 
   1418 KorabbiNemUtolso[2,3,6]
-                               10000                       10000 
+                                   0                       10000 
   1419 KorabbiNemUtolso[2,3,8]
                                    0                       10000 
   1420 KorabbiNemUtolso[2,3,9]
@@ -2852,9 +2852,9 @@ Objective:  Koztestav = 40 (MINimum)
   1422 KorabbiNemUtolso[2,3,12]
                                    0                       10000 
   1423 KorabbiNemUtolso[2,4,3]
-                               10000                       10000 
+                                   0                       10000 
   1424 KorabbiNemUtolso[2,4,6]
-                               10000                       10000 
+                                   0                       10000 
   1425 KorabbiNemUtolso[2,4,7]
                                    0                       10000 
   1426 KorabbiNemUtolso[2,4,8]
@@ -2868,11 +2868,11 @@ Objective:  Koztestav = 40 (MINimum)
   1430 KorabbiNemUtolso[2,4,12]
                                    0                       10000 
   1431 KorabbiNemUtolso[2,5,3]
-                               10000                       10000 
+                                   0                       10000 
   1432 KorabbiNemUtolso[2,5,4]
                                10000                       10000 
   1433 KorabbiNemUtolso[2,5,6]
-                               10000                       10000 
+                                   0                       10000 
   1434 KorabbiNemUtolso[2,5,7]
                                    0                       10000 
   1435 KorabbiNemUtolso[2,5,8]
@@ -2892,9 +2892,9 @@ Objective:  Koztestav = 40 (MINimum)
   1442 KorabbiNemUtolso[2,6,10]
                                10000                       10000 
   1443 KorabbiNemUtolso[2,7,3]
-                               10000                       10000 
+                                   0                       10000 
   1444 KorabbiNemUtolso[2,7,6]
-                               10000                       10000 
+                                   0                       10000 
   1445 KorabbiNemUtolso[2,7,8]
                                    0                       10000 
   1446 KorabbiNemUtolso[2,7,9]
@@ -2912,9 +2912,9 @@ Objective:  Koztestav = 40 (MINimum)
   1452 KorabbiNemUtolso[2,9,10]
                                10000                       10000 
   1453 KorabbiNemUtolso[2,11,3]
-                               10000                       10000 
+                                   0                       10000 
   1454 KorabbiNemUtolso[2,11,6]
-                               10000                       10000 
+                                   0                       10000 
   1455 KorabbiNemUtolso[2,11,8]
                                    0                       10000 
   1456 KorabbiNemUtolso[2,11,9]
@@ -2924,7 +2924,7 @@ Objective:  Koztestav = 40 (MINimum)
   1458 KorabbiNemUtolso[2,11,12]
                                    0                       10000 
   1459 KorabbiNemUtolso[2,12,6]
-                               10000                       10000 
+                                   0                       10000 
   1460 KorabbiNemUtolso[2,12,8]
                                    0                       10000 
   1461 KorabbiNemUtolso[2,12,9]
@@ -2932,13 +2932,13 @@ Objective:  Koztestav = 40 (MINimum)
   1462 KorabbiNemUtolso[2,12,10]
                                10000                       10000 
   1463 KorabbiNemUtolso[3,1,3]
-                                   0                       10000 
+                               10000                       10000 
   1464 KorabbiNemUtolso[3,1,4]
                                    0                       10000 
   1465 KorabbiNemUtolso[3,1,5]
                                    0                       10000 
   1466 KorabbiNemUtolso[3,1,6]
-                                   0                       10000 
+                               10000                       10000 
   1467 KorabbiNemUtolso[3,1,7]
                                10000                       10000 
   1468 KorabbiNemUtolso[3,1,8]
@@ -2952,13 +2952,13 @@ Objective:  Koztestav = 40 (MINimum)
   1472 KorabbiNemUtolso[3,1,12]
                                    0                       10000 
   1473 KorabbiNemUtolso[3,2,3]
-                                   0                       10000 
+                               10000                       10000 
   1474 KorabbiNemUtolso[3,2,4]
                                    0                       10000 
   1475 KorabbiNemUtolso[3,2,5]
                                    0                       10000 
   1476 KorabbiNemUtolso[3,2,6]
-                                   0                       10000 
+                               10000                       10000 
   1477 KorabbiNemUtolso[3,2,7]
                                10000                       10000 
   1478 KorabbiNemUtolso[3,2,8]
@@ -2972,7 +2972,7 @@ Objective:  Koztestav = 40 (MINimum)
   1482 KorabbiNemUtolso[3,2,12]
                                    0                       10000 
   1483 KorabbiNemUtolso[3,3,6]
-                                   0                       10000 
+                               10000                       10000 
   1484 KorabbiNemUtolso[3,3,8]
                                    0                       10000 
   1485 KorabbiNemUtolso[3,3,9]
@@ -2982,9 +2982,9 @@ Objective:  Koztestav = 40 (MINimum)
   1487 KorabbiNemUtolso[3,3,12]
                                    0                       10000 
   1488 KorabbiNemUtolso[3,4,3]
-                                   0                       10000 
+                               10000                       10000 
   1489 KorabbiNemUtolso[3,4,6]
-                                   0                       10000 
+                               10000                       10000 
   1490 KorabbiNemUtolso[3,4,7]
                                10000                       10000 
   1491 KorabbiNemUtolso[3,4,8]
@@ -2998,11 +2998,11 @@ Objective:  Koztestav = 40 (MINimum)
   1495 KorabbiNemUtolso[3,4,12]
                                    0                       10000 
   1496 KorabbiNemUtolso[3,5,3]
-                                   0                       10000 
+                               10000                       10000 
   1497 KorabbiNemUtolso[3,5,4]
                                    0                       10000 
   1498 KorabbiNemUtolso[3,5,6]
-                                   0                       10000 
+                               10000                       10000 
   1499 KorabbiNemUtolso[3,5,7]
                                10000                       10000 
   1500 KorabbiNemUtolso[3,5,8]
@@ -3016,25 +3016,25 @@ Objective:  Koztestav = 40 (MINimum)
   1504 KorabbiNemUtolso[3,5,12]
                                    0                       10000 
   1505 KorabbiNemUtolso[3,6,8]
-                                   0                       10000 
+                                   1                       10000 
   1506 KorabbiNemUtolso[3,6,9]
-                                   0                       10000 
+                                   1                       10000 
   1507 KorabbiNemUtolso[3,6,10]
-                                   0                       10000 
+                                   1                       10000 
   1508 KorabbiNemUtolso[3,7,3]
-                                   1                       10000 
+                               10000                       10000 
   1509 KorabbiNemUtolso[3,7,6]
-                                   1                       10000 
+                               10000                       10000 
   1510 KorabbiNemUtolso[3,7,8]
-                                   1                       10000 
+                                   0                       10000 
   1511 KorabbiNemUtolso[3,7,9]
-                                   1                       10000 
+                                   0                       10000 
   1512 KorabbiNemUtolso[3,7,10]
-                                   1                       10000 
+                                   0                       10000 
   1513 KorabbiNemUtolso[3,7,11]
-                                   1                       10000 
+                                   0                       10000 
   1514 KorabbiNemUtolso[3,7,12]
-                                   1                       10000 
+                                   0                       10000 
   1515 KorabbiNemUtolso[3,8,9]
                                    0                       10000 
   1516 KorabbiNemUtolso[3,8,10]
@@ -3042,9 +3042,9 @@ Objective:  Koztestav = 40 (MINimum)
   1517 KorabbiNemUtolso[3,9,10]
                                    0                       10000 
   1518 KorabbiNemUtolso[3,11,3]
-                                   0                       10000 
+                               10000                       10000 
   1519 KorabbiNemUtolso[3,11,6]
-                                   0                       10000 
+                               10000                       10000 
   1520 KorabbiNemUtolso[3,11,8]
                                    0                       10000 
   1521 KorabbiNemUtolso[3,11,9]
@@ -3054,7 +3054,7 @@ Objective:  Koztestav = 40 (MINimum)
   1523 KorabbiNemUtolso[3,11,12]
                                    0                       10000 
   1524 KorabbiNemUtolso[3,12,6]
-                                   0                       10000 
+                               10000                       10000 
   1525 KorabbiNemUtolso[3,12,8]
                                    0                       10000 
   1526 KorabbiNemUtolso[3,12,9]
@@ -3068,11 +3068,11 @@ Objective:  Koztestav = 40 (MINimum)
   1530 OsszhasznalatKiszamitas[3]
                                    0            -0             = 
   1531 MaxHasznalat[1]
-                                  87                         100 
+                                  87                         200 
   1532 MaxHasznalat[2]
-                                  89                         200 
+                                  51                         300 
   1533 MaxHasznalat[3]
-                                  36                         150 
+                                  74                         250 
   1534 Koztestav                  40                             
 
    No. Column name       Activity     Lower bound   Upper bound
@@ -3092,9 +3092,9 @@ Objective:  Koztestav = 40 (MINimum)
      7 hozzarendel[3,1]
                     *              0             0             1 
      8 hozzarendel[3,2]
-                    *              1             0             1 
-     9 hozzarendel[3,3]
                     *              0             0             1 
+     9 hozzarendel[3,3]
+                    *              1             0             1 
     10 hozzarendel[4,1]
                     *              0             0             1 
     11 hozzarendel[4,2]
@@ -3110,9 +3110,9 @@ Objective:  Koztestav = 40 (MINimum)
     16 hozzarendel[6,1]
                     *              0             0             1 
     17 hozzarendel[6,2]
-                    *              1             0             1 
-    18 hozzarendel[6,3]
                     *              0             0             1 
+    18 hozzarendel[6,3]
+                    *              1             0             1 
     19 hozzarendel[7,1]
                     *              0             0             1 
     20 hozzarendel[7,2]
@@ -3294,7 +3294,7 @@ Objective:  Koztestav = 40 (MINimum)
    108 atmenet[2,2,12]
                     *              0             0             1 
    109 atmenet[2,3,6]
-                    *              1             0             1 
+                    *              0             0             1 
    110 atmenet[2,3,8]
                     *              0             0             1 
    111 atmenet[2,3,9]
@@ -3302,13 +3302,13 @@ Objective:  Koztestav = 40 (MINimum)
    112 atmenet[2,3,10]
                     *              0             0             1 
    113 atmenet[2,4,3]
-                    *              1             0             1 
+                    *              0             0             1 
    114 atmenet[2,4,6]
                     *              0             0             1 
    115 atmenet[2,4,8]
                     *              0             0             1 
    116 atmenet[2,4,9]
-                    *              0             0             1 
+                    *              1             0             1 
    117 atmenet[2,4,10]
                     *              0             0             1 
    118 atmenet[2,4,12]
@@ -3332,7 +3332,7 @@ Objective:  Koztestav = 40 (MINimum)
    127 atmenet[2,5,12]
                     *              0             0             1 
    128 atmenet[2,6,9]
-                    *              1             0             1 
+                    *              0             0             1 
    129 atmenet[2,6,10]
                     *              0             0             1 
    130 atmenet[2,7,3]
@@ -3404,7 +3404,7 @@ Objective:  Koztestav = 40 (MINimum)
    163 atmenet[3,2,12]
                     *              0             0             1 
    164 atmenet[3,3,6]
-                    *              0             0             1 
+                    *              1             0             1 
    165 atmenet[3,3,8]
                     *              0             0             1 
    166 atmenet[3,3,9]
@@ -3446,7 +3446,7 @@ Objective:  Koztestav = 40 (MINimum)
    184 atmenet[3,6,10]
                     *              0             0             1 
    185 atmenet[3,7,3]
-                    *              0             0             1 
+                    *              1             0             1 
    186 atmenet[3,7,6]
                     *              0             0             1 
    187 atmenet[3,7,8]
@@ -4144,9 +4144,9 @@ Objective:  Koztestav = 40 (MINimum)
    533 utolsojarat[5,3]
                     *              0             0             1 
    534 utolsojarat[6,3]
-                    *              0             0             1 
-   535 utolsojarat[7,3]
                     *              1             0             1 
+   535 utolsojarat[7,3]
+                    *              0             0             1 
    536 utolsojarat[8,3]
                     *              0             0             1 
    537 utolsojarat[9,3]
@@ -4160,9 +4160,9 @@ Objective:  Koztestav = 40 (MINimum)
    541 osszhasznalat[1]
                                   87             0               
    542 osszhasznalat[2]
-                                  89             0               
+                                  51             0               
    543 osszhasznalat[3]
-                                  36             0               
+                                  74             0               
 
 Integer feasibility conditions:
 

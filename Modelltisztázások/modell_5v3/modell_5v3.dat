@@ -17,29 +17,33 @@ param ido: A  B  C  D :=
 set Jaratok := j1 j2 j3 j4 j5 j6 j7 j8 j9 j10 j11 j12;
 
 param : honnan hova mikortol meddig tav2:=
-j1  A B 30   100  16
-j2  C D 10   80  21
-j3  A C 20   90  19
-j4  B A 110 200 15
-j5  B C 140 210 9
-j6  C A 150 240 20
-j7  D A 250 290 9
-j8  B D 350 400 11
-j9  A D 600 700 10
-j10 D B 800 900 12
-j11 D C 1000 1100 21
-j12 C B 90 130 6
+j1  A B 0   25   16
+j2  C D 50   85   21
+j3  A C 100   130  19
+j4  B A 150   175   16
+j5  B C 200   210   8
+j6  C A 250  280  19
+j7  D A 300   315   10
+j8  B D 350  370  12
+j9  A D 400  415  10
+j10 D B 450  470  12
+j11 D C 500   515   21
+j12 C B 550   560  8
 ;
 
 set Toltohelyek:= A C;
 
 param idoszelet :=180;
 
-param buszszam := 3;
+param buszszam := 7;
 
 param : depo maxtoltes fogyasztas:=
 1 A 100 2
 2 B 200 4
 3 A 150 3
+4 B 100 2
+5 A 200 4
+6 A 100 2
+7 B 150 3
 ;
 end;

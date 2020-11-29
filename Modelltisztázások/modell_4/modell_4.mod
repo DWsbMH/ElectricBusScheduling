@@ -17,8 +17,6 @@ param depo{Buszok} symbolic, in Helyek;
 param maxtoltes{Buszok}; # Watt
 param fogyasztas{Buszok};  #Watt/km
 
-param M:=10000;
-
 var hozzarendel{Jaratok,Buszok}, binary;
 var atmenet{Buszok,Jaratok,Jaratok}, binary;
 
@@ -33,7 +31,7 @@ s.t. JaratokElvegzese {j in Jaratok} : sum {b in Buszok} hozzarendel[j,b]=1;
 s.t. OsszeferhetetlenJaratok{(j,j2) in Kulonbozobusz, b in Buszok}:
   hozzarendel[j,b]+hozzarendel[j2,b]<=1;
 
-s.t. AtmenetKorlatozas{b in Buszok, j in Jaratok, j2 in Jaratok:mikortol[j2]>meddig[j] }:
+s.t. AtmenetKorlatozas{b in Buszok, j in Jaratok, j2 in Jaratok:mikortol[j2]>=meddig[j] }:
   atmenet[b,j,j2]
   + sum {jkoztes in Jaratok: mikortol[jkoztes]>=meddig[j] && meddig[jkoztes] <= mikortol[j2]} hozzarendel[jkoztes,b]
   >=-1+hozzarendel[j,b]+hozzarendel[j2,b];
@@ -59,7 +57,7 @@ s.t. SzuksegesElso{b in Buszok}:
   sum{j in Jaratok} elsojarat[j,b] >= sum{j in Jaratok} hozzarendel[j,b] / card(Jaratok);
 
 s.t. KesobbiNemElso{b in Buszok, j in Jaratok,j2 in Jaratok: mikortol[j]>mikortol[j2]}:
-  elsojarat[j,b] <= 0 + M * (1- hozzarendel[j2,b]);
+  elsojarat[j,b] <=(1- hozzarendel[j2,b]);
 
 #Utolso jarat korlatozasok
 s.t. UtolsoHozzarendeles{b in Buszok, j in Jaratok}:
@@ -76,7 +74,7 @@ s.t. SzuksegesUtolso{b in Buszok}:
   sum{j in Jaratok} utolsojarat[j,b] >= sum{j in Jaratok} hozzarendel[j,b] / card(Jaratok);
 
 s.t. KorabbiNemUtolso{b in Buszok, j in Jaratok,j2 in Jaratok: mikortol[j]<mikortol[j2]}:
-  utolsojarat[j,b] <= 0 + M * (1- hozzarendel[j2,b]);
+  utolsojarat[j,b] <=(1- hozzarendel[j2,b]);
 
 s.t. OsszhasznalatKiszamitas {b in Buszok}:
   sum {j1 in Jaratok, j2 in Jaratok} tav[hova[j1],honnan[j2]]*atmenet[b,j1,j2]

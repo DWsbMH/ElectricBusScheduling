@@ -22,7 +22,7 @@ s.t. JaratokElvegzese {j in Jaratok} : sum {b in Buszok} hozzarendel[j,b]=1;
 s.t. OsszeferhetetlenJaratok{(j,j2) in Kulonbozobusz, b in Buszok}:
   hozzarendel[j,b]+hozzarendel[j2,b]<=1;
 
-s.t. AtmenetKorlatozas{b in Buszok, j in Jaratok, j2 in Jaratok:mikortol[j2]>meddig[j] }:
+s.t. AtmenetKorlatozas{b in Buszok, j in Jaratok, j2 in Jaratok:mikortol[j2]>=meddig[j] }:
   atmenet[b,j,j2]
   + sum {jkoztes in Jaratok: mikortol[jkoztes]>=meddig[j] && meddig[jkoztes] <= mikortol[j2]} hozzarendel[jkoztes,b]
   >=-1+hozzarendel[j,b]+hozzarendel[j2,b];

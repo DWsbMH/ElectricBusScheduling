@@ -38,7 +38,7 @@ s.t. JaratokElvegzese2 {j2 in Toltojaratok} : sum {b in Buszok} hozzarendel[j2,b
 s.t. OsszeferhetetlenJaratok{(j,j2) in Kulonbozobusz, b in Buszok}:
   hozzarendel[j,b]+hozzarendel[j2,b]<=1;
 
-s.t. AtmenetKorlatozas{b in Buszok, j in MindenJarat, j2 in MindenJarat:mikortol[j2]>meddig[j] }:
+s.t. AtmenetKorlatozas{b in Buszok, j in MindenJarat, j2 in MindenJarat:mikortol[j2]>=meddig[j] }:
   atmenet[b,j,j2]
   + sum {jkoztes in MindenJarat: mikortol[jkoztes]>=meddig[j] && meddig[jkoztes] <= mikortol[j2]} hozzarendel[jkoztes,b]
   >=-1+hozzarendel[j,b]+hozzarendel[j2,b];
@@ -64,7 +64,7 @@ s.t. SzuksegesElso{b in Buszok}:
   sum{j in MindenJarat} elsojarat[j,b] >= sum{j in MindenJarat} hozzarendel[j,b] / card(MindenJarat);
 
 s.t. KesobbiNemElso{b in Buszok, j in MindenJarat,j2 in MindenJarat: mikortol[j]>mikortol[j2]}:
-  elsojarat[j,b] <= 0 + M * (1- hozzarendel[j2,b]);
+  elsojarat[j,b] <=(1- hozzarendel[j2,b]);
 
 #Utolso jarat korlatozasok
 s.t. UtolsoHozzarendeles{b in Buszok, j in MindenJarat}:
@@ -81,7 +81,7 @@ s.t. SzuksegesUtolso{b in Buszok}:
   sum{j in MindenJarat} utolsojarat[j,b] >= sum{j in MindenJarat} hozzarendel[j,b] / card(MindenJarat);
 
 s.t. KorabbiNemUtolso{b in Buszok, j in MindenJarat,j2 in MindenJarat: mikortol[j]<mikortol[j2]}:
-  utolsojarat[j,b] <= 0 + M * (1- hozzarendel[j2,b]);
+  utolsojarat[j,b] <=(1- hozzarendel[j2,b]);
 
 #Toltottsegi szint korlatozasok
 s.t. DepobolToltottseg{b in Buszok, j in MindenJarat}:
@@ -96,7 +96,7 @@ s.t. JaratElottiToltottseg{b in Buszok, j1 in MindenJarat, j2 in MindenJarat}:
   toltottsege[j2,b]<=toltottsegu[j1,b] -tav[hova[j1],honnan[j2]]*fogyasztas[b]+M*(1-atmenet[b,j1,j2]);
 
 s.t. JaratUtaniToltottseg1{b in Buszok, j in MindenJarat diff Toltojaratok}:
-  toltottsegu[j,b]<=toltottsege[j,b]-tav[hova[j],honnan[j]]*fogyasztas[b]+M*(1-hozzarendel[j,b]);
+  toltottsegu[j,b]<=toltottsege[j,b]-tav2[j]*fogyasztas[b]+M*(1-hozzarendel[j,b]);
 
 s.t. JaratUtaniToltottseg2{b in Buszok, tj in Toltojaratok}:
   toltottsegu[tj,b]>=maxtoltes[b]-M*(1-hozzarendel[tj,b]);
@@ -119,19 +119,22 @@ minimize Buszok_osszes_fogyasztasa: sum {b in Buszok} osszfogyasztas[b];
 solve;
 
 printf "Osszes fogyasztas: %g\n", sum{b in Buszok} osszfogyasztas[b];
-
 for{b in Buszok}
 {
   printf "Busz %d:\n",b;
   printf "Ossz futott km  / Osszfogyasztas / maxtoltes: %g / %g / %g\n",osszhasznalat[b],osszfogyasztas[b],maxtoltes[b];
+  printf "\tJaratok/Toltesek:\n";
   for{j in MindenJarat:hozzarendel[j,b]=1}
-    printf "\tJarat %s: %s(%g) --%g--> %s(%g) (%g)->(%g)\n",j,honnan[j],mikortol[j],tav2[j],hova[j],meddig[j],toltottsege[j,b],toltottsegu[j,b];
+    printf "\t\tJarat %s: %s(%g) --%g--> %s(%g) (%g)->(%g)\n",j,honnan_minden[j],mikortol_minden[j],tav2_minden[j],hova_minden[j],meddig_minden[j],toltottsege[j,b],toltottsegu[j,b];
+  
+  printf "\tAtmenetek:\n";
   for{j in MindenJarat: elsojarat[j,b]=1}
-    printf "\tElsojarat: Depo --%g--> Jarat %s : %s(%g) -> %s(%g) (%g)->(%g)\n",tav[depo[b],honnan[j]],j,depo[b],0,honnan[j],mikortol[j],toltottsege[j,b],toltottsegu[j,b];
+    printf "\tElsojarat: Depo --%g--> Jarat %s : %s(%g) -> %s(%g) (%g)->(%g)\n",tav[depo[b],honnan_minden[j]],j,depo[b],0,honnan_minden[j],mikortol_minden[j],toltottsege[j,b]+tav[depo[b],honnan_minden[j]]*fogyasztas[b],toltottsege[j,b];
   for{j in MindenJarat, j2 in MindenJarat: atmenet[b,j,j2]=1}
-    printf "\tAtmenes: Jarat %s --%g--> Jarat %s : %s(%g) -> %s(%g) (%g)->(%g)\n",j,tav[hova[j],honnan[j2]],j2,hova[j],meddig[j],honnan[j2],mikortol[j2],toltottsege[j,b],toltottsegu[j,b];
+    printf "\tAtmenes: Jarat %s --%g--> Jarat %s : %s(%g) -> %s(%g) (%g)->(%g)\n",j,tav[hova_minden[j],honnan_minden[j2]],j2,hova_minden[j],meddig_minden[j],honnan_minden[j2],mikortol_minden[j2],toltottsegu[j,b],toltottsege[j2,b];
   for{j in MindenJarat: utolsojarat[j,b]=1}
-    printf "\tUtolsojarat: Jarat %s --%g--> Depo : %s(%g) -> %s(%g) (%g)->(%g)\n",j,tav[hova[j],depo[b]],hova[j],meddig[j],depo[b],meddig[j]+ido[hova[j],depo[b]],toltottsege[j,b],toltottsegu[j,b];
+    printf "\tUtolsojarat: Jarat %s --%g--> Depo : %s(%g) -> %s(%g) (%g)->(%g)\n",j,tav[hova_minden[j],depo[b]],
+    hova_minden[j],meddig_minden[j],depo[b],meddig_minden[j]+ido[hova_minden[j],depo[b]],toltottsegu[j,b],toltottsegu[j,b]-tav[hova_minden[j],depo[b]]*fogyasztas[b];
 }
 
 end;

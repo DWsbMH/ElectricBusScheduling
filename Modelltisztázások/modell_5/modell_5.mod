@@ -122,19 +122,19 @@ printf "Osszes fogyasztas: %g\n", sum{b in Buszok} osszfogyasztas[b];
 for{b in Buszok}
 {
   printf "Busz %d:\n",b;
-  printf "Ossz futott km  / Osszfogyasztas / maxtoltes: %g / %g / %g\n",osszhasznalat[b],osszfogyasztas[b],maxtoltes[b];
+  printf "Ossz futott km / Osszfogyasztas / maxtoltes: %g / %g / %g\n",osszhasznalat[b],osszfogyasztas[b],maxtoltes[b];
   printf "\tJaratok/Toltesek:\n";
   for{j in MindenJarat:hozzarendel[j,b]=1}
-    printf "\t\tJarat %s: %s(%g) --%g--> %s(%g) (%g)->(%g)\n",j,honnan_minden[j],mikortol_minden[j],tav2_minden[j],hova_minden[j],meddig_minden[j],toltottsege[j,b],toltottsegu[j,b];
+    printf "\t\tJarat %s: %s (%g) --%g--> %s (%g) (%g)->(%g)\n",j,honnan[j],mikortol[j],tav2[j],hova[j],meddig[j],toltottsege[j,b],toltottsegu[j,b];
   
   printf "\tAtmenetek:\n";
   for{j in MindenJarat: elsojarat[j,b]=1}
-    printf "\tElsojarat: Depo --%g--> Jarat %s : %s(%g) -> %s(%g) (%g)->(%g)\n",tav[depo[b],honnan_minden[j]],j,depo[b],0,honnan_minden[j],mikortol_minden[j],toltottsege[j,b]+tav[depo[b],honnan_minden[j]]*fogyasztas[b],toltottsege[j,b];
+    printf "\tElsojarat: Depo --%g--> Jarat %s: %s (%g) -> %s (%g) (%g)->(%g)\n",tav[depo[b],honnan[j]],j,depo[b],0,honnan[j],mikortol[j],toltottsege[j,b]+tav[depo[b],honnan[j]]*fogyasztas[b],toltottsege[j,b];
   for{j in MindenJarat, j2 in MindenJarat: atmenet[b,j,j2]=1}
-    printf "\tAtmenes: Jarat %s --%g--> Jarat %s : %s(%g) -> %s(%g) (%g)->(%g)\n",j,tav[hova_minden[j],honnan_minden[j2]],j2,hova_minden[j],meddig_minden[j],honnan_minden[j2],mikortol_minden[j2],toltottsegu[j,b],toltottsege[j2,b];
+    printf "\tAtmenet: Jarat %s --%g--> Jarat %s: %s (%g) -> %s (%g) (%g)->(%g)\n",j,tav[hova[j],honnan[j2]],j2,hova[j],meddig[j],honnan[j2],mikortol[j2],toltottsegu[j,b],toltottsege[j2,b];
   for{j in MindenJarat: utolsojarat[j,b]=1}
-    printf "\tUtolsojarat: Jarat %s --%g--> Depo : %s(%g) -> %s(%g) (%g)->(%g)\n",j,tav[hova_minden[j],depo[b]],
-    hova_minden[j],meddig_minden[j],depo[b],meddig_minden[j]+ido[hova_minden[j],depo[b]],toltottsegu[j,b],toltottsegu[j,b]-tav[hova_minden[j],depo[b]]*fogyasztas[b];
+    printf "\tUtolsojarat: Jarat %s --%g--> Depo: %s (%g) -> %s (%g) (%g)->(%g)\n",j,tav[hova[j],depo[b]],
+    hova[j],meddig[j],depo[b],meddig[j]+ido[hova[j],depo[b]],toltottsegu[j,b],toltottsegu[j,b]-tav[hova[j],depo[b]]*fogyasztas[b];
 }
 
 end;
